@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!-- Mirrored from www.fibaro.com/us/homekit/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Jul 2020 09:59:50 GMT -->
+    <!-- Added by HTTrack -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <!-- /Added by HTTrack -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>HomeKit với nhà thông minh FIBARO | FIBARO</title>
+        <meta
+            name="description"
+            content="FIBARO là một trong 50 thương hiệu trên toàn thế giới cam kết cung cấp các phụ kiện tương thích với Apple HomeKit. Từ bây giờ, bạn có thể thưởng thức các thiết bị nhà thông minh tương thích HomeKit. Xem tất cả trong số họ trên trang web chính thức. "
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FIBARO | HomeKit • Nhà thông minh FIBARO" />
+        <meta property="og:description" content="Tận hưởng sức mạnh của Apple HomeKit trên các thiết bị nhà thông minh FIBARO. Tạo hành động tự động hóa trong ứng dụng Home của bạn. Tìm hiểu làm thế nào kết nối với các thiết bị này." />
+        <meta property="og:site_name" content="fibarovn.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@fibaro_global" />
+        <meta name="twitter:title" content="FIBARO | HomeKit • Nhà thông minh FIBARO" />
+        <meta name="twitter:description" content="Tận hưởng sức mạnh của Apple HomeKit trên các thiết bị nhà thông minh FIBARO. Tạo hành động tự động hóa trong ứng dụng Home của bạn. Tìm hiểu làm thế nào kết nối với các thiết bị này." />
+        <meta property="og:url" content="index.html" />
+        <meta name="author" content="Fibaro Design Department" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="application-name" content="FIBARO Việt Nam" />
+        <meta name="baidu-site-verification" content="qwr0BSJvep" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.html" />
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="favicon-128x128.png" sizes="128x128" />
+        <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" sizes="57x57" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-60x60.png" sizes="60x60" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-72x72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-76x76.png" sizes="76x76" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-114x114.png" sizes="114x114" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-120x120.png" sizes="120x120" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-144x144.png" sizes="144x144" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-152x152.png" sizes="152x152" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180" />
+        <link rel="stylesheet" id="fibaro-main-css" href="main.2906200724.css" type="text/css" media="all" />
+        <script>
+            !(function (window, document, undefined) {
+                function is(e, t) {
+                    return typeof e === t;
+                }
+                function testRunner() {
+                    var e, t, n, o, r, i, a;
+                    for (var s in tests)
+                        if (tests.hasOwnProperty(s)) {
+                            if (((e = []), (t = tests[s]), t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length)))
+                                for (n = 0; n < t.options.aliases.length; n++) e.push(t.options.aliases[n].toLowerCase());
+                            for (o = is(t.fn, "function") ? t.fn() : t.fn, r = 0; r < e.length; r++)
+                                (i = e[r]),
+                                    (a = i.split(".")),
+                                    1 === a.length ? (Modernizr[a[0]] = o) : (!Modernizr[a[0]] || Modernizr[a[0]] instanceof Boolean || (Modernizr[a[0]] = new Boolean(Modernizr[a[0]])), (Modernizr[a[0]][a[1]] = o)),
+                                    classes.push((o ? "" : "no-") + a.join("-"));
+                        }
+                }
+                function setClasses(e) {
+                    var t = docElement.className,
+                        n = Modernizr._config.classPrefix || "";
+                    if ((isSVG && (t = t.baseVal), Modernizr._config.enableJSClass)) {
+                        var o = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+                        t = t.replace(o, "$1" + n + "js$2");
+                    }
+                    Modernizr._config.enableClasses && ((t += " " + n + e.join(" " + n)), isSVG ? (docElement.className.baseVal = t) : (docElement.className = t));
+                }
+                function addTest(e, t) {
+                    if ("object" == typeof e) for (var n in e) hasOwnProp(e, n) && addTest(n, e[n]);
+                    else {
+                        e = e.toLowerCase();
+                        var o = e.split("."),
+                            r = Modernizr[o[0]];
+                        if ((2 == o.length && (r = r[o[1]]), "undefined" != typeof r)) return Modernizr;
+                        (t = "function" == typeof t ? t() : t),
+                            1 == o.length ? (Modernizr[o[0]] = t) : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), (Modernizr[o[0]][o[1]] = t)),
+                            setClasses([(t && 0 != t ? "" : "no-") + o.join("-")]),
+                            Modernizr._trigger(e, t);
+                    }
+                    return Modernizr;
+                }
+                function contains(e, t) {
+                    return !!~("" + e).indexOf(t);
+                }
+                function createElement() {
+                    return "function" != typeof document.createElement
+                        ? document.createElement(arguments[0])
+                        : isSVG
+                        ? document.createElementNS.call(document, "http://www.w3.org/2000/svg", arguments[0])
+                        : document.createElement.apply(document, arguments);
+                }
+                function getBody() {
+                    var e = document.body;
+                    return e || ((e = createElement(isSVG ? "svg" : "body")), (e.fake = !0)), e;
+                }
+                function injectElementWithStyles(e, t, n, o) {
+                    var r,
+                        i,
+                        a,
+                        s,
+                        d = "modernizr",
+                        l = createElement("div"),
+                        c = getBody();
+                    if (parseInt(n, 10)) for (; n--; ) (a = createElement("div")), (a.id = o ? o[n] : d + (n + 1)), l.appendChild(a);
+                    return (
+                        (r = createElement("style")),
+                        (r.type = "text/css"),
+                        (r.id = "s" + d),
+                        (c.fake ? c : l).appendChild(r),
+                        c.appendChild(l),
+                        r.styleSheet ? (r.styleSheet.cssText = e) : r.appendChild(document.createTextNode(e)),
+                        (l.id = d),
+                        c.fake && ((c.style.background = ""), (c.style.overflow = "hidden"), (s = docElement.style.overflow), (docElement.style.overflow = "hidden"), docElement.appendChild(c)),
+                        (i = t(l, e)),
+                        c.fake ? (c.parentNode.removeChild(c), (docElement.style.overflow = s), docElement.offsetHeight) : l.parentNode.removeChild(l),
+                        !!i
+                    );
+                }
+                function domToCSS(e) {
+                    return e
+                        .replace(/([A-Z])/g, function (e, t) {
+                            return "-" + t.toLowerCase();
+                        })
+                        .replace(/^ms-/, "-ms-");
+                }
+                function computedStyle(e, t, n) {
+                    var o;
+                    if ("getComputedStyle" in window) {
+                        o = getComputedStyle.call(window, e, t);
+                        var r = window.console;
+                        if (null !== o) n && (o = o.getPropertyValue(n));
+                        else if (r) {
+                            var i = r.error ? "error" : "log";
+                            r[i].call(r, "getComputedStyle returning null, its possible modernizr test results are inaccurate");
+                        }
+                    } else o = !t && e.currentStyle && e.currentStyle[n];
+                    return o;
+                }
+                function nativeTestProps(e, t) {
+                    var n = e.length;
+                    if ("CSS" in window && "supports" in window.CSS) {
+                        for (; n--; ) if (window.CSS.supports(domToCSS(e[n]), t)) return !0;
+                        return !1;
+                    }
+                    if ("CSSSupportsRule" in window) {
+                        for (var o = []; n--; ) o.push("(" + domToCSS(e[n]) + ":" + t + ")");
+                        return (
+                            (o = o.join(" or ")),
+                            injectElementWithStyles("@supports (" + o + ") { #modernizr { position: absolute; } }", function (e) {
+                                return "absolute" == computedStyle(e, null, "position");
+                            })
+                        );
+                    }
+                    return undefined;
+                }
+                function cssToDOM(e) {
+                    return e
+                        .replace(/([a-z])-([a-z])/g, function (e, t, n) {
+                            return t + n.toUpperCase();
+                        })
+                        .replace(/^-/, "");
+                }
+                function testProps(e, t, n, o) {
+                    function r() {
+                        a && (delete mStyle.style, delete mStyle.modElem);
+                    }
+                    if (((o = !is(o, "undefined") && o), !is(n, "undefined"))) {
+                        var i = nativeTestProps(e, n);
+                        if (!is(i, "undefined")) return i;
+                    }
+                    for (var a, s, d, l, c, u = ["modernizr", "tspan", "samp"]; !mStyle.style && u.length; ) (a = !0), (mStyle.modElem = createElement(u.shift())), (mStyle.style = mStyle.modElem.style);
+                    for (d = e.length, s = 0; s < d; s++)
+                        if (((l = e[s]), (c = mStyle.style[l]), contains(l, "-") && (l = cssToDOM(l)), mStyle.style[l] !== undefined)) {
+                            if (o || is(n, "undefined")) return r(), "pfx" != t || l;
+                            try {
+                                mStyle.style[l] = n;
+                            } catch (p) {}
+                            if (mStyle.style[l] != c) return r(), "pfx" != t || l;
+                        }
+                    return r(), !1;
+                }
+                function fnBind(e, t) {
+                    return function () {
+                        return e.apply(t, arguments);
+                    };
+                }
+                var tests = [],
+                    ModernizrProto = {
+                        _version: "3.5.0",
+                        _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 },
+                        _q: [],
+                        on: function (e, t) {
+                            var n = this;
+                            setTimeout(function () {
+                                t(n[e]);
+                            }, 0);
+                        },
+                        addTest: function (e, t, n) {
+                            tests.push({ name: e, fn: t, options: n });
+                        },
+                        addAsyncTest: function (e) {
+                            tests.push({ name: null, fn: e });
+                        },
+                    },
+                    Modernizr = function () {};
+                (Modernizr.prototype = ModernizrProto), (Modernizr = new Modernizr());
+                var classes = [],
+                    docElement = document.documentElement,
+                    isSVG = "svg" === docElement.nodeName.toLowerCase(),
+                    hasOwnProp;
+                !(function () {
+                    var e = {}.hasOwnProperty;
+                    hasOwnProp =
+                        is(e, "undefined") || is(e.call, "undefined")
+                            ? function (e, t) {
+                                  return t in e && is(e.constructor.prototype[t], "undefined");
+                              }
+                            : function (t, n) {
+                                  return e.call(t, n);
+                              };
+                })(),
+                    (ModernizrProto._l = {}),
+                    (ModernizrProto.on = function (e, t) {
+                        this._l[e] || (this._l[e] = []),
+                            this._l[e].push(t),
+                            Modernizr.hasOwnProperty(e) &&
+                                setTimeout(function () {
+                                    Modernizr._trigger(e, Modernizr[e]);
+                                }, 0);
+                    }),
+                    (ModernizrProto._trigger = function (e, t) {
+                        if (this._l[e]) {
+                            var n = this._l[e];
+                            setTimeout(function () {
+                                var e, o;
+                                for (e = 0; e < n.length; e++) (o = n[e])(t);
+                            }, 0),
+                                delete this._l[e];
+                        }
+                    }),
+                    Modernizr._q.push(function () {
+                        ModernizrProto.addTest = addTest;
+                    });
+                var modElem = { elem: createElement("modernizr") };
+                Modernizr._q.push(function () {
+                    delete modElem.elem;
+                });
+                var mStyle = { style: modElem.elem.style };
+                Modernizr._q.unshift(function () {
+                    delete mStyle.style;
+                });
+                var testProp = (ModernizrProto.testProp = function (e, t, n) {
+                        return testProps([e], undefined, t, n);
+                    }),
+                    mq = (function () {
+                        var e = window.matchMedia || window.msMatchMedia;
+                        return e
+                            ? function (t) {
+                                  var n = e(t);
+                                  return (n && n.matches) || !1;
+                              }
+                            : function (e) {
+                                  var t = !1;
+                                  return (
+                                      injectElementWithStyles("@media " + e + " { #modernizr { position: absolute; } }", function (e) {
+                                          t = "absolute" == (window.getComputedStyle ? window.getComputedStyle(e, null) : e.currentStyle).position;
+                                      }),
+                                      t
+                                  );
+                              };
+                    })();
+                (ModernizrProto.mq = mq),
+                    Modernizr.addTest("video", function () {
+                        var e = createElement("video"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/, "")),
+                                    (t.h264 = e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/, "")),
+                                    (t.webm = e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/, "")),
+                                    (t.vp9 = e.canPlayType('video/webm; codecs="vp9"').replace(/^no$/, "")),
+                                    (t.hls = e.canPlayType('application/x-mpegURL; codecs="avc1.42E01E"').replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("dataset", function () {
+                        var e = createElement("div");
+                        return e.setAttribute("data-a-b", "c"), !(!e.dataset || "c" !== e.dataset.aB);
+                    }),
+                    Modernizr.addAsyncTest(function () {
+                        function e(e, t, n) {
+                            function o(t) {
+                                var o = !(!t || "load" !== t.type) && 1 == r.width,
+                                    i = "webp" === e;
+                                addTest(e, i && o ? new Boolean(o) : o), n && n(t);
+                            }
+                            var r = new Image();
+                            (r.onerror = o), (r.onload = o), (r.src = t);
+                        }
+                        var t = [
+                                { uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=", name: "webp" },
+                                { uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==", name: "webp.alpha" },
+                                { uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA", name: "webp.animation" },
+                                { uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=", name: "webp.lossless" },
+                            ],
+                            n = t.shift();
+                        e(n.name, n.uri, function (n) {
+                            if (n && "load" === n.type) for (var o = 0; o < t.length; o++) e(t[o].name, t[o].uri);
+                        });
+                    }),
+                    Modernizr.addTest("svg", !!document.createElementNS && !!document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect),
+                    Modernizr.addTest("texttrackapi", "function" == typeof createElement("video").addTextTrack),
+                    Modernizr.addTest("track", "kind" in createElement("track")),
+                    Modernizr.addTest("audio", function () {
+                        var e = createElement("audio"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/, "")),
+                                    (t.mp3 = e.canPlayType('audio/mpeg; codecs="mp3"').replace(/^no$/, "")),
+                                    (t.opus = e.canPlayType('audio/ogg; codecs="opus"') || e.canPlayType('audio/webm; codecs="opus"').replace(/^no$/, "")),
+                                    (t.wav = e.canPlayType('audio/wav; codecs="1"').replace(/^no$/, "")),
+                                    (t.m4a = (e.canPlayType("audio/x-m4a;") || e.canPlayType("audio/aac;")).replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("notification", function () {
+                        if (!window.Notification || !window.Notification.requestPermission) return !1;
+                        if ("granted" === window.Notification.permission) return !0;
+                        try {
+                            new window.Notification("");
+                        } catch (e) {
+                            if ("TypeError" === e.name) return !1;
+                        }
+                        return !0;
+                    }),
+                    Modernizr.addTest("time", "valueAsDate" in createElement("time")),
+                    Modernizr.addTest("arrow", function () {
+                        try {
+                            eval("()=>{}");
+                        } catch (e) {
+                            return !1;
+                        }
+                        return !0;
+                    });
+                var inputElem = createElement("input"),
+                    inputattrs = "autocomplete autofocus list placeholder max min multiple pattern required step".split(" "),
+                    attrs = {};
+                (Modernizr.input = (function (e) {
+                    for (var t = 0, n = e.length; t < n; t++) attrs[e[t]] = !!(e[t] in inputElem);
+                    return attrs.list && (attrs.list = !(!createElement("datalist") || !window.HTMLDataListElement)), attrs;
+                })(inputattrs)),
+                    Modernizr.addTest("hidden", "hidden" in createElement("a")),
+                    testRunner(),
+                    setClasses(classes),
+                    delete ModernizrProto.addTest,
+                    delete ModernizrProto.addAsyncTest;
+                for (var i = 0; i < Modernizr._q.length; i++) Modernizr._q[i]();
+                window.Modernizr = Modernizr;
+            })(window, document);
+        </script>
+        <link rel="stylesheet" id="timed-content-css-css" href="timed-contenta4b6.css?ver=2.61" type="text/css" media="all" />
+        <script type="text/javascript" src="jqueryb8ff.js?ver=1.12.4"></script>
+        <script type="text/javascript" src="jquery-migrate.min330a.js?ver=1.4.1"></script>
+        <script type="text/javascript" src="timed-contenta4b6.js?ver=2.61"></script>
+        <link rel="canonical" href="index.html" />
+        <link rel="alternate" href="https://www.fibaro.com/en/homekit/" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/pl/homekit/" hreflang="pl-pl" />
+        <link rel="alternate" href="https://www.fibaro.com/cz/homekit/" hreflang="cs-cz" />
+        <link rel="alternate" href="https://www.fibaro.com/ro/homekit/" hreflang="ro-ro" />
+        <link rel="alternate" href="https://www.fibaro.com/de/homekit/" hreflang="de-de" />
+        <link rel="alternate" href="https://www.fibaro.com/fr/homekit/" hreflang="fr-fr" />
+        <link rel="alternate" href="https://www.fibaro.com/se/homekit/" hreflang="sv-se" />
+        <link rel="alternate" href="https://www.fibaro.com/cl/homekit/" hreflang="es-es" />
+        <link rel="alternate" href="https://www.fibaro.com/gr/homekit/" hreflang="el" />
+        <link rel="alternate" href="https://www.fibaro.com/no/homekit/" hreflang="nb-no" />
+        <link rel="alternate" href="index.html" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/it/homekit/" hreflang="it-it" />
+        <link rel="alternate" href="https://www.fibaro.com/cn/homekit/" hreflang="zh-cn" />
+        <link rel="alternate" href="https://www.fibaro.com/hu/homekit/" hreflang="hu-hu" />
+        <link rel="alternate" href="https://www.fibaro.com/nl/homekit/" hreflang="nl-nl" />
+        <link rel="alternate" href="https://www.fibaro.com/pt/homekit/" hreflang="pt-br" />
+        <link rel="alternate" href="https://www.fibaro.com/ar/homekit/" hreflang="ar" />
+        <link rel="alternate" href="https://www.fibaro.com/ru/homekit/" hreflang="ru-ru" />
+        <link rel="alternate" href="https://www.fibaro.com/lt/homekit/" hreflang="lt-lt" />
+        <link rel="alternate" href="https://www.fibaro.com/sk/homekit/" hreflang="sk-sk" />
+        <link rel="alternate" href="https://www.fibaro.com/en/homekit/" hreflang="x-default" />
+        <style type="text/css">
+            .homekit-lp #header .bg {
+                background-image: url("header-mobile.jpg");
+            }
+            .homekit-lp #video {
+                background-image: url("movie-poster-siri-mobile.jpg");
+            }
+            .homekit-lp #intuitive-app .bg {
+                background-image: url("application-mobile.jpg");
+            }
+            .homekit-lp #siri {
+                background-image: url("siri.jpg");
+            }
+            .homekit-lp #particles-js {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            @media screen and (min-width: 768px) {
+                .homekit-lp #header .bg {
+                    background-image: url("header.jpg");
+                }
+                .homekit-lp #mesh .bg {
+                    background-image: url("mesh.jpg");
+                }
+                .homekit-lp #video {
+                    background-image: url("movie-poster-siri-desktop.jpg");
+                }
+                .homekit-lp #intuitive-app .bg {
+                    background-image: url("application.jpg");
+                }
+            }
+            @media screen and (min-width: 1200px) {
+                .homekit-lp #devices .swiper-button-prev {
+                    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAADKCAYAAADkZd+oAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdBNjhFM0Y5QzA4NDExRTc5MUEyRTg2RDc4OTNCOTE1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdBNjhFM0ZBQzA4NDExRTc5MUEyRTg2RDc4OTNCOTE1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N0E2OEUzRjdDMDg0MTFFNzkxQTJFODZENzg5M0I5MTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6N0E2OEUzRjhDMDg0MTFFNzkxQTJFODZENzg5M0I5MTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4qpWmPAAAfAElEQVR42uxd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");
+                    left: 20px;
+                }
+                .homekit-lp #devices .swiper-button-next {
+                    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAADKCAYAAADkZd+oAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdBNjhFM0ZEQzA4NDExRTc5MUEyRTg2RDc4OTNCOTE1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdBNjhFM0ZFQzA4NDExRTc5MUEyRTg2RDc4OTNCOTE1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N0E2OEUzRkJDMDg0MTFFNzkxQTJFODZENzg5M0I5MTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6N0E2OEUzRkNDMDg0MTFFNzkxQTJFODZENzg5M0I5MTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7eJnu3AAAfeUlEQVR42uxd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");
+                    right: 20px;
+                }
+            }
+        </style>
+        <script>
+            dataLayer = [];
+        </script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "gtm5445.html?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MF67KLD");
+        </script>
+    </head>
+    <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF67KLD" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <div class="site-wrapper single-page single-product fixed-grid homekit-lp">
+           <header id="fibaro_main_header">
+                <div class="container">
+                    <div class="row">
+                        <div class="brand col-phoneS-10 offset-phoneS-1 col-desktopS-2 offset-desktopS-0 col-desktopL-3">
+                            <a href="/vi/"><img src="https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/img/common/FIBARO_logo.svg" alt="FIBARO Viet Nam" /></a>
+                            <button id="menu-toggle" class="hidden-desktopS-up"><span></span></button>
+                        </div>
+                        <nav class="col-phoneS-10 offset-phoneS-1 col-desktopS-10 offset-desktopS-0 col-desktopL-9">
+                            <ul>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2958"><a href="/vi/">Trang chủ FIBARO</a></li>
+                                <li class="menu-top-item products-redesign menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-17 menu-item-has-children">
+                                    <a href="#">Các sản phẩm</a>
+                                    <ul class="menu-sub menu-sub-products">
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2878 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Chiếu sáng</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-lighting">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2301">
+                                                    <a href="san-pham/dieu-chinh-do-sang-dimmer-2/"> <img src="nav-dimmer.jpg" alt="Chiết áp Dimmer 2 FIBARO" /> <span>Chiết áp Dimmer 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2310">
+                                                    <a href="san-pham/role-dong-ngat-doi-double-switch/"> <img src="nav-relay.jpg" alt="Switches" /> <span>Role thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2308">
+                                                    <a href="san-pham/dieu-khien-mau-sac-RGBW-controller-2/"> <img src="nav-rgbw-1.jpg" alt="RGBW Controller" /> <span>Bộ điều khiển màu sắc RGBW</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2375">
+                                                    <a href="san-pham/o-cam-thong-minh-wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2891">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2879 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Cổng và rèm cửa</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gates-and-blinds">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2777">
+                                                    <a href="san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Smart Implant - Bo tich hop dieu khien thong minh" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2890">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2880 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Điều khiển nhiêt, sưởi ấm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-heating">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2884">
+                                                    <a href="san-pham/tat-ca-san-pham/o-cam-thong-minh-wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2885">
+                                                    <a href="san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2889">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2881 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">An toàn và bảo mật</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-safety-and-security">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2307">
+                                                    <a href="san-pham/cam-bien-chuyen-dong-sensor-motion/"> <img src="nav-motion.jpg" alt="Motion Sensor" /> <span>Cảm biến chuyển động</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2302">
+                                                    <a href="san-pham/cam-bien-cua-door-sensor/"> <img src="nav-dws.jpg" alt="Door/Window Sensor" /> <span>Cảm biến mở cửa</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2303">
+                                                    <a href="san-pham/cam-bien-tran-nuoc-flood-sensor/"> <img src="nav-flood.jpg" alt="Flood Sensor" /> <span>Cảm biến ngập nước</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2886">
+                                                    <a href="san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Bộ tích hợp điều khiển thông minh Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2888">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2882 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Thiết bị kích hoạt</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-triggering">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2306">
+                                                    <a href="san-pham/remote-cam-tay-KeyFob/"> <img src="nav-keyfob.jpg" alt="KeyFob" /> <span>Remote KeyFob</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2311">
+                                                    <a href="san-pham/nut-nhan-the-button/"> <img src="nav-button.jpg" alt="The Button" /> <span>Nút nhấn</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2309">
+                                                    <a href="san-pham/bang-dieu-khien-swipe/"> <img src="nav-swipe.jpg" alt="Swipe" /> <span>Bảng điều khiển Swipe</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2883">
+                                                    <a href="san-pham/smart-home-app/"> <img src="nav_app.jpg" alt="Application FIBARO Home Center" /> <span>Ứng dụng FIBARO Home Center</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2887">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-675 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Bộ điều khiển trung tâm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gateways">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2304">
+                                                    <a href="san-pham/dieu-khien-trung-tam-home-center-2/"> <img src="nav-hc2.jpg" alt="Home Center 2" /> <span>Home Center 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2305">
+                                                    <a href="san-pham/home-center-lite/"> <img src="nav-hcl.jpg" alt="Home Center Lite" /> <span>Home Center Lite</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2892">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2664 menu-item-has-children">
+                                    <a href="#">Hoạt động với</a>
+                                    <ul class="menu-sub menu-sub-workswith">
+                                        <li
+                                            onclick="location.href='https://www.fibaro.com/us/compatibility/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2296"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-fibaro.png" class="page-icon" /> <span class="menu-description">Nhận biết các khả năng của một hệ thống nhà thông minh hoàn chỉnh.</span>
+                                            <a href="https://www.fibaro.com/us/compatibility/" class="menu-sub-toggle">Hệ thống nhà thông minh FIBARO</a> <a href="https://www.fibaro.com/us/compatibility/" class="menu-link">Tìm hiểu hệ thống</a>
+                                        </li>
+                                        <li
+                                            onclick="location.href='https://www.fibaro.com/us/smartthings/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2801"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-smartthings.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với SmartThings.</span>
+                                            <a href="https://www.fibaro.com/us/smartthings/" class="menu-sub-toggle">SmartThings</a> <a href="https://www.fibaro.com/us/smartthings/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                        <li onclick="location.href='https://www.fibaro.com/us/homekit/'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2665" data-level="1">
+                                            <img src="nav-homekit.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với Apple HomeKit.</span>
+                                            <a href="https://www.fibaro.com/us/homekit/" class="menu-sub-toggle">Apple HomeKit</a> <a href="https://www.fibaro.com/us/homekit/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2689"><a href="https://www.fibaro.com/us/why-fibaro/">Những lợi ích</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2931"><a href="https://fibarovn.com/contact/">Nơi để mua</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2298"><a href="https://fibarovn.com/contact/">Hỗ trợ</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2297"><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                            <div id="language-selector">
+                                <a href="index.html" id="lang-toggle">Tiếng Việt</a>
+                                <div id="lang-choices">
+                                    <a href="https://www.fibaro.com/cn/products/smart-implant/" title="中文">中文</a> <a href="https://www.fibaro.com/cz/products/smart-implant/" title="Čeština">Čeština</a>
+                                    <a href="https://www.fibaro.com/de/products/smart-implant/" title="Deutsch">Deutsch</a> <a href="https://www.fibaro.com/en/products/smart-implant/" title="English">English (International)</a>
+                                    <a href="index.html" title="English">Tiếng Việt</a> <a href="https://www.fibaro.com/cl/products/smart-implant/" title="Español">Español</a>
+                                    <a href="https://www.fibaro.com/fr/products/smart-implant/" title="Français">Français</a> <a href="https://www.fibaro.com/gr/products/smart-implant/" title="Ελληνικά">Ελληνικά</a>
+                                    <a href="https://www.fibaro.com/it/products/smart-implant/" title="Italiano">Italiano</a> <a href="https://www.fibaro.com/lt/products/smart-implant/" title="Lietuvių">Lietuvių</a>
+                                    <a href="https://www.fibaro.com/hu/products/smart-implant/" title="Magyar">Magyar</a> <a href="https://www.fibaro.com/nl/products/smart-implant/" title="Nederlands">Nederlands</a>
+                                    <a href="https://www.fibaro.com/ru/products/smart-implant/" title="Русский">Русский</a> <a href="https://www.fibaro.com/no/products/smart-implant/" title="Norsk bokmål">Norsk bokmål</a>
+                                    <a href="https://www.fibaro.com/ar/products/smart-implant/" title="العربية">العربية</a> <a href="https://www.fibaro.com/pl/products/smart-implant/" title="Polski">Polski</a>
+                                    <a href="https://www.fibaro.com/pt/products/smart-implant/" title="Português">Português</a> <a href="https://www.fibaro.com/ro/products/smart-implant/" title="Română">Română</a>
+                                    <a href="https://www.fibaro.com/sk/products/smart-implant/" title="Slovenčina">Slovenčina</a> <a href="https://www.fibaro.com/se/products/smart-implant/" title="Svenska">Svenska</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section id="header" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-8 offset-tabletP-2">
+                                    <h1>Ngôi nhà thông minh</h1>
+                                    <p class="sub-header">với các thiết bị phù hợp HomeKit</p>
+                                </div>
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-4 offset-tabletP-4 col-desktopS-4 offset-desktopS-4 col-desktopM-4 offset-desktopM-4"><p class="claim">Khám phá ngay</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="mesh" class="section-app">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-8 offset-tabletP-2 col-desktopS-10 offset-desktopS-1">
+                                    <h2>Thiết bị FIBARO tương thích với nền tảng Apple HomeKit</h2>
+                                    <p>Chúng tôi cam kết sẽ tạo ra nhiều thiết bị công nghệ để người dùng ưa chuộng sản phẩm FIBARO.</p>
+                                    <img src="https://www.fibaro.com/en/wp-content/uploads/sites/3/2017/02/homekit-logo-new.svg" alt="HomeKit" class="homekit hidden-tabletP-up" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover bg-left">
+                        <div id="particles-js"></div>
+                        <img src="badges.png" alt="HomeKit" class="badges hidden-phoneL-down" />
+                        <img src="https://www.fibaro.com/en/wp-content/uploads/sites/3/2017/02/homekit-logo-new.svg" alt="HomeKit FIBARO VIỆT NAM" class="homekit hidden-phoneL-down" />
+                    </div>
+                </section>
+                <section id="devices" class="section-inter">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-8 offset-tabletP-2">
+                                    <h2>Các thiết bị FIBARO hoạt động với HomeKit</h2>
+                                    <p>
+                                        Tháo thiết bị khỏi hộp và thêm vào Apple HomeKit. Tải xuống ứng dụng của FIBARO 
+                                        trên di động sau đó bạn có thể dễ dàng tùy chỉnh hệ thống để phù hợp với nhu cầu cá nhân và 
+                                        sở thích của bạn. Tận hưởng sự thoải mái và công nghệ, khám phá ngôi nhà của bạn với một luồng gió mới!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-8 offset-tabletP-2 dashes"><h2>Các cảm biến</h2></div>
+                                <div class="col-phoneS-12">
+                                    <div class="swiper-container sensors-us">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide device">
+                                                <img src="hk-device-flood.png" alt="HOMEKIT flood detector" />
+                                                <h3>Cảm biến rò rỉ và tràn nước</h3>
+                                                <div class="col-phoneS-8 offset-phoneS-2 col-phoneL-10 offset-phoneL-1"><span>Phát hiện rò rỉ nước và đo nhiệt độ môi trường trong ngôi nhà của bạn.</span></div>
+                                                <a href="/vi/san-pham/cam-bien-tran-nuoc-flood-sensor/" class="learnmore">Tìm hiểu thêm</a><br />
+                                                <a
+                                                    href="https://fibarovn.com/contact/"
+                                                    rel="nofollow"
+                                                    class="morelink reverse"
+                                                >
+                                                    Liên hệ ngay
+                                                </a>
+                                                <br />
+                                            </div>
+                                            <div class="swiper-slide device">
+                                                <img src="hk-device-motion.png" alt="homekit cảm biến chuyển động" />
+                                                <h3>Cảm biến chuyển động</h3>
+                                                <div class="col-phoneS-8 offset-phoneS-2 col-phoneL-10 offset-phoneL-1"><span>Phát hiện chuyển động, cường độ ánh sáng và nhiệt độ phòng trong ngôi nhà của bạn.</span></div>
+                                                <a href="/vi/san-pham/cam-bien-tran-nuoc-flood-sensor/" class="learnmore">Tìm hiểu thêm</a><br />
+                                                <a
+                                                    href="https://fibarovn.com/contact/"
+                                                    rel="nofollow"
+                                                    class="morelink reverse"
+                                                >
+                                                    Liên hệ ngay
+                                                </a>
+                                                <br />
+                                            </div>
+                                            <div class="swiper-slide device">
+                                                <img src="hk-device-dws.png" alt="homekit cảm biến tràn, rò rỉ nước" />
+                                                <h3>Cảm biến mở cửa</h3>
+                                                <div class="col-phoneS-8 offset-phoneS-2 col-phoneL-10 offset-phoneL-1"><span>Cảm biến mở cửa, cửa sổ, cổng và nhiệt độ môi trường.</span></div>
+                                                <a href="/vi/san-pham/cam-bien-tran-nuoc-flood-sensor/" class="learnmore">Tìm hiểu thêm</a><br />
+                                                <a
+                                                    href="https://fibarovn.com/contact/"
+                                                    rel="nofollow"
+                                                    class="morelink reverse"
+                                                >
+                                                    Liên hệ ngay
+                                                </a>
+                                                <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-8 offset-tabletP-2 remotes dashes"><h2>Kích hoạt hành động</h2></div>
+                                <div class="col-phoneS-12">
+                                    <div class="device">
+                                        <div class="col-phoneS-10 col-tabletP-6 col-desktopS-4 button"><img src="buttons-hk.jpg" alt="smart homekit nút nhấn thông minh" /></div>
+                                        <h3>Nút nhấn thông minh</h3>
+                                        <div class="col-phoneS-8 offset-phoneS-2 col-tabletP-6 offset-tabletP-3 col-desktopS-4 offset-desktopS-4 button-text">
+                                            <span>Kích hoạt hoặc hủy kích hoạt thủ công bất kỳ thiết bị và hành động nào trong Hệ thống FIBARO.</span>
+                                        </div>
+                                        <a href="/vi/san-pham/cam-bien-tran-nuoc-flood-sensor/" class="learnmore">Tìm hiểu thêm</a><br />
+                                        <a href="https://fibarovn.com/contact/" rel="nofollow" class="morelink reverse">Liên hệ ngay</a><br />
+                                        <a
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="video" class="section-video-player typo-light">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-6 offset-tabletP-3 col-desktopM-8 offset-desktopM-2">
+                                    <h2>Điều khiển giọng nói với Siri</h2>
+                                    <p>Điều khiển các phụ kiện FIBARO hỗ trợ HomeKit bằng giọng nói bằng Siri trực tiếp từ iPhone, iPad hoặc iPod touch. <a href="http://manuals.fibaro.com/faq-hk/" class="more">Tìm hiểu thêm</a></p>
+                                    <a href="#" class="button button-play" data-video-id="vHUvDJt72qg"><span>Phát</span></a>
+                                    <script type="application/ld+json">
+                                        {
+                                            "@context": "http://schema.org/",
+                                            "@type": "VideoObject",
+                                            "name": "Siri voice assistant & FIBARO",
+                                            "description": "Control HomeKit-enabled FIBARO accessories with voice using Siri directly from iPhone, iPad, or iPod touch. Always at your service.",
+                                            "thumbnailURL": "http://i.ytimg.com/vi/vHUvDJt72qg/hqdefault.jpg",
+                                            "UploadDate": "2017-12-20"
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="intuitive-app" class="section-app">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-6 offset-tabletP-3 col-desktopS-4 offset-desktopS-4">
+                                    <h2>Ứng dụng di động trực quan</h2>
+                                    <ul class="icons">
+                                        <li><img src="https://www.fibaro.com/en/wp-content/uploads/sites/3/2017/11/user-friendly-on.svg" alt="User friendly homekit" /> <span>Thân thiện với người dùng</span></li>
+                                        <li><img src="https://www.fibaro.com/en/wp-content/uploads/sites/3/2017/11/quick-setup-on.svg" alt="Quick setup for homekit" /> <span>Cài đặt nhanh</span></li>
+                                        <li><img src="https://www.fibaro.com/en/wp-content/uploads/sites/3/2017/11/worldwide-access-on.svg" alt="homekit Worldwide access" /> <span>Truy cập mọi nơi</span></li>
+                                    </ul>
+                                    <p>Các thiết bị được thêm bởi ứng dụng FIBARO cực kỳ thân thiện với người dùng có thể nhìn thấy và được hỗ trợ trong ứng dụng Apple HomeKit. Việc cài đặt rất đơn giản và quản lý nhà của bạn chưa bao giờ dễ dàng và nhanh chóng đến thế.</p>
+                                    <a href="https://itunes.apple.com/us/app/fibaro-for-homekit-connected/id1178623010?l=pl&amp;mt=8" target="_blank" rel="nofollow">
+                                        <img src="https://www.fibaro.com/en/wp-content/uploads/sites/3/2017/02/appstore-download.svg" alt="Download on the AppStore" class="appstore hidden-tabletP-up" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover bg-left">
+                        <a href="https://itunes.apple.com/us/app/fibaro-for-homekit-connected/id1178623010?l=pl&amp;mt=8" target="_blank" rel="nofollow">
+                            <img src="https://www.fibaro.com/en/wp-content/uploads/sites/3/2017/02/appstore-download.svg" alt="homekit app for smart home" class="appstore hidden-phoneL-down" />
+                        </a>
+                    </div>
+                </section>
+                <section class="section-product-footer typo-align-center">
+                    <div class="container-fluid top">
+                        <div class="row">
+                            <div class="col-phoneS-12">
+                                <div class="content where-to-buy">
+                                    <h2>Mua ở đâu</h2>
+                                    <a href="https://www.fibaro.com/us/where-to-buy-homekit/"> Tìm cửa hàng </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container sub">
+                        <div class="row">
+                            <div class="col-phoneS-12 col-tabletP-10 offset-tabletP-1 col-desktopS-8 offset-desktopS-2 col-desktopL-6 offset-desktopL-3">
+                                <div class="row">
+                                    <div class="col-phoneS-6">
+                                        <div class="content manuals">
+                                            <a href="https://manuals.fibaro.com/" target="_blank">
+                                                <img src="https://www.fibaro.com/en/wp-content/uploads/sites/3/2017/02/manuals.svg" alt="Download homekit manuals" /> <span>Download manuals</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-phoneS-6">
+                                        <div class="content kbase">
+                                            <a href="https://manuals.fibaro.com/knowledge-base/" target="_blank">
+                                                <img src="https://www.fibaro.com/en/wp-content/uploads/sites/3/2017/02/knowledge-base.svg" alt="Homekit knowledge base" /> <span>Knowledge base</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <script type="text/javascript">
+                    (function ($) {
+                        $(function () {
+                            function hexToRgb(e) {
+                                var a = /^#?([a-fd])([a-fd])([a-fd])$/i;
+                                e = e.replace(a, function (e, a, t, i) {
+                                    return a + a + t + t + i + i;
+                                });
+                                var t = /^#?([a-fd]{2})([a-fd]{2})([a-fd]{2})$/i.exec(e);
+                                return t ? { r: parseInt(t[1], 16), g: parseInt(t[2], 16), b: parseInt(t[3], 16) } : null;
+                            }
+                            function clamp(e, a, t) {
+                                return Math.min(Math.max(e, a), t);
+                            }
+                            function isInArray(e, a) {
+                                return a.indexOf(e) > -1;
+                            }
+                            var pJS = function (e, a) {
+                                var t = document.querySelector("#" + e + " > .particles-js-canvas-el");
+                                this.pJS = {
+                                    canvas: { el: t, w: t.offsetWidth, h: t.offsetHeight },
+                                    particles: {
+                                        number: { value: 400, density: { enable: !0, value_area: 800 } },
+                                        color: { value: "#fff" },
+                                        shape: { type: "circle", stroke: { width: 0, color: "#ff0000" }, polygon: { nb_sides: 5 }, image: { src: "", width: 100, height: 100 } },
+                                        opacity: { value: 1, random: !1, anim: { enable: !1, speed: 2, opacity_min: 0, sync: !1 } },
+                                        size: { value: 20, random: !1, anim: { enable: !1, speed: 20, size_min: 0, sync: !1 } },
+                                        line_linked: { enable: !0, distance: 100, color: "#fff", opacity: 1, width: 1 },
+                                        move: { enable: !0, speed: 2, direction: "none", random: !1, straight: !1, out_mode: "out", bounce: !1, attract: { enable: !1, rotateX: 3e3, rotateY: 3e3 } },
+                                        array: [],
+                                    },
+                                    interactivity: {
+                                        detect_on: "canvas",
+                                        events: { onhover: { enable: !0, mode: "grab" }, onclick: { enable: !0, mode: "push" }, resize: !0 },
+                                        modes: {
+                                            grab: { distance: 100, line_linked: { opacity: 1 } },
+                                            bubble: { distance: 200, size: 80, duration: 0.4 },
+                                            repulse: { distance: 200, duration: 0.4 },
+                                            push: { particles_nb: 4 },
+                                            remove: { particles_nb: 2 },
+                                        },
+                                        mouse: {},
+                                    },
+                                    retina_detect: !1,
+                                    fn: { interact: {}, modes: {}, vendors: {} },
+                                    tmp: {},
+                                };
+                                var i = this.pJS;
+                                a && Object.deepExtend(i, a),
+                                    (i.tmp.obj = {
+                                        size_value: i.particles.size.value,
+                                        size_anim_speed: i.particles.size.anim.speed,
+                                        move_speed: i.particles.move.speed,
+                                        line_linked_distance: i.particles.line_linked.distance,
+                                        line_linked_width: i.particles.line_linked.width,
+                                        mode_grab_distance: i.interactivity.modes.grab.distance,
+                                        mode_bubble_distance: i.interactivity.modes.bubble.distance,
+                                        mode_bubble_size: i.interactivity.modes.bubble.size,
+                                        mode_repulse_distance: i.interactivity.modes.repulse.distance,
+                                    }),
+                                    (i.fn.retinaInit = function () {
+                                        i.retina_detect && window.devicePixelRatio > 1 ? ((i.canvas.pxratio = window.devicePixelRatio), (i.tmp.retina = !0)) : ((i.canvas.pxratio = 1), (i.tmp.retina = !1)),
+                                            (i.canvas.w = i.canvas.el.offsetWidth * i.canvas.pxratio),
+                                            (i.canvas.h = i.canvas.el.offsetHeight * i.canvas.pxratio),
+                                            (i.particles.size.value = i.tmp.obj.size_value * i.canvas.pxratio),
+                                            (i.particles.size.anim.speed = i.tmp.obj.size_anim_speed * i.canvas.pxratio),
+                                            (i.particles.move.speed = i.tmp.obj.move_speed * i.canvas.pxratio),
+                                            (i.particles.line_linked.distance = i.tmp.obj.line_linked_distance * i.canvas.pxratio),
+                                            (i.interactivity.modes.grab.distance = i.tmp.obj.mode_grab_distance * i.canvas.pxratio),
+                                            (i.interactivity.modes.bubble.distance = i.tmp.obj.mode_bubble_distance * i.canvas.pxratio),
+                                            (i.particles.line_linked.width = i.tmp.obj.line_linked_width * i.canvas.pxratio),
+                                            (i.interactivity.modes.bubble.size = i.tmp.obj.mode_bubble_size * i.canvas.pxratio),
+                                            (i.interactivity.modes.repulse.distance = i.tmp.obj.mode_repulse_distance * i.canvas.pxratio);
+                                    }),
+                                    (i.fn.canvasInit = function () {
+                                        i.canvas.ctx = i.canvas.el.getContext("2d");
+                                    }),
+                                    (i.fn.canvasSize = function () {
+                                        (i.canvas.el.width = i.canvas.w),
+                                            (i.canvas.el.height = i.canvas.h),
+                                            i &&
+                                                i.interactivity.events.resize &&
+                                                window.addEventListener("resize", function () {
+                                                    (i.canvas.w = i.canvas.el.offsetWidth),
+                                                        (i.canvas.h = i.canvas.el.offsetHeight),
+                                                        i.tmp.retina && ((i.canvas.w *= i.canvas.pxratio), (i.canvas.h *= i.canvas.pxratio)),
+                                                        (i.canvas.el.width = i.canvas.w),
+                                                        (i.canvas.el.height = i.canvas.h),
+                                                        i.particles.move.enable || (i.fn.particlesEmpty(), i.fn.particlesCreate(), i.fn.particlesDraw(), i.fn.vendors.densityAutoParticles()),
+                                                        i.fn.vendors.densityAutoParticles();
+                                                });
+                                    }),
+                                    (i.fn.canvasPaint = function () {
+                                        i.canvas.ctx.fillRect(0, 0, i.canvas.w, i.canvas.h);
+                                    }),
+                                    (i.fn.canvasClear = function () {
+                                        i.canvas.ctx.clearRect(0, 0, i.canvas.w, i.canvas.h);
+                                    }),
+                                    (i.fn.particle = function (e, a, t) {
+                                        if (
+                                            ((this.radius = (i.particles.size.random ? Math.random() : 1) * i.particles.size.value),
+                                            i.particles.size.anim.enable && ((this.size_status = !1), (this.vs = i.particles.size.anim.speed / 100), i.particles.size.anim.sync || (this.vs = this.vs * Math.random())),
+                                            (this.x = t ? t.x : Math.random() * i.canvas.w),
+                                            (this.y = t ? t.y : Math.random() * i.canvas.h),
+                                            this.x > i.canvas.w - 2 * this.radius ? (this.x = this.x - this.radius) : this.x < 2 * this.radius && (this.x = this.x + this.radius),
+                                            this.y > i.canvas.h - 2 * this.radius ? (this.y = this.y - this.radius) : this.y < 2 * this.radius && (this.y = this.y + this.radius),
+                                            i.particles.move.bounce && i.fn.vendors.checkOverlap(this, t),
+                                            (this.color = {}),
+                                            "object" == typeof e.value)
+                                        )
+                                            if (e.value instanceof Array) {
+                                                var s = e.value[Math.floor(Math.random() * i.particles.color.value.length)];
+                                                this.color.rgb = hexToRgb(s);
+                                            } else
+                                                void 0 != e.value.r && void 0 != e.value.g && void 0 != e.value.b && (this.color.rgb = { r: e.value.r, g: e.value.g, b: e.value.b }),
+                                                    void 0 != e.value.h && void 0 != e.value.s && void 0 != e.value.l && (this.color.hsl = { h: e.value.h, s: e.value.s, l: e.value.l });
+                                        else
+                                            "random" == e.value
+                                                ? (this.color.rgb = { r: Math.floor(256 * Math.random()) + 0, g: Math.floor(256 * Math.random()) + 0, b: Math.floor(256 * Math.random()) + 0 })
+                                                : "string" == typeof e.value && ((this.color = e), (this.color.rgb = hexToRgb(this.color.value)));
+                                        (this.opacity = (i.particles.opacity.random ? Math.random() : 1) * i.particles.opacity.value),
+                                            i.particles.opacity.anim.enable && ((this.opacity_status = !1), (this.vo = i.particles.opacity.anim.speed / 100), i.particles.opacity.anim.sync || (this.vo = this.vo * Math.random()));
+                                        var n = {};
+                                        switch (i.particles.move.direction) {
+                                            case "top":
+                                                n = { x: 0, y: -1 };
+                                                break;
+                                            case "top-right":
+                                                n = { x: 0.5, y: -0.5 };
+                                                break;
+                                            case "right":
+                                                n = { x: 1, y: -0 };
+                                                break;
+                                            case "bottom-right":
+                                                n = { x: 0.5, y: 0.5 };
+                                                break;
+                                            case "bottom":
+                                                n = { x: 0, y: 1 };
+                                                break;
+                                            case "bottom-left":
+                                                n = { x: -0.5, y: 1 };
+                                                break;
+                                            case "left":
+                                                n = { x: -1, y: 0 };
+                                                break;
+                                            case "top-left":
+                                                n = { x: -0.5, y: -0.5 };
+                                                break;
+                                            default:
+                                                n = { x: 0, y: 0 };
+                                        }
+                                        i.particles.move.straight
+                                            ? ((this.vx = n.x), (this.vy = n.y), i.particles.move.random && ((this.vx = this.vx * Math.random()), (this.vy = this.vy * Math.random())))
+                                            : ((this.vx = n.x + Math.random() - 0.5), (this.vy = n.y + Math.random() - 0.5)),
+                                            (this.vx_i = this.vx),
+                                            (this.vy_i = this.vy);
+                                        var r = i.particles.shape.type;
+                                        if ("object" == typeof r) {
+                                            if (r instanceof Array) {
+                                                var c = r[Math.floor(Math.random() * r.length)];
+                                                this.shape = c;
+                                            }
+                                        } else this.shape = r;
+                                        if ("image" == this.shape) {
+                                            var o = i.particles.shape;
+                                            (this.img = { src: o.image.src, ratio: o.image.width / o.image.height }),
+                                                this.img.ratio || (this.img.ratio = 1),
+                                                "svg" == i.tmp.img_type && void 0 != i.tmp.source_svg && (i.fn.vendors.createSvgImg(this), i.tmp.pushing && (this.img.loaded = !1));
+                                        }
+                                    }),
+                                    (i.fn.particle.prototype.draw = function () {
+                                        function e() {
+                                            i.canvas.ctx.drawImage(r, a.x - t, a.y - t, 2 * t, (2 * t) / a.img.ratio);
+                                        }
+                                        var a = this;
+                                        if (void 0 != a.radius_bubble) var t = a.radius_bubble;
+                                        else var t = a.radius;
+                                        if (void 0 != a.opacity_bubble) var s = a.opacity_bubble;
+                                        else var s = a.opacity;
+                                        if (a.color.rgb) var n = "rgba(" + a.color.rgb.r + "," + a.color.rgb.g + "," + a.color.rgb.b + "," + s + ")";
+                                        else var n = "hsla(" + a.color.hsl.h + "," + a.color.hsl.s + "%," + a.color.hsl.l + "%," + s + ")";
+                                        switch (((i.canvas.ctx.fillStyle = n), i.canvas.ctx.beginPath(), a.shape)) {
+                                            case "circle":
+                                                i.canvas.ctx.arc(a.x, a.y, t, 0, 2 * Math.PI, !1);
+                                                break;
+                                            case "edge":
+                                                i.canvas.ctx.rect(a.x - t, a.y - t, 2 * t, 2 * t);
+                                                break;
+                                            case "triangle":
+                                                i.fn.vendors.drawShape(i.canvas.ctx, a.x - t, a.y + t / 1.66, 2 * t, 3, 2);
+                                                break;
+                                            case "polygon":
+                                                i.fn.vendors.drawShape(
+                                                    i.canvas.ctx,
+                                                    a.x - t / (i.particles.shape.polygon.nb_sides / 3.5),
+                                                    a.y - t / 0.76,
+                                                    (2.66 * t) / (i.particles.shape.polygon.nb_sides / 3),
+                                                    i.particles.shape.polygon.nb_sides,
+                                                    1
+                                                );
+                                                break;
+                                            case "star":
+                                                i.fn.vendors.drawShape(
+                                                    i.canvas.ctx,
+                                                    a.x - (2 * t) / (i.particles.shape.polygon.nb_sides / 4),
+                                                    a.y - t / 1.52,
+                                                    (2 * t * 2.66) / (i.particles.shape.polygon.nb_sides / 3),
+                                                    i.particles.shape.polygon.nb_sides,
+                                                    2
+                                                );
+                                                break;
+                                            case "image":
+                                                if ("svg" == i.tmp.img_type) var r = a.img.obj;
+                                                else var r = i.tmp.img_obj;
+                                                r && e();
+                                        }
+                                        i.canvas.ctx.closePath(),
+                                            i.particles.shape.stroke.width > 0 && ((i.canvas.ctx.strokeStyle = i.particles.shape.stroke.color), (i.canvas.ctx.lineWidth = i.particles.shape.stroke.width), i.canvas.ctx.stroke()),
+                                            i.canvas.ctx.fill();
+                                    }),
+                                    (i.fn.particlesCreate = function () {
+                                        for (var e = 0; e < i.particles.number.value; e++) i.particles.array.push(new i.fn.particle(i.particles.color, i.particles.opacity.value));
+                                    }),
+                                    (i.fn.particlesUpdate = function () {
+                                        for (var e = 0; e < i.particles.array.length; e++) {
+                                            var a = i.particles.array[e];
+                                            if (i.particles.move.enable) {
+                                                var t = i.particles.move.speed / 2;
+                                                (a.x += a.vx * t), (a.y += a.vy * t);
+                                            }
+                                            if (
+                                                (i.particles.opacity.anim.enable &&
+                                                    (1 == a.opacity_status
+                                                        ? (a.opacity >= i.particles.opacity.value && (a.opacity_status = !1), (a.opacity += a.vo))
+                                                        : (a.opacity <= i.particles.opacity.anim.opacity_min && (a.opacity_status = !0), (a.opacity -= a.vo)),
+                                                    a.opacity < 0 && (a.opacity = 0)),
+                                                i.particles.size.anim.enable &&
+                                                    (1 == a.size_status
+                                                        ? (a.radius >= i.particles.size.value && (a.size_status = !1), (a.radius += a.vs))
+                                                        : (a.radius <= i.particles.size.anim.size_min && (a.size_status = !0), (a.radius -= a.vs)),
+                                                    a.radius < 0 && (a.radius = 0)),
+                                                "bounce" == i.particles.move.out_mode)
+                                            )
+                                                var s = { x_left: a.radius, x_right: i.canvas.w, y_top: a.radius, y_bottom: i.canvas.h };
+                                            else var s = { x_left: -a.radius, x_right: i.canvas.w + a.radius, y_top: -a.radius, y_bottom: i.canvas.h + a.radius };
+                                            switch (
+                                                (a.x - a.radius > i.canvas.w ? ((a.x = s.x_left), (a.y = Math.random() * i.canvas.h)) : a.x + a.radius < 0 && ((a.x = s.x_right), (a.y = Math.random() * i.canvas.h)),
+                                                a.y - a.radius > i.canvas.h ? ((a.y = s.y_top), (a.x = Math.random() * i.canvas.w)) : a.y + a.radius < 0 && ((a.y = s.y_bottom), (a.x = Math.random() * i.canvas.w)),
+                                                i.particles.move.out_mode)
+                                            ) {
+                                                case "bounce":
+                                                    a.x + a.radius > i.canvas.w ? (a.vx = -a.vx) : a.x - a.radius < 0 && (a.vx = -a.vx), a.y + a.radius > i.canvas.h ? (a.vy = -a.vy) : a.y - a.radius < 0 && (a.vy = -a.vy);
+                                            }
+                                            if (
+                                                (isInArray("grab", i.interactivity.events.onhover.mode) && i.fn.modes.grabParticle(a),
+                                                (isInArray("bubble", i.interactivity.events.onhover.mode) || isInArray("bubble", i.interactivity.events.onclick.mode)) && i.fn.modes.bubbleParticle(a),
+                                                (isInArray("repulse", i.interactivity.events.onhover.mode) || isInArray("repulse", i.interactivity.events.onclick.mode)) && i.fn.modes.repulseParticle(a),
+                                                i.particles.line_linked.enable || i.particles.move.attract.enable)
+                                            )
+                                                for (var n = e + 1; n < i.particles.array.length; n++) {
+                                                    var r = i.particles.array[n];
+                                                    i.particles.line_linked.enable && i.fn.interact.linkParticles(a, r),
+                                                        i.particles.move.attract.enable && i.fn.interact.attractParticles(a, r),
+                                                        i.particles.move.bounce && i.fn.interact.bounceParticles(a, r);
+                                                }
+                                        }
+                                    }),
+                                    (i.fn.particlesDraw = function () {
+                                        i.canvas.ctx.clearRect(0, 0, i.canvas.w, i.canvas.h), i.fn.particlesUpdate();
+                                        for (var e = 0; e < i.particles.array.length; e++) {
+                                            var a = i.particles.array[e];
+                                            a.draw();
+                                        }
+                                    }),
+                                    (i.fn.particlesEmpty = function () {
+                                        i.particles.array = [];
+                                    }),
+                                    (i.fn.particlesRefresh = function () {
+                                        cancelRequestAnimFrame(i.fn.checkAnimFrame),
+                                            cancelRequestAnimFrame(i.fn.drawAnimFrame),
+                                            (i.tmp.source_svg = void 0),
+                                            (i.tmp.img_obj = void 0),
+                                            (i.tmp.count_svg = 0),
+                                            i.fn.particlesEmpty(),
+                                            i.fn.canvasClear(),
+                                            i.fn.vendors.start();
+                                    }),
+                                    (i.fn.interact.linkParticles = function (e, a) {
+                                        var t = e.x - a.x,
+                                            s = e.y - a.y,
+                                            n = Math.sqrt(t * t + s * s);
+                                        if (n <= i.particles.line_linked.distance) {
+                                            var r = i.particles.line_linked.opacity - n / (1 / i.particles.line_linked.opacity) / i.particles.line_linked.distance;
+                                            if (r > 0) {
+                                                var c = i.particles.line_linked.color_rgb_line;
+                                                (i.canvas.ctx.strokeStyle = "rgba(" + c.r + "," + c.g + "," + c.b + "," + r + ")"),
+                                                    (i.canvas.ctx.lineWidth = i.particles.line_linked.width),
+                                                    i.canvas.ctx.beginPath(),
+                                                    i.canvas.ctx.moveTo(e.x, e.y),
+                                                    i.canvas.ctx.lineTo(a.x, a.y),
+                                                    i.canvas.ctx.stroke(),
+                                                    i.canvas.ctx.closePath();
+                                            }
+                                        }
+                                    }),
+                                    (i.fn.interact.attractParticles = function (e, a) {
+                                        var t = e.x - a.x,
+                                            s = e.y - a.y,
+                                            n = Math.sqrt(t * t + s * s);
+                                        if (n <= i.particles.line_linked.distance) {
+                                            var r = t / (1e3 * i.particles.move.attract.rotateX),
+                                                c = s / (1e3 * i.particles.move.attract.rotateY);
+                                            (e.vx -= r), (e.vy -= c), (a.vx += r), (a.vy += c);
+                                        }
+                                    }),
+                                    (i.fn.interact.bounceParticles = function (e, a) {
+                                        var t = e.x - a.x,
+                                            i = e.y - a.y,
+                                            s = Math.sqrt(t * t + i * i),
+                                            n = e.radius + a.radius;
+                                        n >= s && ((e.vx = -e.vx), (e.vy = -e.vy), (a.vx = -a.vx), (a.vy = -a.vy));
+                                    }),
+                                    (i.fn.modes.pushParticles = function (e, a) {
+                                        i.tmp.pushing = !0;
+                                        for (var t = 0; e > t; t++)
+                                            i.particles.array.push(new i.fn.particle(i.particles.color, i.particles.opacity.value, { x: a ? a.pos_x : Math.random() * i.canvas.w, y: a ? a.pos_y : Math.random() * i.canvas.h })),
+                                                t == e - 1 && (i.particles.move.enable || i.fn.particlesDraw(), (i.tmp.pushing = !1));
+                                    }),
+                                    (i.fn.modes.removeParticles = function (e) {
+                                        i.particles.array.splice(0, e), i.particles.move.enable || i.fn.particlesDraw();
+                                    }),
+                                    (i.fn.modes.bubbleParticle = function (e) {
+                                        function a() {
+                                            (e.opacity_bubble = e.opacity), (e.radius_bubble = e.radius);
+                                        }
+                                        function t(a, t, s, n, c) {
+                                            if (a != t)
+                                                if (i.tmp.bubble_duration_end) {
+                                                    if (void 0 != s) {
+                                                        var o = n - (p * (n - a)) / i.interactivity.modes.bubble.duration,
+                                                            l = a - o;
+                                                        (d = a + l), "size" == c && (e.radius_bubble = d), "opacity" == c && (e.opacity_bubble = d);
+                                                    }
+                                                } else if (r <= i.interactivity.modes.bubble.distance) {
+                                                    if (void 0 != s) var v = s;
+                                                    else var v = n;
+                                                    if (v != a) {
+                                                        var d = n - (p * (n - a)) / i.interactivity.modes.bubble.duration;
+                                                        "size" == c && (e.radius_bubble = d), "opacity" == c && (e.opacity_bubble = d);
+                                                    }
+                                                } else "size" == c && (e.radius_bubble = void 0), "opacity" == c && (e.opacity_bubble = void 0);
+                                        }
+                                        if (i.interactivity.events.onhover.enable && isInArray("bubble", i.interactivity.events.onhover.mode)) {
+                                            var s = e.x - i.interactivity.mouse.pos_x,
+                                                n = e.y - i.interactivity.mouse.pos_y,
+                                                r = Math.sqrt(s * s + n * n),
+                                                c = 1 - r / i.interactivity.modes.bubble.distance;
+                                            if (r <= i.interactivity.modes.bubble.distance) {
+                                                if (c >= 0 && "mousemove" == i.interactivity.status) {
+                                                    if (i.interactivity.modes.bubble.size != i.particles.size.value)
+                                                        if (i.interactivity.modes.bubble.size > i.particles.size.value) {
+                                                            var o = e.radius + i.interactivity.modes.bubble.size * c;
+                                                            o >= 0 && (e.radius_bubble = o);
+                                                        } else {
+                                                            var l = e.radius - i.interactivity.modes.bubble.size,
+                                                                o = e.radius - l * c;
+                                                            o > 0 ? (e.radius_bubble = o) : (e.radius_bubble = 0);
+                                                        }
+                                                    if (i.interactivity.modes.bubble.opacity != i.particles.opacity.value)
+                                                        if (i.interactivity.modes.bubble.opacity > i.particles.opacity.value) {
+                                                            var v = i.interactivity.modes.bubble.opacity * c;
+                                                            v > e.opacity && v <= i.interactivity.modes.bubble.opacity && (e.opacity_bubble = v);
+                                                        } else {
+                                                            var v = e.opacity - (i.particles.opacity.value - i.interactivity.modes.bubble.opacity) * c;
+                                                            v < e.opacity && v >= i.interactivity.modes.bubble.opacity && (e.opacity_bubble = v);
+                                                        }
+                                                }
+                                            } else a();
+                                            "mouseleave" == i.interactivity.status && a();
+                                        } else if (i.interactivity.events.onclick.enable && isInArray("bubble", i.interactivity.events.onclick.mode)) {
+                                            if (i.tmp.bubble_clicking) {
+                                                var s = e.x - i.interactivity.mouse.click_pos_x,
+                                                    n = e.y - i.interactivity.mouse.click_pos_y,
+                                                    r = Math.sqrt(s * s + n * n),
+                                                    p = (new Date().getTime() - i.interactivity.mouse.click_time) / 1e3;
+                                                p > i.interactivity.modes.bubble.duration && (i.tmp.bubble_duration_end = !0),
+                                                    p > 2 * i.interactivity.modes.bubble.duration && ((i.tmp.bubble_clicking = !1), (i.tmp.bubble_duration_end = !1));
+                                            }
+                                            i.tmp.bubble_clicking &&
+                                                (t(i.interactivity.modes.bubble.size, i.particles.size.value, e.radius_bubble, e.radius, "size"),
+                                                t(i.interactivity.modes.bubble.opacity, i.particles.opacity.value, e.opacity_bubble, e.opacity, "opacity"));
+                                        }
+                                    }),
+                                    (i.fn.modes.repulseParticle = function (e) {
+                                        function a() {
+                                            var a = Math.atan2(d, p);
+                                            if (((e.vx = u * Math.cos(a)), (e.vy = u * Math.sin(a)), "bounce" == i.particles.move.out_mode)) {
+                                                var t = { x: e.x + e.vx, y: e.y + e.vy };
+                                                t.x + e.radius > i.canvas.w ? (e.vx = -e.vx) : t.x - e.radius < 0 && (e.vx = -e.vx), t.y + e.radius > i.canvas.h ? (e.vy = -e.vy) : t.y - e.radius < 0 && (e.vy = -e.vy);
+                                            }
+                                        }
+                                        if (i.interactivity.events.onhover.enable && isInArray("repulse", i.interactivity.events.onhover.mode) && "mousemove" == i.interactivity.status) {
+                                            var t = e.x - i.interactivity.mouse.pos_x,
+                                                s = e.y - i.interactivity.mouse.pos_y,
+                                                n = Math.sqrt(t * t + s * s),
+                                                r = { x: t / n, y: s / n },
+                                                c = i.interactivity.modes.repulse.distance,
+                                                o = 100,
+                                                l = clamp((1 / c) * (-1 * Math.pow(n / c, 2) + 1) * c * o, 0, 50),
+                                                v = { x: e.x + r.x * l, y: e.y + r.y * l };
+                                            "bounce" == i.particles.move.out_mode
+                                                ? (v.x - e.radius > 0 && v.x + e.radius < i.canvas.w && (e.x = v.x), v.y - e.radius > 0 && v.y + e.radius < i.canvas.h && (e.y = v.y))
+                                                : ((e.x = v.x), (e.y = v.y));
+                                        } else if (i.interactivity.events.onclick.enable && isInArray("repulse", i.interactivity.events.onclick.mode))
+                                            if ((i.tmp.repulse_finish || (i.tmp.repulse_count++, i.tmp.repulse_count == i.particles.array.length && (i.tmp.repulse_finish = !0)), i.tmp.repulse_clicking)) {
+                                                var c = Math.pow(i.interactivity.modes.repulse.distance / 6, 3),
+                                                    p = i.interactivity.mouse.click_pos_x - e.x,
+                                                    d = i.interactivity.mouse.click_pos_y - e.y,
+                                                    m = p * p + d * d,
+                                                    u = (-c / m) * 1;
+                                                c >= m && a();
+                                            } else 0 == i.tmp.repulse_clicking && ((e.vx = e.vx_i), (e.vy = e.vy_i));
+                                    }),
+                                    (i.fn.modes.grabParticle = function (e) {
+                                        if (i.interactivity.events.onhover.enable && "mousemove" == i.interactivity.status) {
+                                            var a = e.x - i.interactivity.mouse.pos_x,
+                                                t = e.y - i.interactivity.mouse.pos_y,
+                                                s = Math.sqrt(a * a + t * t);
+                                            if (s <= i.interactivity.modes.grab.distance) {
+                                                var n = i.interactivity.modes.grab.line_linked.opacity - s / (1 / i.interactivity.modes.grab.line_linked.opacity) / i.interactivity.modes.grab.distance;
+                                                if (n > 0) {
+                                                    var r = i.particles.line_linked.color_rgb_line;
+                                                    (i.canvas.ctx.strokeStyle = "rgba(" + r.r + "," + r.g + "," + r.b + "," + n + ")"),
+                                                        (i.canvas.ctx.lineWidth = i.particles.line_linked.width),
+                                                        i.canvas.ctx.beginPath(),
+                                                        i.canvas.ctx.moveTo(e.x, e.y),
+                                                        i.canvas.ctx.lineTo(i.interactivity.mouse.pos_x, i.interactivity.mouse.pos_y),
+                                                        i.canvas.ctx.stroke(),
+                                                        i.canvas.ctx.closePath();
+                                                }
+                                            }
+                                        }
+                                    }),
+                                    (i.fn.vendors.eventsListeners = function () {
+                                        "window" == i.interactivity.detect_on ? (i.interactivity.el = window) : (i.interactivity.el = i.canvas.el),
+                                            (i.interactivity.events.onhover.enable || i.interactivity.events.onclick.enable) &&
+                                                (i.interactivity.el.addEventListener("mousemove", function (e) {
+                                                    if (i.interactivity.el == window)
+                                                        var a = e.clientX,
+                                                            t = e.clientY;
+                                                    else
+                                                        var a = e.offsetX || e.clientX,
+                                                            t = e.offsetY || e.clientY;
+                                                    (i.interactivity.mouse.pos_x = a),
+                                                        (i.interactivity.mouse.pos_y = t),
+                                                        i.tmp.retina && ((i.interactivity.mouse.pos_x *= i.canvas.pxratio), (i.interactivity.mouse.pos_y *= i.canvas.pxratio)),
+                                                        (i.interactivity.status = "mousemove");
+                                                }),
+                                                i.interactivity.el.addEventListener("mouseleave", function (e) {
+                                                    (i.interactivity.mouse.pos_x = null), (i.interactivity.mouse.pos_y = null), (i.interactivity.status = "mouseleave");
+                                                })),
+                                            i.interactivity.events.onclick.enable &&
+                                                i.interactivity.el.addEventListener("click", function () {
+                                                    if (
+                                                        ((i.interactivity.mouse.click_pos_x = i.interactivity.mouse.pos_x),
+                                                        (i.interactivity.mouse.click_pos_y = i.interactivity.mouse.pos_y),
+                                                        (i.interactivity.mouse.click_time = new Date().getTime()),
+                                                        i.interactivity.events.onclick.enable)
+                                                    )
+                                                        switch (i.interactivity.events.onclick.mode) {
+                                                            case "push":
+                                                                i.particles.move.enable
+                                                                    ? i.fn.modes.pushParticles(i.interactivity.modes.push.particles_nb, i.interactivity.mouse)
+                                                                    : 1 == i.interactivity.modes.push.particles_nb
+                                                                    ? i.fn.modes.pushParticles(i.interactivity.modes.push.particles_nb, i.interactivity.mouse)
+                                                                    : i.interactivity.modes.push.particles_nb > 1 && i.fn.modes.pushParticles(i.interactivity.modes.push.particles_nb);
+                                                                break;
+                                                            case "remove":
+                                                                i.fn.modes.removeParticles(i.interactivity.modes.remove.particles_nb);
+                                                                break;
+                                                            case "bubble":
+                                                                i.tmp.bubble_clicking = !0;
+                                                                break;
+                                                            case "repulse":
+                                                                (i.tmp.repulse_clicking = !0),
+                                                                    (i.tmp.repulse_count = 0),
+                                                                    (i.tmp.repulse_finish = !1),
+                                                                    setTimeout(function () {
+                                                                        i.tmp.repulse_clicking = !1;
+                                                                    }, 1e3 * i.interactivity.modes.repulse.duration);
+                                                        }
+                                                });
+                                    }),
+                                    (i.fn.vendors.densityAutoParticles = function () {
+                                        if (i.particles.number.density.enable) {
+                                            var e = (i.canvas.el.width * i.canvas.el.height) / 1e3;
+                                            i.tmp.retina && (e /= 2 * i.canvas.pxratio);
+                                            var a = (e * i.particles.number.value) / i.particles.number.density.value_area,
+                                                t = i.particles.array.length - a;
+                                            0 > t ? i.fn.modes.pushParticles(Math.abs(t)) : i.fn.modes.removeParticles(t);
+                                        }
+                                    }),
+                                    (i.fn.vendors.checkOverlap = function (e, a) {
+                                        for (var t = 0; t < i.particles.array.length; t++) {
+                                            var s = i.particles.array[t],
+                                                n = e.x - s.x,
+                                                r = e.y - s.y,
+                                                c = Math.sqrt(n * n + r * r);
+                                            c <= e.radius + s.radius && ((e.x = a ? a.x : Math.random() * i.canvas.w), (e.y = a ? a.y : Math.random() * i.canvas.h), i.fn.vendors.checkOverlap(e));
+                                        }
+                                    }),
+                                    (i.fn.vendors.createSvgImg = function (e) {
+                                        var a = i.tmp.source_svg,
+                                            t = /#([0-9A-F]{3,6})/gi,
+                                            s = a.replace(t, function (a, t, i, s) {
+                                                if (e.color.rgb) var n = "rgba(" + e.color.rgb.r + "," + e.color.rgb.g + "," + e.color.rgb.b + "," + e.opacity + ")";
+                                                else var n = "hsla(" + e.color.hsl.h + "," + e.color.hsl.s + "%," + e.color.hsl.l + "%," + e.opacity + ")";
+                                                return n;
+                                            }),
+                                            n = new Blob([s], { type: "image/svg+xml;charset=utf-8" }),
+                                            r = window.URL || window.webkitURL || window,
+                                            c = r.createObjectURL(n),
+                                            o = new Image();
+                                        o.addEventListener("load", function () {
+                                            (e.img.obj = o), (e.img.loaded = !0), r.revokeObjectURL(c), i.tmp.count_svg++;
+                                        }),
+                                            (o.src = c);
+                                    }),
+                                    (i.fn.vendors.destroypJS = function () {
+                                        cancelAnimationFrame(i.fn.drawAnimFrame), t.remove(), (pJSDom = null);
+                                    }),
+                                    (i.fn.vendors.drawShape = function (e, a, t, i, s, n) {
+                                        var r = s * n,
+                                            c = s / n,
+                                            o = (180 * (c - 2)) / c,
+                                            l = Math.PI - (Math.PI * o) / 180;
+                                        e.save(), e.beginPath(), e.translate(a, t), e.moveTo(0, 0);
+                                        for (var v = 0; r > v; v++) e.lineTo(i, 0), e.translate(i, 0), e.rotate(l);
+                                        e.fill(), e.restore();
+                                    }),
+                                    (i.fn.vendors.exportImg = function () {
+                                        window.open(i.canvas.el.toDataURL("image/png"), "_blank");
+                                    }),
+                                    (i.fn.vendors.loadImg = function (e) {
+                                        if (((i.tmp.img_error = void 0), "" != i.particles.shape.image.src))
+                                            if ("svg" == e) {
+                                                var a = new XMLHttpRequest();
+                                                a.open("get.html", i.particles.shape.image.src),
+                                                    (a.onreadystatechange = function (e) {
+                                                        4 == a.readyState &&
+                                                            (200 == a.status ? ((i.tmp.source_svg = e.currentTarget.response), i.fn.vendors.checkBeforeDraw()) : (console.log("Error pJS - Image not found"), (i.tmp.img_error = !0)));
+                                                    }),
+                                                    a.send();
+                                            } else {
+                                                var t = new Image();
+                                                t.addEventListener("load", function () {
+                                                    (i.tmp.img_obj = t), i.fn.vendors.checkBeforeDraw();
+                                                }),
+                                                    (t.src = i.particles.shape.image.src);
+                                            }
+                                        else console.log("error%20pjs%20-%20no%20image.html"), (i.tmp.img_error = !0);
+                                    }),
+                                    (i.fn.vendors.draw = function () {
+                                        "image" == i.particles.shape.type
+                                            ? "svg" == i.tmp.img_type
+                                                ? i.tmp.count_svg >= i.particles.number.value
+                                                    ? (i.fn.particlesDraw(), i.particles.move.enable ? (i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw)) : cancelRequestAnimFrame(i.fn.drawAnimFrame))
+                                                    : i.tmp.img_error || (i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw))
+                                                : void 0 != i.tmp.img_obj
+                                                ? (i.fn.particlesDraw(), i.particles.move.enable ? (i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw)) : cancelRequestAnimFrame(i.fn.drawAnimFrame))
+                                                : i.tmp.img_error || (i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw))
+                                            : (i.fn.particlesDraw(), i.particles.move.enable ? (i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw)) : cancelRequestAnimFrame(i.fn.drawAnimFrame));
+                                    }),
+                                    (i.fn.vendors.checkBeforeDraw = function () {
+                                        "image" == i.particles.shape.type
+                                            ? "svg" == i.tmp.img_type && void 0 == i.tmp.source_svg
+                                                ? (i.tmp.checkAnimFrame = requestAnimFrame(check))
+                                                : (cancelRequestAnimFrame(i.tmp.checkAnimFrame), i.tmp.img_error || (i.fn.vendors.init(), i.fn.vendors.draw()))
+                                            : (i.fn.vendors.init(), i.fn.vendors.draw());
+                                    }),
+                                    (i.fn.vendors.init = function () {
+                                        i.fn.retinaInit(),
+                                            i.fn.canvasInit(),
+                                            i.fn.canvasSize(),
+                                            i.fn.canvasPaint(),
+                                            i.fn.particlesCreate(),
+                                            i.fn.vendors.densityAutoParticles(),
+                                            (i.particles.line_linked.color_rgb_line = hexToRgb(i.particles.line_linked.color));
+                                    }),
+                                    (i.fn.vendors.start = function () {
+                                        isInArray("image", i.particles.shape.type)
+                                            ? ((i.tmp.img_type = i.particles.shape.image.src.substr(i.particles.shape.image.src.length - 3)), i.fn.vendors.loadImg(i.tmp.img_type))
+                                            : i.fn.vendors.checkBeforeDraw();
+                                    }),
+                                    i.fn.vendors.eventsListeners(),
+                                    i.fn.vendors.start();
+                            };
+                            (Object.deepExtend = function (e, a) {
+                                for (var t in a) a[t] && a[t].constructor && a[t].constructor === Object ? ((e[t] = e[t] || {}), arguments.callee(e[t], a[t])) : (e[t] = a[t]);
+                                return e;
+                            }),
+                                (window.requestAnimFrame = (function () {
+                                    return (
+                                        window.requestAnimationFrame ||
+                                        window.webkitRequestAnimationFrame ||
+                                        window.mozRequestAnimationFrame ||
+                                        window.oRequestAnimationFrame ||
+                                        window.msRequestAnimationFrame ||
+                                        function (e) {
+                                            window.setTimeout(e, 1e3 / 60);
+                                        }
+                                    );
+                                })()),
+                                (window.cancelRequestAnimFrame = (function () {
+                                    return (
+                                        window.cancelAnimationFrame ||
+                                        window.webkitCancelRequestAnimationFrame ||
+                                        window.mozCancelRequestAnimationFrame ||
+                                        window.oCancelRequestAnimationFrame ||
+                                        window.msCancelRequestAnimationFrame ||
+                                        clearTimeout
+                                    );
+                                })()),
+                                (window.pJSDom = []),
+                                (window.particlesJS = function (e, a) {
+                                    "string" != typeof e && ((a = e), (e = "particles-js")), e || (e = "particles-js");
+                                    var t = document.getElementById(e),
+                                        i = "particles-js-canvas-el",
+                                        s = t.getElementsByClassName(i);
+                                    if (s.length) for (; s.length > 0; ) t.removeChild(s[0]);
+                                    var n = document.createElement("canvas");
+                                    (n.className = i), (n.style.width = "100%"), (n.style.height = "100%");
+                                    var r = document.getElementById(e).appendChild(n);
+                                    null != r && pJSDom.push(new pJS(e, a));
+                                }),
+                                (window.particlesJS.load = function (e, a, t) {
+                                    var i = new XMLHttpRequest();
+                                    i.open("get.html", a),
+                                        (i.onreadystatechange = function (a) {
+                                            if (4 == i.readyState)
+                                                if (200 == i.status) {
+                                                    var s = JSON.parse(a.currentTarget.response);
+                                                    window.particlesJS(e, s), t && t();
+                                                } else console.log("Error pJS - XMLHttpRequest status: " + i.status), console.log("Error pJS - File config not found");
+                                        }),
+                                        i.send();
+                                });
+                            new Swiper(".homekit-lp #devices .sensors", {
+                                simulateTouch: false,
+                                loop: true,
+                                disableOnInteraction: true,
+                                pagination: ".sensors .swiper-pagination",
+                                nextButton: ".sensors .swiper-button-next",
+                                prevButton: ".sensors .swiper-button-prev",
+                                slidesPerView: 4,
+                                breakpoints: { 767: { slidesPerView: 1, autoplay: 5000 }, 991: { slidesPerView: 2, autoplay: 5000 }, 1599: { slidesPerView: 3, autoplay: 5000 } },
+                            });
+                            new Swiper(".homekit-lp #devices .actors", {
+                                simulateTouch: false,
+                                loop: true,
+                                disableOnInteraction: true,
+                                pagination: ".actors .swiper-pagination",
+                                nextButton: ".actors .swiper-button-next",
+                                prevButton: ".actors .swiper-button-prev",
+                                slidesPerView: 3,
+                                breakpoints: { 767: { slidesPerView: 1, autoplay: 5000 }, 991: { slidesPerView: 2, autoplay: 5000 } },
+                            });
+
+                            particlesJS("particles-js", {
+                                particles: {
+                                    number: { value: 180, density: { enable: true, value_area: 650 } },
+                                    color: { value: "#ffffff" },
+                                    shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 5 }, image: { src: "img/github.svg", width: 100, height: 100 } },
+                                    opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+                                    size: { value: 5, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+                                    line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+                                    move: { enable: true, speed: 3, direction: "none", random: false, straight: false, out_mode: "out", attract: { enable: false, rotateX: 600, rotateY: 1200 } },
+                                },
+                                interactivity: {
+                                    detect_on: "canvas",
+                                    events: { onhover: { enable: false, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                                    modes: {
+                                        grab: { distance: 400, line_linked: { opacity: 1 } },
+                                        bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+                                        repulse: { distance: 200 },
+                                        push: { particles_nb: 4 },
+                                        remove: { particles_nb: 2 },
+                                    },
+                                },
+                                retina_detect: true,
+                                config_demo: { hide_card: false, background_color: "#b61924", background_image: "", background_position: "50% 50%", background_repeat: "no-repeat", background_size: "cover" },
+                            });
+                        });
+                    })(jQuery);
+                </script>
+            </main>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row custom-footer">
+                        <div class="custom-footer-menu col-phoneS-10 offset-phoneS-1">
+                            <div class="row">
+                                <div class="four-columns">
+                                    <h3>Hỗ trợ</h3>
+                                    <ul>
+                                        <li><a href="https://manuals.fibaro.com/" target="_blank" rel="nofollow">Hướng dẫn sử dụng</a></li>
+                                        <li><a href="https://manuals.fibaro.com/knowledge-base/" target="" rel="nofollow">Kiến thức cơ bản</a></li>
+                                        <li><a href="https://forum.fibaro.com/" target="" rel="nofollow">Diễn đàn FIBARO</a></li>
+                                        <li><a href="https://manuals.fibaro.com/faq/" target="" rel="nofollow">FAQ</a></li>
+                                        <li><a href="https://www.fibaro.com/files/FIBARO_Guarantee.pdf" target="">Sự bảo đảm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Người dùng</h3>
+                                    <ul>
+                                        <li><a href="https://id.cloud.fibaro.com/" target="" rel="nofollow">FIBARO ID</a></li>
+                                        <li><a href="https://marketplace.fibaro.com/" target="" rel="nofollow">Thị trường</a></li>
+                                        <li><a href="https://itunes.apple.com/us/app/fibaro-for-iphone/id511085659?mt=8" target="" rel="nofollow">Ứng dụng FIBARO iOS</a></li>
+                                        <li><a href="https://play.google.com/store/apps/details?id=com.fibaro&amp;hl=en" target="" rel="nofollow">Ứng dụng FIBARO Android</a></li>
+                                        <li><a href="https://www.fibaro.com/us/homekit/" target="">FIBARO HomeKit</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Doanh nghiệp</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/dai-ly/" target="">Nhà phân phối</a></li>
+                                        <li><a href="https://compatibility.fibaro.com/" target="">Khả năng tương thích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/events/training-for-installers/" target="">Trình cài đặt</a></li>
+                                        <li><a href="https://www.fibaro.com/en/partnership/architect/" target="">Kiến trúc</a></li>
+                                        <!--<li><a href="https://www.fibaro.com/en/partnership/developer/" target="">Nhà phát triển</a></li>-->
+                                        <li><a href="https://www.fibaro.com/us/support/" target="">Trình tìm kiếm FIBARO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Thông tin</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/tin-tuc/" target="">Tin tức</a></li>
+                                        <li><a href="https://www.fibaro.com/us/about-us/" target="">Giá trị của chúng tôi</a></li>
+                                        <li><a href="https://www.fibaro.com/us/why-fibaro/" target="">Những lợi ích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/compatibility/" target="">Việc làm với FIBARO</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Nơi để mua</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="links lighter-font col-phoneS-12 col-desktopS-10 col-desktopM-8 offset-desktopM-1">
+                            <ul>
+                                <li><a href="https://www.fibaro.com/us/patents/">Bằng sáng chế</a></li>
+                                <li><a href="https://www.fibaro.com/us/privacy-policy/">Chính sách bảo mật</a></li>
+                                <li><a href="https://www.fibaro.com/us/reach/">REACH</a></li>
+                                <li><a href="https://id.cloud.fibaro.com/" rel="nofollow">FIBARO ID</a></li>
+                                <li><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="social col-phoneS-12 col-desktopS-2">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/FIBAROVN/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/facebook-d.svg" alt="Facebook" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/nhathongminh/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/instagram-d.svg" alt="Instagram" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/fibarovn001" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/twitter-d.svg" alt="Twitter" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/2936170/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/linkedin-d.svg" alt="LinkedIn" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCRTX4A0btp062eRjcqmoEdg" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/youtube-d.svg" alt="YouTube" /> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="copyright col-phoneS-12">
+                            <p>&copy; 2020. FIBAR0 Việt Nam</p>
+                            <img src="smart-home-system.png" alt="FIBARO Viet Nam" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopM-12 offset-desktopM-0 col-desktopL-10 offset-desktopL-1">
+                            <p>
+                                Chúng tôi sử dụng cookie để cá nhân hóa nội dung, tùy chỉnh và phân tích quảng cáo và đảm bảo sử dụng an toàn trang web. Bằng cách nhấp hoặc điều hướng trang web này, bạn đồng ý với việc thu thập thông tin tại
+                                www.fibaro.com và hơn thế nữa bằng cách sử dụng cookie. Thêm thông tin có sẵn trong tài liệu: <a href="https://www.fibaro.com/us/privacy-policy/">CHÍNH SÁCH RIÊNG TƯ VÀ CHÍNH SÁCH COOKIES</a>
+                            </p>
+                            <a href="#" class="cookie-ok">OK</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="close"></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="vendor.1912191358.js"></script>
+        <script type="text/javascript" src="main.2110191037.js"></script>
+        <script type="text/javascript" src="main-homekit-inside.1803191251.js"></script>
+    </body>
+    <!-- Mirrored from www.fibaro.com/us/homekit/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Jul 2020 10:00:10 GMT -->
+</html>

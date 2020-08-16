@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Cảm biến chuyển động - Z-Wave và HomeKit | FIBARO</title>
+        <meta name="description" content="Cảm biến chuyển động thông minh bao gồm cảm biến ánh sáng và nhiệt độ. Công nghệ độc đáo - Cảm biến chuyển động nhà thông minh tương thích Z-Wave và HomeKit của FIBARO." />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FIBARO | Cảm biến chuyển động - Phát hiện chuyển động" />
+        <meta property="og:description" content="Cảm biến chuyển động, ánh sáng và nhiệt độ để thực hiện tự động hóa nhà tốt hơn. Trải nghiệm phát hiện chuyển động, thiết kế độc đáo và hiệu suất của nó." />
+        <meta property="og:site_name" content="fibaro.com" />
+        <meta property="og:image" content="miniatura-social-media-facebook-motion-sensor.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@fibaro_global" />
+        <meta name="twitter:title" content="FIBARO | Cảm biến chuyển động - Phát hiện chuyển động" />
+        <meta name="twitter:description" content="Cảm biến chuyển động, ánh sáng và nhiệt độ để thực hiện tự động hóa nhà tốt hơn. Trải nghiệm phát hiện chuyển động, thiết kế độc đáo và hiệu suất của nó."/>
+        <meta name="twitter:image" content="twitter-motion-sensor.jpg" />
+        <meta property="og:url" content="index.html" />
+        <meta name="author" content="Fibaro Design Department" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="application-name" content="FIBARO" />
+        <meta name="baidu-site-verification" content="qwr0BSJvep" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.html" />
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="favicon-128x128.png" sizes="128x128" />
+        <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" sizes="57x57" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-60x60.png" sizes="60x60" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-72x72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-76x76.png" sizes="76x76" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-114x114.png" sizes="114x114" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-120x120.png" sizes="120x120" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-144x144.png" sizes="144x144" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-152x152.png" sizes="152x152" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180" />
+        <link rel="stylesheet" id="fibaro-main-css" href="main.2906200724.css" type="text/css" media="all" />
+        <script>
+            !(function (window, document, undefined) {
+                function is(e, t) {
+                    return typeof e === t;
+                }
+                function testRunner() {
+                    var e, t, n, o, r, i, a;
+                    for (var s in tests)
+                        if (tests.hasOwnProperty(s)) {
+                            if (((e = []), (t = tests[s]), t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length)))
+                                for (n = 0; n < t.options.aliases.length; n++) e.push(t.options.aliases[n].toLowerCase());
+                            for (o = is(t.fn, "function") ? t.fn() : t.fn, r = 0; r < e.length; r++)
+                                (i = e[r]),
+                                    (a = i.split(".")),
+                                    1 === a.length ? (Modernizr[a[0]] = o) : (!Modernizr[a[0]] || Modernizr[a[0]] instanceof Boolean || (Modernizr[a[0]] = new Boolean(Modernizr[a[0]])), (Modernizr[a[0]][a[1]] = o)),
+                                    classes.push((o ? "" : "no-") + a.join("-"));
+                        }
+                }
+                function setClasses(e) {
+                    var t = docElement.className,
+                        n = Modernizr._config.classPrefix || "";
+                    if ((isSVG && (t = t.baseVal), Modernizr._config.enableJSClass)) {
+                        var o = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+                        t = t.replace(o, "$1" + n + "js$2");
+                    }
+                    Modernizr._config.enableClasses && ((t += " " + n + e.join(" " + n)), isSVG ? (docElement.className.baseVal = t) : (docElement.className = t));
+                }
+                function addTest(e, t) {
+                    if ("object" == typeof e) for (var n in e) hasOwnProp(e, n) && addTest(n, e[n]);
+                    else {
+                        e = e.toLowerCase();
+                        var o = e.split("."),
+                            r = Modernizr[o[0]];
+                        if ((2 == o.length && (r = r[o[1]]), "undefined" != typeof r)) return Modernizr;
+                        (t = "function" == typeof t ? t() : t),
+                            1 == o.length ? (Modernizr[o[0]] = t) : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), (Modernizr[o[0]][o[1]] = t)),
+                            setClasses([(t && 0 != t ? "" : "no-") + o.join("-")]),
+                            Modernizr._trigger(e, t);
+                    }
+                    return Modernizr;
+                }
+                function contains(e, t) {
+                    return !!~("" + e).indexOf(t);
+                }
+                function createElement() {
+                    return "function" != typeof document.createElement
+                        ? document.createElement(arguments[0])
+                        : isSVG
+                        ? document.createElementNS.call(document, "http://www.w3.org/2000/svg", arguments[0])
+                        : document.createElement.apply(document, arguments);
+                }
+                function getBody() {
+                    var e = document.body;
+                    return e || ((e = createElement(isSVG ? "svg" : "body")), (e.fake = !0)), e;
+                }
+                function injectElementWithStyles(e, t, n, o) {
+                    var r,
+                        i,
+                        a,
+                        s,
+                        d = "modernizr",
+                        l = createElement("div"),
+                        c = getBody();
+                    if (parseInt(n, 10)) for (; n--; ) (a = createElement("div")), (a.id = o ? o[n] : d + (n + 1)), l.appendChild(a);
+                    return (
+                        (r = createElement("style")),
+                        (r.type = "text/css"),
+                        (r.id = "s" + d),
+                        (c.fake ? c : l).appendChild(r),
+                        c.appendChild(l),
+                        r.styleSheet ? (r.styleSheet.cssText = e) : r.appendChild(document.createTextNode(e)),
+                        (l.id = d),
+                        c.fake && ((c.style.background = ""), (c.style.overflow = "hidden"), (s = docElement.style.overflow), (docElement.style.overflow = "hidden"), docElement.appendChild(c)),
+                        (i = t(l, e)),
+                        c.fake ? (c.parentNode.removeChild(c), (docElement.style.overflow = s), docElement.offsetHeight) : l.parentNode.removeChild(l),
+                        !!i
+                    );
+                }
+                function domToCSS(e) {
+                    return e
+                        .replace(/([A-Z])/g, function (e, t) {
+                            return "-" + t.toLowerCase();
+                        })
+                        .replace(/^ms-/, "-ms-");
+                }
+                function computedStyle(e, t, n) {
+                    var o;
+                    if ("getComputedStyle" in window) {
+                        o = getComputedStyle.call(window, e, t);
+                        var r = window.console;
+                        if (null !== o) n && (o = o.getPropertyValue(n));
+                        else if (r) {
+                            var i = r.error ? "error" : "log";
+                            r[i].call(r, "getComputedStyle returning null, its possible modernizr test results are inaccurate");
+                        }
+                    } else o = !t && e.currentStyle && e.currentStyle[n];
+                    return o;
+                }
+                function nativeTestProps(e, t) {
+                    var n = e.length;
+                    if ("CSS" in window && "supports" in window.CSS) {
+                        for (; n--; ) if (window.CSS.supports(domToCSS(e[n]), t)) return !0;
+                        return !1;
+                    }
+                    if ("CSSSupportsRule" in window) {
+                        for (var o = []; n--; ) o.push("(" + domToCSS(e[n]) + ":" + t + ")");
+                        return (
+                            (o = o.join(" or ")),
+                            injectElementWithStyles("@supports (" + o + ") { #modernizr { position: absolute; } }", function (e) {
+                                return "absolute" == computedStyle(e, null, "position");
+                            })
+                        );
+                    }
+                    return undefined;
+                }
+                function cssToDOM(e) {
+                    return e
+                        .replace(/([a-z])-([a-z])/g, function (e, t, n) {
+                            return t + n.toUpperCase();
+                        })
+                        .replace(/^-/, "");
+                }
+                function testProps(e, t, n, o) {
+                    function r() {
+                        a && (delete mStyle.style, delete mStyle.modElem);
+                    }
+                    if (((o = !is(o, "undefined") && o), !is(n, "undefined"))) {
+                        var i = nativeTestProps(e, n);
+                        if (!is(i, "undefined")) return i;
+                    }
+                    for (var a, s, d, l, c, u = ["modernizr", "tspan", "samp"]; !mStyle.style && u.length; ) (a = !0), (mStyle.modElem = createElement(u.shift())), (mStyle.style = mStyle.modElem.style);
+                    for (d = e.length, s = 0; s < d; s++)
+                        if (((l = e[s]), (c = mStyle.style[l]), contains(l, "-") && (l = cssToDOM(l)), mStyle.style[l] !== undefined)) {
+                            if (o || is(n, "undefined")) return r(), "pfx" != t || l;
+                            try {
+                                mStyle.style[l] = n;
+                            } catch (p) {}
+                            if (mStyle.style[l] != c) return r(), "pfx" != t || l;
+                        }
+                    return r(), !1;
+                }
+                function fnBind(e, t) {
+                    return function () {
+                        return e.apply(t, arguments);
+                    };
+                }
+                var tests = [],
+                    ModernizrProto = {
+                        _version: "3.5.0",
+                        _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 },
+                        _q: [],
+                        on: function (e, t) {
+                            var n = this;
+                            setTimeout(function () {
+                                t(n[e]);
+                            }, 0);
+                        },
+                        addTest: function (e, t, n) {
+                            tests.push({ name: e, fn: t, options: n });
+                        },
+                        addAsyncTest: function (e) {
+                            tests.push({ name: null, fn: e });
+                        },
+                    },
+                    Modernizr = function () {};
+                (Modernizr.prototype = ModernizrProto), (Modernizr = new Modernizr());
+                var classes = [],
+                    docElement = document.documentElement,
+                    isSVG = "svg" === docElement.nodeName.toLowerCase(),
+                    hasOwnProp;
+                !(function () {
+                    var e = {}.hasOwnProperty;
+                    hasOwnProp =
+                        is(e, "undefined") || is(e.call, "undefined")
+                            ? function (e, t) {
+                                  return t in e && is(e.constructor.prototype[t], "undefined");
+                              }
+                            : function (t, n) {
+                                  return e.call(t, n);
+                              };
+                })(),
+                    (ModernizrProto._l = {}),
+                    (ModernizrProto.on = function (e, t) {
+                        this._l[e] || (this._l[e] = []),
+                            this._l[e].push(t),
+                            Modernizr.hasOwnProperty(e) &&
+                                setTimeout(function () {
+                                    Modernizr._trigger(e, Modernizr[e]);
+                                }, 0);
+                    }),
+                    (ModernizrProto._trigger = function (e, t) {
+                        if (this._l[e]) {
+                            var n = this._l[e];
+                            setTimeout(function () {
+                                var e, o;
+                                for (e = 0; e < n.length; e++) (o = n[e])(t);
+                            }, 0),
+                                delete this._l[e];
+                        }
+                    }),
+                    Modernizr._q.push(function () {
+                        ModernizrProto.addTest = addTest;
+                    });
+                var modElem = { elem: createElement("modernizr") };
+                Modernizr._q.push(function () {
+                    delete modElem.elem;
+                });
+                var mStyle = { style: modElem.elem.style };
+                Modernizr._q.unshift(function () {
+                    delete mStyle.style;
+                });
+                var testProp = (ModernizrProto.testProp = function (e, t, n) {
+                        return testProps([e], undefined, t, n);
+                    }),
+                    mq = (function () {
+                        var e = window.matchMedia || window.msMatchMedia;
+                        return e
+                            ? function (t) {
+                                  var n = e(t);
+                                  return (n && n.matches) || !1;
+                              }
+                            : function (e) {
+                                  var t = !1;
+                                  return (
+                                      injectElementWithStyles("@media " + e + " { #modernizr { position: absolute; } }", function (e) {
+                                          t = "absolute" == (window.getComputedStyle ? window.getComputedStyle(e, null) : e.currentStyle).position;
+                                      }),
+                                      t
+                                  );
+                              };
+                    })();
+                (ModernizrProto.mq = mq),
+                    Modernizr.addTest("video", function () {
+                        var e = createElement("video"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/, "")),
+                                    (t.h264 = e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/, "")),
+                                    (t.webm = e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/, "")),
+                                    (t.vp9 = e.canPlayType('video/webm; codecs="vp9"').replace(/^no$/, "")),
+                                    (t.hls = e.canPlayType('application/x-mpegURL; codecs="avc1.42E01E"').replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("dataset", function () {
+                        var e = createElement("div");
+                        return e.setAttribute("data-a-b", "c"), !(!e.dataset || "c" !== e.dataset.aB);
+                    }),
+                    Modernizr.addAsyncTest(function () {
+                        function e(e, t, n) {
+                            function o(t) {
+                                var o = !(!t || "load" !== t.type) && 1 == r.width,
+                                    i = "webp" === e;
+                                addTest(e, i && o ? new Boolean(o) : o), n && n(t);
+                            }
+                            var r = new Image();
+                            (r.onerror = o), (r.onload = o), (r.src = t);
+                        }
+                        var t = [
+                                { uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=", name: "webp" },
+                                { uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==", name: "webp.alpha" },
+                                { uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA", name: "webp.animation" },
+                                { uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=", name: "webp.lossless" },
+                            ],
+                            n = t.shift();
+                        e(n.name, n.uri, function (n) {
+                            if (n && "load" === n.type) for (var o = 0; o < t.length; o++) e(t[o].name, t[o].uri);
+                        });
+                    }),
+                    Modernizr.addTest("svg", !!document.createElementNS && !!document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect),
+                    Modernizr.addTest("texttrackapi", "function" == typeof createElement("video").addTextTrack),
+                    Modernizr.addTest("track", "kind" in createElement("track")),
+                    Modernizr.addTest("audio", function () {
+                        var e = createElement("audio"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/, "")),
+                                    (t.mp3 = e.canPlayType('audio/mpeg; codecs="mp3"').replace(/^no$/, "")),
+                                    (t.opus = e.canPlayType('audio/ogg; codecs="opus"') || e.canPlayType('audio/webm; codecs="opus"').replace(/^no$/, "")),
+                                    (t.wav = e.canPlayType('audio/wav; codecs="1"').replace(/^no$/, "")),
+                                    (t.m4a = (e.canPlayType("audio/x-m4a;") || e.canPlayType("audio/aac;")).replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("notification", function () {
+                        if (!window.Notification || !window.Notification.requestPermission) return !1;
+                        if ("granted" === window.Notification.permission) return !0;
+                        try {
+                            new window.Notification("");
+                        } catch (e) {
+                            if ("TypeError" === e.name) return !1;
+                        }
+                        return !0;
+                    }),
+                    Modernizr.addTest("time", "valueAsDate" in createElement("time")),
+                    Modernizr.addTest("arrow", function () {
+                        try {
+                            eval("()=>{}");
+                        } catch (e) {
+                            return !1;
+                        }
+                        return !0;
+                    });
+                var inputElem = createElement("input"),
+                    inputattrs = "autocomplete autofocus list placeholder max min multiple pattern required step".split(" "),
+                    attrs = {};
+                (Modernizr.input = (function (e) {
+                    for (var t = 0, n = e.length; t < n; t++) attrs[e[t]] = !!(e[t] in inputElem);
+                    return attrs.list && (attrs.list = !(!createElement("datalist") || !window.HTMLDataListElement)), attrs;
+                })(inputattrs)),
+                    Modernizr.addTest("hidden", "hidden" in createElement("a")),
+                    testRunner(),
+                    setClasses(classes),
+                    delete ModernizrProto.addTest,
+                    delete ModernizrProto.addAsyncTest;
+                for (var i = 0; i < Modernizr._q.length; i++) Modernizr._q[i]();
+                window.Modernizr = Modernizr;
+            })(window, document);
+        </script>
+        <link rel="stylesheet" id="timed-content-css-css" href="timed-contenta4b6.css?ver=2.61" type="text/css" media="all" />
+        <script type="text/javascript" src="jqueryb8ff.js?ver=1.12.4"></script>
+        <script type="text/javascript" src="jquery-migrate.min330a.js?ver=1.4.1"></script>
+        <script type="text/javascript" src="timed-contenta4b6.js?ver=2.61"></script>
+        <link rel="canonical" href="https://www.fibaro.com/en/products/motion-sensor/" />
+        <link rel="alternate" href="https://www.fibaro.com/en/products/motion-sensor/" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/cn/products/motion-sensor/" hreflang="zh-cn" />
+        <link rel="alternate" href="https://www.fibaro.com/pl/products/motion-sensor/" hreflang="pl-pl" />
+        <link rel="alternate" href="https://www.fibaro.com/cz/products/motion-sensor/" hreflang="cs-cz" />
+        <link rel="alternate" href="https://www.fibaro.com/ro/products/motion-sensor/" hreflang="ro-ro" />
+        <link rel="alternate" href="https://www.fibaro.com/de/products/motion-sensor/" hreflang="de-de" />
+        <link rel="alternate" href="https://www.fibaro.com/fr/products/motion-sensor/" hreflang="fr-fr" />
+        <link rel="alternate" href="https://www.fibaro.com/it/products/motion-sensor/" hreflang="it-it" />
+        <link rel="alternate" href="https://www.fibaro.com/se/products/motion-sensor/" hreflang="sv-se" />
+        <link rel="alternate" href="https://www.fibaro.com/cl/products/motion-sensor/" hreflang="es-cl" />
+        <link rel="alternate" href="https://www.fibaro.com/gr/products/motion-sensor/" hreflang="el" />
+        <link rel="alternate" href="https://www.fibaro.com/no/products/bevegelsessensor-motion-sensor/" hreflang="nb-no" />
+        <link rel="alternate" href="index.html" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/en/products/motion-sensor/" hreflang="x-default" />
+        <style type="text/css">
+            .section-product-header .bg {
+                background-image: url("header-mobile-3.jpg");
+            }
+            @media screen and (min-width: 1200px) {
+                .section-product-header .bg {
+                    background-image: url("motion-canvas-bg.jpg");
+                }
+            }
+            #section2 {
+                background-image: url("movie-poster.jpg");
+            }
+            @media screen and (min-width: 1200px) {
+                #section2 {
+                    background-image: none;
+                }
+            }
+            #section4.section-video-player {
+                background-image: url("inspired-mobile.jpg");
+            }
+            #section4 video {
+                width: 50%;
+                left: 25%;
+            }
+            @media screen and (min-width: 1200px) {
+                #section4.section-video-player {
+                    background-image: url("inspired.jpg");
+                }
+            }
+            #section5 .bg {
+                background-image: url("full-mobility-mobile.jpg");
+            }
+            #section7 .bg {
+                background-image: url("works-with-other-mobile-on.jpg");
+            }
+            #section7 .bg-second {
+                background-image: url("works-with-other-mobile-off.jpg");
+            }
+            #section7 .st2 {
+                fill: #0090ff;
+            }
+            @media screen and (min-width: 768px) {
+                #section7 .bg {
+                    background-image: url("works-with-other-on.jpg");
+                }
+                #section7 .bg-second {
+                    background-image: url("works-with-other-off.jpg");
+                }
+            }
+            @media screen and (min-width: 992px) {
+                #section7 .st2 {
+                    fill: #ffffff;
+                }
+                #section7 .st6 {
+                    opacity: 0.7;
+                }
+            }
+            .section-homekit-enabled .bg {
+                background-image: url("homekit-enabled-mobile-us.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                .section-homekit-enabled .bg {
+                    background-image: url("homekit-enabled-us.jpg");
+                }
+            }
+            #section10.section-siri {
+                background-image: url("siri-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section10.section-siri {
+                    background-image: url("siri.jpg");
+                }
+            }
+            #section11 .bg {
+                background-image: url("colors-temp-mobile-us.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section11 .bg {
+                    background-image: url("colors-temp-us.jpg");
+                }
+            }
+            #section12 .bg {
+                background-image: url("security-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section12 .bg {
+                    background-image: url("security.jpg");
+                }
+            }
+            #section14 .bg {
+                background-image: url("notifications-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section14 .bg {
+                    background-image: url("dog.jpg");
+                }
+            }
+            #section15 .bg {
+                background-image: url("instant-notifications-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section15 .bg {
+                    background-image: url("baby.jpg");
+                }
+            }
+            #section16 .bg {
+                background-image: url("adjust-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section16 .bg {
+                    background-image: url("adjust.jpg");
+                }
+            }
+            #section17 .bg {
+                background-image: url("wake-up-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section17 .bg {
+                    background-image: url("wake-up.jpg");
+                }
+            }
+            #section18 .bg {
+                background-image: url("child-night-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section18 .bg {
+                    background-image: url("child-night.jpg");
+                }
+            }
+            #section19 .bg {
+                background-image: url("sensitivity-mobile.jpg");
+            }
+            #section19 .sensitivity-sensor.on {
+                background-image: url("sensitivity-on.png");
+            }
+            #section19 .sensitivity-sensor.off {
+                background-image: url("sensitivity-off.png");
+            }
+            #section19 .disclaimer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+            #section19 .disclaimer span {
+                font-size: 60%;
+                line-height: 1.1;
+                display: inline-block;
+                width: 68%;
+            }
+            @media screen and (min-width: 544px) {
+                #section19 .disclaimer span {
+                    width: 100%;
+                }
+            }
+            @media screen and (min-width: 768px) {
+                #section19 .disclaimer {
+                    bottom: 6px;
+                }
+            }
+            @media screen and (min-width: 1200px) {
+                #section19 .bg {
+                    background-image: url("sensitivity.jpg");
+                }
+            }
+            #section20 .bg {
+                background-image: url("apps-mobile-us.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section20 .bg {
+                    background-image: url("apps-us.jpg");
+                }
+            }
+            #section21 {
+                background-image: url("movie-poster.jpg");
+            }
+            @media screen and (min-width: 1200px) {
+                #section21 {
+                    background-image: none;
+                }
+            }
+            .motion-sensor .section-product-sizing .content img {
+                width: 100%;
+            }
+        </style>
+        <script>
+            dataLayer = [];
+        </script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "gtm5445.html?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MF67KLD");
+        </script>
+    </head>
+    <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF67KLD" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <div class="site-wrapper single-product motion-sensor has-secondary-nav">
+<header id="fibaro_main_header">
+                <div class="container">
+                    <div class="row">
+                        <div class="brand col-phoneS-10 offset-phoneS-1 col-desktopS-2 offset-desktopS-0 col-desktopL-3">
+                            <a href="https://fibarovn.com/"><img src="https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/img/common/FIBARO_logo.svg" alt="FIBARO Viet Nam" /></a>
+                            <button id="menu-toggle" class="hidden-desktopS-up"><span></span></button>
+                        </div>
+                        <nav class="col-phoneS-10 offset-phoneS-1 col-desktopS-10 offset-desktopS-0 col-desktopL-9">
+                            <ul>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2958"><a href="https://fibarovn.com/">Trang chủ FIBARO</a></li>
+                                <li class="menu-top-item products-redesign menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-17 menu-item-has-children">
+                                    <a href="#">Các sản phẩm</a>
+                                    <ul class="menu-sub menu-sub-products">
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2878 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Chiếu sáng</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-lighting">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2301">
+                                                    <a href="https://www.fibaro.com/us/products/dimmer-2/"> <img src="nav-dimmer.jpg" alt="Dimmer 2" /> <span>Chiết áp Dimmer 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2310">
+                                                    <a href="https://www.fibaro.com/us/products/switches/"> <img src="nav-relay.jpg" alt="Switches" /> <span>Role thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2308">
+                                                    <a href="https://www.fibaro.com/us/products/rgbw-controller/"> <img src="nav-rgbw-1.jpg" alt="RGBW Controller" /> <span>Bộ điều khiển màu sắc RGBW</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2375">
+                                                    <a href="https://www.fibaro.com/us/products/wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2891">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2879 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Cổng và rèm cửa</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gates-and-blinds">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2777">
+                                                    <a href="index.html"> <img src="nav_smartimplant.png" alt="Smart Implant - Bo tich hop dieu khien thong minh" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2890">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2880 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Điều khiển nhiêt, sưởi ấm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-heating">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2884">
+                                                    <a href="https://www.fibaro.com/us/products/wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2885">
+                                                    <a href="index.html"> <img src="nav_smartimplant.png" alt="Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2889">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2881 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">An toàn và bảo mật</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-safety-and-security">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2307">
+                                                    <a href="https://www.fibaro.com/us/products/motion-sensor/"> <img src="nav-motion.jpg" alt="Motion Sensor" /> <span>Cảm biến chuyển động</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2302">
+                                                    <a href="https://www.fibaro.com/us/products/door-window-sensor/"> <img src="nav-dws.jpg" alt="Door/Window Sensor" /> <span>Cảm biến mở cửa</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2303">
+                                                    <a href="https://www.fibaro.com/us/products/flood-sensor/"> <img src="nav-flood.jpg" alt="Flood Sensor" /> <span>Cảm biến ngập nước</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2886">
+                                                    <a href="index.html"> <img src="nav_smartimplant.png" alt="Bộ tích hợp điều khiển thông minh Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2888">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2882 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Thiết bị kích hoạt</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-triggering">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2306">
+                                                    <a href="https://www.fibaro.com/us/products/keyfob/"> <img src="nav-keyfob.jpg" alt="KeyFob" /> <span>Remote KeyFob</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2311">
+                                                    <a href="https://www.fibaro.com/us/products/the-button/"> <img src="nav-button.jpg" alt="The Button" /> <span>Nút nhấn</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2309">
+                                                    <a href="https://www.fibaro.com/us/products/swipe/"> <img src="nav-swipe.jpg" alt="Swipe" /> <span>Bảng điều khiển Swipe</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2883">
+                                                    <a href="https://www.fibaro.com/us/smart-home-app/"> <img src="nav_app.jpg" alt="Application FIBARO Home Center" /> <span>Ứng dụng FIBARO Home Center</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2887">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-675 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Bộ điều khiển trung tâm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gateways">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2304">
+                                                    <a href="https://www.fibaro.com/us/products/home-center-2/"> <img src="nav-hc2.jpg" alt="Home Center 2" /> <span>Home Center 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2305">
+                                                    <a href="https://www.fibaro.com/us/products/home-center-lite/"> <img src="nav-hcl.jpg" alt="Home Center Lite" /> <span>Home Center Lite</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2892">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2664 menu-item-has-children">
+                                    <a href="#">Hoạt động với</a>
+                                    <ul class="menu-sub menu-sub-workswith">
+                                        <li
+                                            onclick="location.href='https://www.fibaro.com/us/compatibility/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2296"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-fibaro.png" class="page-icon" /> <span class="menu-description">Nhận biết các khả năng của một hệ thống nhà thông minh hoàn chỉnh.</span>
+                                            <a href="https://www.fibaro.com/us/compatibility/" class="menu-sub-toggle">Hệ thống nhà thông minh FIBARO</a> <a href="https://www.fibaro.com/us/compatibility/" class="menu-link">Tìm hiểu hệ thống</a>
+                                        </li>
+                                        <li
+                                            onclick="location.href='https://www.fibaro.com/us/smartthings/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2801"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-smartthings.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với SmartThings.</span>
+                                            <a href="https://www.fibaro.com/us/smartthings/" class="menu-sub-toggle">SmartThings</a> <a href="https://www.fibaro.com/us/smartthings/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                        <li onclick="location.href='https://www.fibaro.com/us/homekit/'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2665" data-level="1">
+                                            <img src="nav-homekit.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với Apple HomeKit.</span>
+                                            <a href="https://www.fibaro.com/us/homekit/" class="menu-sub-toggle">Apple HomeKit</a> <a href="https://www.fibaro.com/us/homekit/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2689"><a href="https://www.fibaro.com/us/why-fibaro/">Những lợi ích</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2931"><a href="https://fibarovn.com/contact/">Nơi để mua</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2298"><a href="https://fibarovn.com/contact/">Hỗ trợ</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2297"><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                            <div id="language-selector">
+                                <a href="index.html" id="lang-toggle">Tiếng Việt</a>
+                                <div id="lang-choices">
+                                    <a href="https://www.fibaro.com/cn/products/smart-implant/" title="中文">中文</a> <a href="https://www.fibaro.com/cz/products/smart-implant/" title="Čeština">Čeština</a>
+                                    <a href="https://www.fibaro.com/de/products/smart-implant/" title="Deutsch">Deutsch</a> <a href="https://www.fibaro.com/en/products/smart-implant/" title="English">English (International)</a>
+                                    <a href="index.html" title="English">Tiếng Việt</a> <a href="https://www.fibaro.com/cl/products/smart-implant/" title="Español">Español</a>
+                                    <a href="https://www.fibaro.com/fr/products/smart-implant/" title="Français">Français</a> <a href="https://www.fibaro.com/gr/products/smart-implant/" title="Ελληνικά">Ελληνικά</a>
+                                    <a href="https://www.fibaro.com/it/products/smart-implant/" title="Italiano">Italiano</a> <a href="https://www.fibaro.com/lt/products/smart-implant/" title="Lietuvių">Lietuvių</a>
+                                    <a href="https://www.fibaro.com/hu/products/smart-implant/" title="Magyar">Magyar</a> <a href="https://www.fibaro.com/nl/products/smart-implant/" title="Nederlands">Nederlands</a>
+                                    <a href="https://www.fibaro.com/ru/products/smart-implant/" title="Русский">Русский</a> <a href="https://www.fibaro.com/no/products/smart-implant/" title="Norsk bokmål">Norsk bokmål</a>
+                                    <a href="https://www.fibaro.com/ar/products/smart-implant/" title="العربية">العربية</a> <a href="https://www.fibaro.com/pl/products/smart-implant/" title="Polski">Polski</a>
+                                    <a href="https://www.fibaro.com/pt/products/smart-implant/" title="Português">Português</a> <a href="https://www.fibaro.com/ro/products/smart-implant/" title="Română">Română</a>
+                                    <a href="https://www.fibaro.com/sk/products/smart-implant/" title="Slovenčina">Slovenčina</a> <a href="https://www.fibaro.com/se/products/smart-implant/" title="Svenska">Svenska</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div id="secondary-nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-12 offset-desktopS-0">
+                                <div class="items">
+                                    <div class="title">Cảm biến chuyển động FIBARO</div>
+                                    <div class="links mobile-hidden"></div>
+                                    <div class="actions"><a href="https://fibarovn.com/contact/" class="bin">MUA</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section id="section1" class="section-product-header">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1">
+                                    <h1>Cảm biến chuyển động FIBARO</h1>
+                                    <p>Cảm biến chuyển động, ánh sáng và nhiệt độ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"><canvas id="header-app"></canvas></div>
+                </section>
+                <section id="section2" class="section-video-player">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2">
+                                    <h2>Xem cảm biến hoạt động</h2>
+                                    <a href="#" class="button button-play" data-video-id="R_I2p1Tq2QU"> <span></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <video src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/2016-12-27_WWW_Motion_Sensor_ZW.mp4" preload loop muted class="hidden-tabletL-down"></video>
+                </section>
+                <section id="section3" class="section-product-sizing product-sizing-background">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopM-6 offset-desktopM-3">
+                                    <h2>Nhỏ và hoàn thiện tinh xảo</h2>
+                                    <p>Với kiểu dáng đẹp, hiện đại, thẩm mỹ hiện đại với màu trắng tinh khôi, bạn sẽ ngay lập tức yêu chiếc cảm biến nhỏ gọn này.</p>
+                                </div>
+                                <div class="col-phoneS-12 col-tabletP-6 col-1">
+                                    <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/motion-sizes-left-imperial.svg" alt="Cảm biến chuyển động - Bộ phát hiện chuyển động Z-Wave và HomeKit" />
+                                </div>
+                                <div class="col-phoneS-12 col-tabletP-6 col-2">
+                                    <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/motion-sizes-right-imperial.svg" alt="Cảm biến chuyển động - Bộ phát hiện chuyển động Z-Wave và HomeKit" />
+                                </div>
+                                <div class="col-phoneS-12 col-desktopM-8 offset-desktopM-2 col-3"><img src="sizes-eye.png" alt="Cảm biến chuyển động - Bộ phát hiện chuyển động Z-Wave và HomeKit" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section4" class="section-video-player typo-light">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-6 offset-phoneS-3"><h2>Lấy cảm hứng từ thiên nhiên</h2></div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="butterfly-anim.gif" alt="Cảm biến chuyển động - Bộ phát hiện chuyển động Z-Wave và HomeKit" class="hidden-desktopS-up" />
+                    <video src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/1280-1024_3_1.mp4" preload class="hidden-tabletL-down" data-loop="3.2"></video>
+                </section>
+                <section id="section5" class="section-interactive anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopM-6 offset-desktopM-3">
+                                    <h2>Dễ dàng di chuyển</h2>
+                                    <p>
+                                       Cảm biến chuyển động FIBARO di động chạy bằng pin hoạt động không dây từ mọi vị trí. Tay cầm thông minh tích hợp 
+                                       có nghĩa là bạn có thể đặt nó bất cứ nơi nào bạn thích, có thể là sàn nhà, tường hoặc thậm chí là trần nhà.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"><canvas id="mobility-app"></canvas></div>
+                </section>
+                <section id="section6" class="section-video-reveal">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-12 offset-desktopS-0">
+                                    <h2>Cảm biến chuyển động FIBARO ứng dụng công nghệ tiên tiến</h2>
+                                    <p>FIBARO đã phát triển chức năng tiên tiến và đặt nó trong một thiết bị nhỏ, kiểu dáng đẹp, đẹp như hiệu quả.</p>
+                                    <img class="hidden-desktopS-up" src="composition.jpg" alt="Cảm biến chuyển động - Bộ phát hiện chuyển động Z-Wave và HomeKit" />
+                                    <video class="hidden-tabletL-down" src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/parts-reveal.mp4" preload muted></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section7" class="section-big-image section-short-scroll">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-4 col-desktopM-3">
+                                    <h2>Hoàn toàn tương thích với các thiết bị kết nối</h2>
+                                    <p>
+                                        Cảm biến chuyển động FIBARO hoạt động dễ dàng với tất cả các yếu tố tiêu chuẩn mà bạn mong đợi trong một ngôi nhà thông minh. 
+                                        Cảm biến có khả năng kích hoạt các chuỗi kịch bản phức tạp nhất; giới hạn duy nhất là trí tưởng tượng của bạn.
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1079 428" xml:space="preserve">
+                                        <style type="text/css">
+                                            #section7 .st0 {
+                                                opacity: 0.2;
+                                            }
+                                            #section7 .st1 {
+                                                fill: none;
+                                            }
+                                            #section7 .st3 {
+                                                opacity: 0.5;
+                                            }
+                                            #section7 .st4 {
+                                                clip-path: url(#SVGID_2_);
+                                            }
+                                            #section7 .st5 {
+                                                clip-path: url(#SVGID_4_);
+                                            }
+                                            #section7 .st6 {
+                                                opacity: 0.3;
+                                            }
+                                            #section7 .st7 {
+                                                fill: #7e7e7e;
+                                            }
+                                            #section7 .st8 {
+                                                font-family: "Open Sans", sans-serif;
+                                                font-weight: 300;
+                                            }
+                                            #section7 .st9 {
+                                                font-size: 70px;
+                                            }
+                                            #section7 .st10 {
+                                                fill: #ffffff;
+                                            }
+                                        </style>
+                                        <g>
+                                            <g>
+                                                <g class="st0">
+                                                    <circle class="st1" cx="105.2" cy="28.3" r="20.3" />
+                                                    <path
+                                                        class="st1"
+                                                        d="M108.6,69.4c-0.9-1.8-2.3-3.3-4-4.5c-2.4-1.7-5.1-3-7.9-4c-1.6-0.4-3.3-0.6-5-0.5c-1.5-0.1-3,0.1-4.5,0.5 c-2.6,1-5.1,2.1-7.4,3.5L30.8,90.2c-0.4,1-1.1,1.9-2,2.5c-2,1-3.4,2.8-4,5l-7.4,40.1c-0.5,1.7-0.1,3.5,1,5c1.1,1.5,2.6,2.6,4.5,3 c1.7,0.5,3.5,0.1,5-1c1.5-1.1,2.6-2.6,3-4.5l7.4-39.1l31.7-16.8l-12.4,57.5c-0.4,1.3-0.6,2.6-0.5,4l-8.9,55.5l-0.5,1l-34.7,53 c-1.5,2.7-2.4,5.8-2.5,8.9c0.2,2.4,1.5,4.6,3.5,5.9c5.2,2.2,11.3,0.1,13.9-5l34.2-53c0.9-1.4,1.5-2.9,2-4.5c0.5-1.5,1-2,1-3 l6.9-43.1l2.5,1c0.5,0,1.5,0.5,2,0.5c2.7,0.7,5.3,1.5,7.9,2.5l1,0.5l14.9,17.8l6.4-38.6c-0.1-1.5,0.1-3,0.5-4.5l10.4-47.1 l-20.3,10.9l-6.9,36.7c-0.5,3.1-2.3,5.7-5,7.4c-2.6,1.9-5.8,2.6-8.9,2c-3.1-0.5-5.7-2.3-7.4-5c-1.9-2.6-2.6-5.8-2-8.9l7.4-40.1 c0.6-3.4,2.8-6.4,5.9-7.9c0.8-0.6,1.6-1.1,2.5-1.5l27.3-14.4c-0.5-0.5-0.5-1-1-2L108.6,69.4z"
+                                                    />
+                                                    <circle class="st1" cx="159.7" cy="28.3" r="20.3" />
+                                                    <path
+                                                        class="st2"
+                                                        d="M105.1,53c14,0,25.3-11.3,25.3-25.3S119.1,2.5,105.1,2.5C91.2,3,80.1,14.3,79.9,28.3 C80.1,42,91.4,53,105.1,53z M105.1,8c11.2,0,20.3,9.1,20.3,20.3s-9.1,20.3-20.3,20.3c-11.2,0-20.3-9.1-20.3-20.3 C84.7,17.2,93.6,8.1,104.7,8C104.9,7.9,105,7.9,105.1,8z"
+                                                    />
+                                                    <path
+                                                        class="st2"
+                                                        d="M85.8,166.5l-1-1c-2.5-1.3-5.2-2.1-7.9-2.5c-1,0-1.5-0.5-2-0.5l-3-1L65,205.1c-0.2,1-0.6,2-1,3 c-0.5,1.6-1.1,3.1-2,4.5l-34.2,52.5c-3.5,5.5-9.9,7.9-13.9,5c-1.9-1.5-3.1-3.6-3.5-5.9c-0.4-3.2,0.5-6.4,2.5-8.9l34.7-53l0.5-1 l8.9-55.5c-0.1-1.3,0.1-2.7,0.5-4l12.4-57.5l-31.7,16.8l-7.4,39.1c-0.4,1.8-1.4,3.4-3,4.5c-1.4,1-3.2,1.4-5,1 c-1.8-0.4-3.4-1.4-4.5-3c-1-1.4-1.4-3.2-1-5l7.4-40.1c0.5-2.2,2-4,4-5c0.5-0.5,1.5-1,2-1.5l49.1-25.8c2.2-1.7,4.7-2.9,7.4-3.5 c1.4-0.4,3-0.6,4.5-0.5c1.7-0.1,3.3,0.1,5,0.5c2.9,0.6,5.7,2,7.9,4c1.9,0.8,3.4,2.5,4,4.5l0.5,1c0.5,0.5,0.5,1,1,2l4.5-2.5 c-0.5-0.5-0.5-1.5-1-2l-0.5-1.5c-1.3-2.7-3.4-4.9-5.9-6.4c-2.9-2-6.1-3.5-9.4-4.5c-2-0.4-4-0.6-5.9-0.5c-2,0.1-4,0.4-5.9,1 c-2.9,1-5.8,2.3-8.4,4L28.8,86.7c-0.9,0.4-1.7,0.9-2.5,1.5c-3.1,1.5-5.3,4.5-5.9,7.9l-7.9,40.6c-0.6,3.1,0.1,6.3,2,8.9 c1.8,2.5,4.4,4.3,7.4,5c3.1,0.6,6.3-0.1,8.9-2c2.5-1.8,4.3-4.4,5-7.4l6.9-36.7L63,93.7l-10.4,47.1c-0.4,1.5-0.6,3-0.5,4.5 l-8.4,54c0,0.3-0.2,0.5-0.5,0.5L9,252.7c-2.4,3.5-3.5,7.7-3,11.9c0.5,3.9,2.4,7.4,5.5,9.9c1.9,1.3,4.1,2,6.4,2 c5.9-0.3,11.3-3.4,14.4-8.4l34.2-53c0.9-1.8,1.8-3.6,2.5-5.5c0.5-1.1,0.8-2.3,1-3.5l5.9-37.7c2,0.4,4,1.1,5.9,2l17.3,20.8l1-6.4 L85.8,166.5z"
+                                                    />
+                                                </g>
+                                                <g class="st3">
+                                                    <path
+                                                        class="st1"
+                                                        d="M161.6,140.7L172,93.7l-20.3,10.9l-6.9,36.7c-0.5,3.1-2.3,5.7-5,7.4c-2.6,1.9-5.8,2.6-8.9,2 c-3.1-0.5-5.7-2.3-7.4-5c-1.9-2.6-2.6-5.8-2-8.9l7.4-40.1c0.6-3.4,2.8-6.4,5.9-7.9c0.8-0.6,1.6-1.1,2.5-1.5l27.3-14.4 c-0.5-0.5-0.5-1-1-2l-0.5-1c-0.9-1.8-2.3-3.3-4-4.5c-2.4-1.7-5.1-3-7.9-4c-1.6-0.4-3.3-0.6-5-0.5c-1.5-0.1-3,0.1-4.5,0.5 c-2.6,1-5.1,2.1-7.4,3.5L85.3,90.7c-0.5,0.5-1.5,1-2,1.5c-2,1-3.4,2.8-4,5l-7.4,40.1c-0.5,1.7-0.1,3.5,1,5c1.1,1.5,2.6,2.6,4.5,3 c1.7,0.5,3.5,0.1,5-1c1.5-1.1,2.6-2.6,3-4.5l7.4-39.1l31.7-16.8l-12.4,58c-0.4,1.3-0.6,2.6-0.5,4l-8.9,55.5l-0.5,1l-34.7,53 c-1.8,2.6-2.7,5.8-2.5,8.9c0.2,2.4,1.5,4.6,3.5,5.9c5.2,2.2,11.3,0.1,13.9-5l34.2-53c0.9-1.4,1.5-2.9,2-4.5c0.5-1.5,1-2,1-3 l6.9-43.1l2.5,1c0.5,0,1.5,0.5,2,0.5c2.7,0.7,5.3,1.5,7.9,2.5l1,0.5l14.9,17.8l6.4-38.6C161.1,143.7,161.2,142.2,161.6,140.7z"
+                                                    />
+                                                    <circle class="st1" cx="214.1" cy="28.3" r="20.3" />
+                                                    <circle class="st1" cx="159.7" cy="28.3" r="20.3" />
+                                                    <path
+                                                        class="st1"
+                                                        d="M137.8,92.7c-2,1-3.4,2.8-4,5l-7.4,40.1c-0.5,1.7-0.1,3.5,1,5c1.1,1.5,2.6,2.6,4.5,3c1.7,0.5,3.5,0.1,5-1 c1.5-1.1,2.6-2.6,3-4.5l7.4-39.1l31.7-16.8l-12.4,57.5c-0.4,1.3-0.6,2.6-0.5,4l-8.9,55.5l-0.5,1l-34.7,53 c-1.8,2.6-2.7,5.8-2.5,8.9c0.2,2.4,1.5,4.6,3.5,5.9c5.2,2.2,11.3,0.1,13.9-5l34.2-53c0.9-1.4,1.5-2.9,2-4.5c0.5-1.5,1-2,1-3 l6.9-43.1l2.5,1c0.5,0,1.5,0.5,2,0.5c2.7,0.7,5.3,1.5,7.9,2.5l1,0.5l36.2,43.1l11.4,53.5c0.7,5.1,5.5,8.7,10.7,8 c0.1,0,0.2,0,0.2,0c4.9-1.4,7.9-6.4,6.9-11.4l-11.4-53.5c-0.5-1.6-1.1-3.1-2-4.5c-0.4-0.7-0.9-1.4-1.5-2l-38.2-45.6l11.9-54.5 l11.9,24.8c0,0.5,0.5,1,0.5,1.5l0.5,1c0.2,1.8,1.3,3.3,3,4l34.7,15.4c1.4,0.5,3,0.5,4.5,0c1.8-0.8,3.2-2.2,4-4 c1.7-3.2,0.4-7.2-2.8-8.8c-0.1,0-0.1-0.1-0.2-0.1l-33.2-14.9l-21.3-43.6c-0.4-1.5-1-2.8-2-4l-0.5-1c-0.9-1.8-2.3-3.3-4-4.5 c-2.4-1.7-5.1-3-7.9-4c-1.6-0.4-3.3-0.6-5-0.5c-1.5-0.1-3,0.1-4.5,0.5c-2.6,1-5.1,2.1-7.4,3.5l-49.1,25.8 C139.4,91.2,138.7,92.1,137.8,92.7z"
+                                                    />
+                                                    <path
+                                                        class="st2"
+                                                        d="M134.4,28.3c0,14,11.3,25.3,25.3,25.3s25.3-11.3,25.3-25.3S173.6,3,159.6,3C145.7,3,134.4,14.3,134.4,28.3z M179.4,28.3c-0.1,11.2-9.1,20.3-20.3,20.3c-10.9,0-19.8-8.9-19.8-19.8c0-0.2,0-0.3,0-0.5c-0.1-11.1,8.8-20.2,19.9-20.3 c0.1,0,0.3,0,0.4,0c10.9,0,19.8,8.9,19.8,19.8C179.5,27.9,179.4,28.1,179.4,28.3z"
+                                                    />
+                                                    <path
+                                                        class="st2"
+                                                        d="M121,215.1c0.9-1.8,1.8-3.6,2.5-5.5c0.5-1.1,0.8-2.3,1-3.5l5.9-37.7c2,0.4,4,1.1,5.9,2l17.3,20.8l1-6.4 L139.8,167l-0.5-1.5c-2.5-1.3-5.2-2.1-7.9-2.5c-1,0-1.5-0.5-2-0.5l-3-1l-6.9,43.6c-0.2,1-0.6,2-1,3c-0.5,1.6-1.1,3.1-2,4.5 l-34.2,53c-3.5,5.5-9.9,7.9-13.9,5c-1.9-1.5-3.1-3.6-3.5-5.9c-0.4-3.2,0.5-6.4,2.5-8.9l34.7-53l0.5-1l8.9-55.5 c-0.1-1.3,0.1-2.7,0.5-4l12.4-58l-31.7,16.8l-7.4,39.1c-0.4,1.8-1.4,3.4-3,4.5c-1.4,1-3.2,1.4-5,1c-1.8-0.4-3.4-1.4-4.5-3 c-1-1.4-1.4-3.2-1-5l7.4-40.1c0.5-2.2,2-4,4-5c0.5-0.5,1.5-1,2-1.5l49.1-25.8c2.2-1.7,4.7-2.9,7.4-3.5c1.4-0.4,3-0.6,4.5-0.5 c1.7-0.1,3.3,0.1,5,0.5c2.9,0.6,5.7,2,7.9,4c1.9,0.8,3.4,2.5,4,4.5l0.5,1c0.5,0.5,0.5,1,1,2l4.5-2.5c-0.5-0.5-0.5-1.5-1-2 l-0.5-1.5c-1.3-2.7-3.4-4.9-5.9-6.4c-2.9-2-6.1-3.5-9.4-4.5c-2-0.4-4-0.6-5.9-0.5c-2,0.1-4,0.4-5.9,1c-2.9,1-5.8,2.3-8.4,4 L83.3,86.7c-0.9,0.4-1.7,0.9-2.5,1.5c-3.1,1.5-5.3,4.5-5.9,7.9L67,136.8c-0.6,3.1,0.1,6.3,2,8.9c1.8,2.5,4.4,4.3,7.4,5 c3.1,0.6,6.3-0.1,8.9-2c2.5-1.8,4.3-4.4,5-7.4l6.9-36.7l20.3-10.9l-10.4,47.1c-0.4,1.5-0.6,3-0.5,4.5l-8.4,54 c0,0.3-0.2,0.5-0.5,0.5l-34.2,53c-2.4,3.5-3.5,7.7-3,11.9c0.5,3.9,2.4,7.4,5.5,9.9c1.9,1.3,4.1,2,6.4,2 c5.9-0.3,11.3-3.4,14.4-8.4L121,215.1z"
+                                                    />
+                                                </g>
+                                                <g>
+                                                    <defs><rect id="SVGID_1_" x="114.5" y="3" width="168.5" height="273" /></defs>
+                                                    <clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow: visible;" /></clipPath>
+                                                    <g class="st4">
+                                                        <path
+                                                            class="st2"
+                                                            d="M214.1,53c-13.9-0.1-25.2-11.3-25.3-25.3c0.1-14,11.6-25.2,25.5-25s25.2,11.6,25,25.5 C238.9,41.9,227.8,52.9,214.1,53z M214.1,8c-11.1-0.1-20.2,8.8-20.3,19.9c0,0.1,0,0.3,0,0.4c0.1,11.2,9.1,20.3,20.3,20.3 c11.1,0.1,20.2-8.8,20.3-19.9c0-0.1,0-0.3,0-0.4C234.2,17.1,225.3,8.2,214.1,8z"
+                                                        />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <defs><rect id="SVGID_3_" x="114.5" y="3" width="168.5" height="273" /></defs>
+                                                    <clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow: visible;" /></clipPath>
+                                                    <g class="st5">
+                                                        <path
+                                                            class="st2"
+                                                            d="M126.9,276c-2.3,0.1-4.6-0.6-6.4-2c-3.4-2.2-5.4-5.9-5.5-9.9c-0.5-4.2,0.6-8.4,3-11.9l34.2-53 c0-0.3,0.2-0.5,0.5-0.5l8.4-54c-0.1-1.5,0.1-3,0.5-4.5L172,93.2l-20.3,10.9l-6.9,36.7c-0.5,3.1-2.3,5.7-5,7.4 c-2.6,1.9-5.8,2.6-8.9,2c-3.1-0.5-5.7-2.3-7.4-5c-1.9-2.6-2.6-5.8-2-8.9l7.4-40.1c0.6-3.4,2.8-6.4,5.9-7.9 c0.8-0.6,1.6-1.1,2.5-1.5L185.9,61c2.4-2,5.3-3.4,8.4-4c1.9-0.6,3.9-0.9,5.9-1c2-0.1,4,0.1,5.9,0.5c3.4,0.9,6.6,2.4,9.4,4.5 c2.7,1.4,4.8,3.7,5.9,6.4l0.5,1c0.9,1.4,1.5,2.9,2,4.5l20.3,41.6l31.7,13.9c5.6,2.9,8,9.6,5.5,15.4c-1.3,2.8-3.6,5.1-6.4,6.4 c-2.5,1-5.4,1-7.9,0l-34.7-15.4c-2.8-1.4-5-3.9-5.9-6.9c-0.5-0.5-0.5-1-1-1.5l-5.9-11.9l-8.4,38.2l36.7,43.6 c0.5,1,1,1.5,1.5,2.5c1.6,1.8,2.6,4.1,3,6.4l11.4,53.5c1.8,7.6-2.8,15.3-10.4,17.3c-7.9,1.2-15.3-4-16.8-11.9l-10.9-52 l-35.2-41.6c-1.9-0.9-3.9-1.5-5.9-2l-5.5,37.2c-0.1,1.2-0.4,2.4-1,3.5c-0.7,1.9-1.5,3.7-2.5,5.5l-34.2,53 C138.3,272.7,132.8,275.8,126.9,276z M178.9,84.3l-12.4,57.5c-0.4,1.3-0.6,2.6-0.5,4l-8.9,55.5l-0.5,1l-34.7,53 c-1.8,2.6-2.7,5.8-2.5,8.9c0.2,2.4,1.5,4.6,3.5,5.9c5.2,2.2,11.3,0.1,13.9-5l34.2-53c0.9-1.4,1.5-2.9,2-4.5c0.5-1.5,1-2,1-3 l6.9-43.1l2.5,1c0.5,0,1.5,0.5,2,0.5c2.7,0.7,5.3,1.5,7.9,2.5l1,0.5l36.2,43.1l11.4,53.5c0.7,5.1,5.5,8.7,10.7,8 c0.1,0,0.2,0,0.2,0c4.9-1.4,7.9-6.4,6.9-11.4l-11.4-53.5c-0.5-1.6-1.1-3.1-2-4.5c-0.4-0.7-0.9-1.4-1.5-2l-38.2-45.6l11.9-54.5 l11.9,24.8c0,0.5,0.5,1,0.5,1.5l0.5,1c0.2,1.8,1.3,3.3,3,4l34.7,15.4c1.4,0.5,3,0.5,4.5,0c1.8-0.8,3.2-2.2,4-4 c1.7-3.2,0.4-7.2-2.8-8.8c-0.1,0-0.1-0.1-0.2-0.1l-33.2-14.9l-21.3-43.6c-0.4-1.5-1-2.8-2-4l-0.5-1c-0.9-1.8-2.3-3.3-4-4.5 c-2.4-1.7-5.1-3-7.9-4c-1.6-0.4-3.3-0.6-5-0.5c-1.5-0.1-3,0.1-4.5,0.5c-2.6,1-5.1,2.1-7.4,3.5l-49.1,25.8c-0.5,0.5-1.5,1-2,1.5 c-2,1-3.4,2.8-4,5l-7.4,40.1c-0.5,1.7-0.1,3.5,1,5c1.1,1.5,2.6,2.6,4.5,3c1.7,0.5,3.5,0.1,5-1c1.5-1.1,2.6-2.6,3-4.5l7.4-39.1 L178.9,84.3z"
+                                                        />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <path
+                                                    class="st2"
+                                                    d="M789.2,27.9C774.6,15,755.4,8,735.6,8c-2.9,0-5.9,0.2-8.8,0.5c-36.6,3.8-66.3,32.9-70.4,69.1 c-2.1,18.1,2.2,35.3,12.5,51c14.8,22.6,23.6,46.2,26.1,70.1l0.3,2.8c0.3,3.1,1.8,6.1,4,8.3l0.6,0.6l-0.7,0.6 c-2.5,2.2-3.9,5.2-3.9,8.5c0,2.7,1.2,5.4,3.3,7.5l0.6,0.6l-0.6,0.6c-2.1,2.1-3.3,4.8-3.3,7.5c0,2.7,1.2,5.4,3.3,7.5l0.6,0.6 l-0.6,0.6c-2.1,2.1-3.3,5.1-3.3,7.8c0,6.2,4.9,11.4,11.1,11.4h9.4l0.1,0.4c1.7,9.2,9.9,15.7,19.5,15.7c9.6,0,17.8-6.4,19.5-15.6 l0.1-0.4h9.4c6.2,0,11.1-5.2,11.1-11.4c0-2.7-1.2-5.5-3.3-7.6l-0.6-0.7l0.6-0.6c2.1-2.1,3.3-4.8,3.3-7.5c0-2.7-1.2-5.4-3.3-7.5 l-0.6-0.6l0.6-0.6c2.1-2.1,3.3-4.8,3.3-7.5c0-2.8-1.3-5.8-3.3-7.8l-0.6-0.6l0.3-0.6c2.8-2.4,4.3-5.4,4.3-8.9v-1.3 c5.7-26.2,11.4-50.3,25-69.5c9.3-13.1,14.4-28.5,14.4-44.4C815.8,64,806.2,42.8,789.2,27.9z M748.8,264.2c-1.5,5.9-7,10-13.4,10 c-6.2,0-11.5-3.8-13.4-9.9l-0.3-1h27.4L748.8,264.2z M764.2,257.6h-57.5c-2.9,0-5.4-2.8-5.4-5.7s2.5-5.7,5.4-5.7h57.8 c2.9,0,5.4,2.8,5.4,5.7C769.9,254.8,767.3,257.6,764.2,257.6z M764.5,240.4h-57.8c-2.9,0-5.4-2.8-5.4-5.7s2.5-5.7,5.4-5.7h57.8 c2.9,0,5.4,2.8,5.4,5.7S767.4,240.4,764.5,240.4z M701.3,217.5c0-2.9,2.5-5.7,5.4-5.7h57.5c2.9,0,5.4,2.8,5.4,5.7 s-2.5,5.7-5.4,5.7h-57.5C703.8,223.2,701.3,220.4,701.3,217.5z M796.7,127.3c-14.4,20.4-20.4,45.4-26.1,72.2v1.3 c0,4.4-3.3,5.3-7.8,5.3h-53.3c-4.4,0-7.7-1-7.7-5.2v-2.5c-5.7-25-11.9-49.4-27.3-72.5c-9.4-14.5-13.7-30.9-11.9-47.5 c3.5-33.6,30.9-60.6,65.1-64.2c2.8-0.4,5.7-0.4,8.4-0.4c18.4,0,35.4,6.4,49.2,18.4C801,46,809.7,65.7,809.7,86.1 C810,100.7,805.4,114.9,796.7,127.3z M717.2,34.1c-1,0-2.5-0.2-2.7-1.3c-0.5-1.6,0.2-2.3,1.9-2.9c2.3-0.7,4.3-1.6,6.9-1.6h0 c0.2,0,0.4,0,0.5,0c1.5,0,2.5,1.1,2.7,2.2c0.3,1.6-0.8,2.6-2.5,2.9c-2.1,0.4-3.9,0.7-6,0.7H717.2z M706.1,34.6 c1.1,0,2.1,0.5,2.6,1.2c0.8,1.3,0.3,2.9-1.1,3.8c-9,5.4-16.1,13.4-19.9,22.4c-0.5,1-1.6,1.7-2.8,1.7c-0.6,0-0.8-0.1-0.8-0.1 l-0.3-0.2c-0.7-0.2-1.3-0.7-1.6-1.3c-0.3-0.7-0.3-1.4,0-2.1c4.6-10.6,12.5-19.4,22.4-24.9l0,0C705.1,34.7,705.6,34.6,706.1,34.6z"
+                                                />
+                                            </g>
+                                            <g class="st6">
+                                                <path class="st10" d="M507.5,141.1l-71,71c-0.4,0.4-1,0.4-1.4,0l-2.6-2.6c-0.4-0.4-0.4-1,0-1.4l71-71c0.4-0.4,1-0.4,1.4,0l2.6,2.6 C507.9,140.1,507.9,140.7,507.5,141.1z" />
+                                                <path class="st10" d="M507.5,139.7l-71-71c-0.4-0.4-1-0.4-1.4,0l-2.6,2.6c-0.4,0.4-0.4,1,0,1.4l71,71c0.4,0.4,1,0.4,1.4,0l2.6-2.6 C507.9,140.7,507.9,140.1,507.5,139.7z" />
+                                            </g>
+                                            <text transform="matrix(1 0 0 1 84.1922 410.5029)" class="st7 st8 st9">Chuyển động</text>
+                                            <text transform="matrix(1 0 0 1 454.0704 410.5029)" class="st7 st8 st9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đèn: bật</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"><div class="bg bg-size-cover bg-second"></div></div>
+                </section>
+                <section id="section8" class="section-content-image">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2">
+                                    <h2>Cảm biến chuyển động FIBARO<br/>Đa nhiệm</h2>
+                                    <p>
+                                        Ngoài cảm biến chuyển động, thiết bị còn đo nhiệt độ và mức độ ánh sáng, 
+                                        cung cấp cho bạn một giải pháp phát hiện chuyển động hoàn chỉnh hơn. 
+                                        Gia tốc kế phát hiện sự thay đổi vị trí hoặc bất kỳ cố gắn nào khi mở vỏ của cảm biến.
+                                    </p>
+                                    <ul>
+                                        <li class="motion"><span>Cảm biến chuyển động</span></li>
+                                        <li class="light"><span>Cảm biến ánh sáng</span></li>
+                                        <li class="temp"><span>Cảm biến nhiệt độ</span></li>
+                                        <li class="accel"><span>Gia tốc kế</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-phoneS-12 col-1"><img src="multisensor.png" alt="Cảm biến chuyển động FIBARO" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section9" class="section-homekit-enabled">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-6 col-desktopL-4">
+                                    <h2>Phù hợp với hệ thống Apple HomeKit</h2>
+                                    <p>
+                                        Chúng tôi đã tạo hai dòng Cảm biến chuyển động FIBARO - một cho hệ thống FIBARO với các bộ điều khiển Z-Wave tương 
+                                        thích khác và một là cho hệ thống Apple HomeKit. 
+                                        Cho dù bạn chọn nền tảng nào, các sản phẩm của chúng tôi đều được thiết kế để hoạt động trơn tru với công nghệ đấy. 
+                                        <a href="https://www.fibaro.com/us/homekit/" target="_blank">Tìm hiểu thêm.</a>
+                                    </p>
+                                    <a href="https://www.fibaro.com/us/homekit/" target="_blank"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/homekit-logo-new.svg" alt="homekit cảm biến chuyển động" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section10" class="section-siri bg bg-size-cover typo-light">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-12 offset-desktopS-0">
+                                    <h2>Này Siri, có bất kỳ chuyển động nào được phát hiện ở lối vào không?</h2>
+                                    <div class="siriwave"></div>
+                                    <p>Phù hợp với <img src="https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/img/common/homekit-logo-new.svg" alt="cảm biến chuyển động fibaro tương thích Apple HomeKit" /></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section11" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopM-6 offset-desktopM-3">
+                                    <h2>Màu sắc cho thấy sự thay đổi nhiệt độ</h2>
+                                    <p>Sau khi phát hiện chuyển động, cảm biến chuyển động FIBARO sẽ sử dụng một màu khác để thông báo cho bạn về nhiệt độ hiện tại trong phòng.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section12" class="section-big-image anim-textcontent anim-textcontent-l2r">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-5 col-desktopM-4">
+                                    <h2>Cảm biến chuyển động FIBARO Bảo vệ sự an toàn của bạn</h2>
+                                    <p>Cảm biến chuyển động FIBARO là người bảo vệ cuối cùng của nhà bạn, theo dõi bạn và gia đình 24/7.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section13" class="section-content-image hidden-phoneL-down">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-tabletP-5 offset-tabletP-7 offset-desktopM-6">
+                                    <h2>Bảng thông báo chuyển động</h2>
+                                    <p>Bảng điều khiển Fibaro Home Center không chỉ hiển thị trạng thái hiện tại. 
+                                    Nó cũng chứa lịch sử của các sự kiện quan trọng đối với sự an toàn của bạn.</p>
+                                    <img src="ipad-motion-us.png" alt="Cảm biến chuyển động FIBARO" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section14" class="section-big-image anim-textcontent anim-image-up">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-5 offset-tabletP-0">
+                                    <h2>Thông báo ngay lập tức đến bạn</h2>
+                                    <p>thiết bị sẽ ngay lập tức thông báo cho bạn về bất kỳ chuyển động nào bằng cách gửi thông báo đến điện thoại thông minh của bạn ...</p>
+                                    <img src="notifications-phone.png" alt="cảm biến chuyển động FIBARO" class="hidden-phoneL-down anim-up" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover bg-pos-left"></div>
+                </section>
+                <section id="section15" class="section-big-image anim-textcontent anim-image-up">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-5 offset-tabletP-7">
+                                    <h2>Cảm biến chuyển động FIBARO thuận tiện với bạn</h2>
+                                    <p>Nếu hay chọn cài đặt phù hợp với tình huống, nó sẽ không làm phiền bạn chút nào.</p>
+                                    <img src="iphone6.png" alt="Cảm biến chuyển động FIBARO" class="hidden-phoneL-down anim-up" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover bg-pos-right"></div>
+                </section>
+                <section id="section16" class="section-big-image typo-light">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-5 offset-tabletP-7 col-desktopS-4 offset-desktopS-8 col-desktopL-3">
+                                    <h2>Cảm biến chuyển động FIBARO đo cường độ ánh sáng</h2>
+                                    <p>
+                                        Một cảm biến ẩn trong Cảm biến chuyển động FIBARO sẽ cho phép bạn tự động điều chỉnh đèn 
+                                        theo lượng ánh sáng tự nhiên. Hệ thống sẽ thiết lập mức độ chiếu sáng tối ưu cho mọi 
+                                        người trong nhà, và chiếu sáng không gian xung quanh tòa nhà, đồng thời tiết kiệm năng lượng và tiết kiệm tiền.
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1054 350">
+                                        <style type="text/css">
+                                            #section16 .st0 {
+                                                fill: #ffffff;
+                                            }
+                                            #section16 .st1 {
+                                                font-family: "Open Sans", sans-serif;
+                                                font-weight: 300;
+                                            }
+                                            #section16 .st2 {
+                                                font-size: 64px;
+                                            }
+                                            #section16 .st3 {
+                                                font-size: 160px;
+                                            }
+                                        </style>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    class="st0"
+                                                    d="M172.8,210.6c-18.6,0-33.8-15.1-33.8-33.8s15.1-33.8,33.8-33.8s33.8,15.1,33.8,33.8S191.4,210.6,172.8,210.6z M172.8,149.5c-15.1,0-27.3,12.3-27.3,27.3s12.3,27.3,27.3,27.3c15.1,0,27.3-12.3,27.3-27.3S187.9,149.5,172.8,149.5z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M174.6,118.9c-1.6,0-2.8-1.3-2.8-2.8V89.2c0-1.6,1.3-2.8,2.8-2.8s2.8,1.3,2.8,2.8v26.8
+C177.4,117.6,176.2,118.9,174.6,118.9z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M174.6,264.8c-1.6,0-2.8-1.3-2.8-2.8v-26.9c0-1.6,1.3-2.8,2.8-2.8s2.8,1.3,2.8,2.8V262
+C177.4,263.6,176.2,264.8,174.6,264.8z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M144.8,126.8c-1,0-1.9-0.5-2.4-1.4L129,102.2c-0.8-1.3-0.3-3.1,1-3.8c1.3-0.8,3.1-0.3,3.8,1l13.4,23.2
+c0.8,1.3,0.3,3.1-1,3.8C145.8,126.7,145.3,126.8,144.8,126.8z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M217.8,253.2c-1,0-1.9-0.5-2.4-1.4l-13.5-23.3c-0.8-1.3-0.3-3.1,1-3.8c1.3-0.8,3.1-0.3,3.8,1l13.5,23.3
+c0.8,1.3,0.3,3.1-1,3.8C218.8,253.1,218.3,253.2,217.8,253.2z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M123,148.6c-0.5,0-1-0.1-1.4-0.4l-23.2-13.4c-1.3-0.8-1.8-2.5-1-3.8c0.8-1.3,2.5-1.8,3.8-1l23.2,13.4
+c1.3,0.8,1.8,2.5,1,3.8C125,148.1,124,148.6,123,148.6z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M249.4,221.6c-0.5,0-1-0.1-1.4-0.4l-23.3-13.5c-1.3-0.8-1.8-2.5-1-3.8c0.8-1.3,2.5-1.8,3.8-1l23.3,13.5
+c1.3,0.8,1.8,2.5,1,3.8C251.3,221.1,250.4,221.6,249.4,221.6z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M115.1,178.4H88.2c-1.6,0-2.8-1.3-2.8-2.8s1.3-2.8,2.8-2.8h26.8c1.6,0,2.8,1.3,2.8,2.8
+S116.6,178.4,115.1,178.4z"
+                                                />
+                                                <path class="st0" d="M261,178.4h-26.9c-1.6,0-2.8-1.3-2.8-2.8s1.3-2.8,2.8-2.8H261c1.6,0,2.8,1.3,2.8,2.8S262.6,178.4,261,178.4z" />
+                                                <path
+                                                    class="st0"
+                                                    d="M99.8,221.6c-1,0-1.9-0.5-2.4-1.4c-0.8-1.3-0.3-3.1,1-3.8l23.2-13.4c1.3-0.8,3.1-0.3,3.8,1
+c0.8,1.3,0.3,3.1-1,3.8l-23.2,13.4C100.8,221.5,100.3,221.6,99.8,221.6z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M226.1,148.7c-1,0-1.9-0.5-2.4-1.4c-0.8-1.3-0.3-3.1,1-3.8L248,130c1.3-0.8,3.1-0.3,3.8,1
+c0.8,1.3,0.3,3.1-1,3.8l-23.3,13.5C227.1,148.6,226.6,148.7,226.1,148.7z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M131.4,253.2c-0.5,0-1-0.1-1.4-0.4c-1.3-0.8-1.8-2.5-1-3.8l13.4-23.2c0.8-1.3,2.5-1.8,3.8-1
+c1.3,0.8,1.8,2.5,1,3.8l-13.4,23.2C133.3,252.7,132.4,253.2,131.4,253.2z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M204.3,126.9c-0.5,0-1-0.1-1.4-0.4c-1.3-0.8-1.8-2.5-1-3.8l13.5-23.3c0.8-1.3,2.5-1.8,3.8-1
+c1.3,0.8,1.8,2.5,1,3.8l-13.5,23.3C206.2,126.4,205.3,126.9,204.3,126.9z"
+                                                />
+                                            </g>
+                                            <path
+                                                class="st0"
+                                                d="M176.1,349.8c-96.5,0-175-78.5-175-175s78.5-175,175-175s175,78.5,175,175S272.6,349.8,176.1,349.8z M176.1,5.4C82.7,5.4,6.7,81.4,6.7,174.8c0,93.4,76,169.4,169.4,169.4c93.4,0,169.4-76,169.4-169.4C345.5,81.4,269.5,5.4,176.1,5.4
+z"
+                                            />
+                                            <text transform="matrix(1 0 0 1 455.332 111.5093)" class="st0 st1 st2">Cảm biến ánh sáng</text>
+                                            <text transform="matrix(1 0 0 1 450.3325 263.2598)" class="st0 st1 st3">128 LUX</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover bg-pos-bottom"></div>
+                </section>
+                <section id="section17" class="section-big-image anim-textcontent anim-textcontent-l2r">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-7 col-tabletL-6 offset-tabletL-1 col-desktopM-5">
+                                    <h2>Một ngôi nhà sẽ thức dậy với bạn</h2>
+                                    <p>Cảm biến chuyển động FIBARO làm cho mỗi buổi sáng trở nên độc đáo. 
+                                    Ngay khi bạn thức dậy, cảm biến sẽ kích hoạt một cảnh đánh thức toàn bộ ngôi nhà cùng với bạn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section18" class="section-big-image typo-light">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-5 offset-tabletP-7 col-desktopS-4 offset-desktopS-8 col-desktopL-3">
+                                    <h2>Luôn luôn hoàn điều chỉnh ánh sáng phù hợp</h2>
+                                    <p>
+                                        Bằng cách đo cường độ ánh sáng, Cảm biến chuyển động FIBARO sẽ điều chỉnh ánh sáng theo nhu cầu của bạn. 
+                                        Tính năng giám sát chuyển động của cảm biến có thể đợi cho đến khi bé nhỏ của bạn ngủ say trước khi tắt đèn. 
+                                        Với FIBARO, bạn không cần phải lo lắng về việc nuôi con khi ngủ, hoặc lãng phí năng lượng không cần thiết.
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1054 350">
+                                        <style type="text/css">
+                                            #section18 .st0 {
+                                                fill: #ffffff;
+                                            }
+                                            #section18 .st1 {
+                                                font-family: "Open Sans", sans-serif;
+                                                font-weight: 300;
+                                            }
+                                            #section18 .st2 {
+                                                font-size: 64px;
+                                            }
+                                            #section18 .st3 {
+                                                font-size: 160px;
+                                            }
+                                        </style>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    class="st0"
+                                                    d="M172.8,210.6c-18.6,0-33.8-15.1-33.8-33.8s15.1-33.8,33.8-33.8s33.8,15.1,33.8,33.8S191.4,210.6,172.8,210.6z M172.8,149.5c-15.1,0-27.3,12.3-27.3,27.3s12.3,27.3,27.3,27.3c15.1,0,27.3-12.3,27.3-27.3S187.9,149.5,172.8,149.5z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M174.6,118.9c-1.6,0-2.8-1.3-2.8-2.8V89.2c0-1.6,1.3-2.8,2.8-2.8s2.8,1.3,2.8,2.8v26.8
+C177.4,117.6,176.2,118.9,174.6,118.9z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M174.6,264.8c-1.6,0-2.8-1.3-2.8-2.8v-26.9c0-1.6,1.3-2.8,2.8-2.8s2.8,1.3,2.8,2.8V262
+C177.4,263.6,176.2,264.8,174.6,264.8z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M144.8,126.8c-1,0-1.9-0.5-2.4-1.4L129,102.2c-0.8-1.3-0.3-3.1,1-3.8c1.3-0.8,3.1-0.3,3.8,1l13.4,23.2
+c0.8,1.3,0.3,3.1-1,3.8C145.8,126.7,145.3,126.8,144.8,126.8z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M217.8,253.2c-1,0-1.9-0.5-2.4-1.4l-13.5-23.3c-0.8-1.3-0.3-3.1,1-3.8c1.3-0.8,3.1-0.3,3.8,1l13.5,23.3
+c0.8,1.3,0.3,3.1-1,3.8C218.8,253.1,218.3,253.2,217.8,253.2z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M123,148.6c-0.5,0-1-0.1-1.4-0.4l-23.2-13.4c-1.3-0.8-1.8-2.5-1-3.8c0.8-1.3,2.5-1.8,3.8-1l23.2,13.4
+c1.3,0.8,1.8,2.5,1,3.8C125,148.1,124,148.6,123,148.6z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M249.4,221.6c-0.5,0-1-0.1-1.4-0.4l-23.3-13.5c-1.3-0.8-1.8-2.5-1-3.8c0.8-1.3,2.5-1.8,3.8-1l23.3,13.5
+c1.3,0.8,1.8,2.5,1,3.8C251.3,221.1,250.4,221.6,249.4,221.6z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M115.1,178.4H88.2c-1.6,0-2.8-1.3-2.8-2.8s1.3-2.8,2.8-2.8h26.8c1.6,0,2.8,1.3,2.8,2.8
+S116.6,178.4,115.1,178.4z"
+                                                />
+                                                <path class="st0" d="M261,178.4h-26.9c-1.6,0-2.8-1.3-2.8-2.8s1.3-2.8,2.8-2.8H261c1.6,0,2.8,1.3,2.8,2.8S262.6,178.4,261,178.4z" />
+                                                <path
+                                                    class="st0"
+                                                    d="M99.8,221.6c-1,0-1.9-0.5-2.4-1.4c-0.8-1.3-0.3-3.1,1-3.8l23.2-13.4c1.3-0.8,3.1-0.3,3.8,1
+c0.8,1.3,0.3,3.1-1,3.8l-23.2,13.4C100.8,221.5,100.3,221.6,99.8,221.6z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M226.1,148.7c-1,0-1.9-0.5-2.4-1.4c-0.8-1.3-0.3-3.1,1-3.8L248,130c1.3-0.8,3.1-0.3,3.8,1
+c0.8,1.3,0.3,3.1-1,3.8l-23.3,13.5C227.1,148.6,226.6,148.7,226.1,148.7z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M131.4,253.2c-0.5,0-1-0.1-1.4-0.4c-1.3-0.8-1.8-2.5-1-3.8l13.4-23.2c0.8-1.3,2.5-1.8,3.8-1
+c1.3,0.8,1.8,2.5,1,3.8l-13.4,23.2C133.3,252.7,132.4,253.2,131.4,253.2z"
+                                                />
+                                                <path
+                                                    class="st0"
+                                                    d="M204.3,126.9c-0.5,0-1-0.1-1.4-0.4c-1.3-0.8-1.8-2.5-1-3.8l13.5-23.3c0.8-1.3,2.5-1.8,3.8-1
+c1.3,0.8,1.8,2.5,1,3.8l-13.5,23.3C206.2,126.4,205.3,126.9,204.3,126.9z"
+                                                />
+                                            </g>
+                                            <path
+                                                class="st0"
+                                                d="M176.1,349.8c-96.5,0-175-78.5-175-175s78.5-175,175-175s175,78.5,175,175S272.6,349.8,176.1,349.8z M176.1,5.4C82.7,5.4,6.7,81.4,6.7,174.8c0,93.4,76,169.4,169.4,169.4c93.4,0,169.4-76,169.4-169.4C345.5,81.4,269.5,5.4,176.1,5.4
+z"
+                                            />
+                                            <text transform="matrix(1 0 0 1 455.332 111.5093)" class="st0 st1 st2">Cảm biến ánh sáng</text>
+                                            <text transform="matrix(1 0 0 1 450.3325 263.2598)" class="st0 st1 st3">128 LUX</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section19" class="section-interactive">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2">
+                                    <h1>Cảm biến chuyển đông FIBARO có thể điều chỉnh độ nhạy</h1>
+                                    <p>Có thể thay đổi cài đặt độ nhạy của Cảm biến chuyển động FIBARO để đáp ứng nhu cầu của bạn. 
+                                    Ví dụ, điều chỉnh nó để loại trừ việc phát hiện động vật nhỏ, như mèo hoặc chó của bạn.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-phoneS-8 offset-phoneS-2 col-tabletL-6 offset-tabletL-3 col-desktopS-4 offset-desktopS-4">
+                                    <div class="row">
+                                        <div class="sensitivity-icons col-phoneS-4">
+                                            <img class="sensitivity-human" src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/sensitivity-human.svg" alt="Cảm biến chuyển động FIBARO" />
+                                        </div>
+                                        <div class="sensitivity-icons col-phoneS-4">
+                                            <img class="sensitivity-large-dog" src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/sensitivity-large-dog.svg" alt="Cảm biến chuyển động FIBARO" />
+                                        </div>
+                                        <div class="sensitivity-icons col-phoneS-4">
+                                            <img class="sensitivity-small-dog" src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/sensitivity-small-dog.svg" alt="Cảm biến chuyển động FIBARO" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-phoneS-8 offset-phoneS-2"><input class="sensitivity-slider" type="text" name="sensitivity" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover bg-pos-bottom">
+                        <div class="sensitivity-sensor off"></div>
+                        <div class="sensitivity-sensor on"></div>
+                        <div class="disclaimer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-phoneS-12"><span>* đối với các thiết bị hoạt động với Apple HomeKit, chức năng này cần có sự hỗ trợ từ ứng dụng di động</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section20" class="section-big-image typo-light">
+                    <div class="content">
+                        <div class="container">
+                            <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-6 col-tabletP-7 offset-tabletL-1 col-desktopS-6 col-desktopL-5">
+                                <h2>Kiểm soát hoàn toàn thông qua ứng dụng di động</h2>
+                                <p>Ứng dụng di động của chúng tôi cho phép bạn kiểm soát và 
+                                kiểm tra trạng thái của cảm biến chuyển động ngay từ điện thoại của mình. 
+                                Đó là cách thuận tiện nhất và dễ dàng nhất để kiểm soát nhà của bạn mọi lúc mọi nơi.</p>
+                                <p>Có sẵn trên: <img src="platform-logos.png" alt="ios motion detector wifi" /></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover bg-pos-bottom"></div>
+                </section>
+                <section id="section21" class="section-video-player">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2">
+                                    <h2>Xem video</h2>
+                                    <a href="#" class="button button-play" data-video-id="q9IiEH3ml6w"> <span></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <video src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/2016-12-27_WWW_Motion_Sensor_HK.mp4" preload loop muted class="hidden-tabletL-down"></video>
+                </section>
+                <section id="section22" class="section-packshot-slider">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2">
+                                    <h2>Chọn nền tảng phù hợp với bạn</h2>
+                                    <p>
+                                        Chúng tôi đã tạo hai phiên bản Cảm biến chuyển động FIBARO - một cho hệ thống FIBARO 
+                                        với bộ điều khiển Z-Wave tương thích và một cho Apple HomeKit. 
+                                        Chọn một trong hai nền tảng với hệ thống của bạn. với một trong hai công nghệ.
+                                    </p>
+                                </div>
+                                <div class="col-phoneS-12 col-phoneL-10 offset-phoneL-1 col-tabletL-12 offset-tabletL-0 col-desktopM-10 offset-desktopM-1">
+                                    <div class="swiper-container">
+                                        <div class="buttons"><a href="#" class="swiper-button active">Apple HomeKit</a> <a href="#" class="swiper-button">Z-Wave</a></div>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide slide1">
+                                                <div class="row">
+                                                    <div class="col-1 col-phoneS-12 col-tabletL-6 offset-tabletL-1 col-desktopM-5">
+                                                        <ul>
+                                                            <li class="bluetooth"><span>Giao tiếp Bluetooth</span></li>
+                                                            <li class="battery"><span>Tuổi thọ pin 2 năm</span></li>
+                                                            <li class="scene"><span>Kích hoạt các kịch bản đơn giản</span></li>
+                                                            <li class="siri"><span>Điều khiển giọng nói thông qua Apple Siri®</span></li>
+                                                            <li class="ios9"><span>Hoạt động với các thiết bị Apple với iOS 9 trở lên.</span></li>
+                                                            <li class="sharing"><span>Chia sẻ chức năng với gia đình</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-2 col-phoneS-12 col-tabletL-5 col-desktopM-5"><img src="choose-homekit.png" alt="cảm biến chuyển động FIBARO" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide slide2">
+                                                <div class="row">
+                                                    <div class="col-1 col-phoneS-12 col-tabletL-6 offset-tabletL-1 col-desktopM-5">
+                                                        <ul>
+                                                            <li class="wireless"><span>Giao tiếp Bluetooth</span></li>
+                                                            <li class="battery"><span>Tuổi thọ pin 2 năm</span></li>
+                                                            <li class="scene"><span>Kích hoạt các kịch bản đơn giản</span></li>
+                                                            <li class="smart"><span>Thông báo đến thiết bị thông minh</span></li>
+                                                            <li class="mobile"><span>Tương thích với thiết bị Android và iOS</span></li>
+                                                            <li class="range"><span>Một loạt các hoạt động với nhau</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-2 col-phoneS-12 col-tabletL-5 col-desktopM-5"><img src="choose-zwave.png" alt="cảm biến chuyển động z-wave" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-product-footer typo-align-center">
+                    <div class="container-fluid top">
+                        <div class="row">
+                            <div class="col-phoneS-12">
+                                <div class="content where-to-buy">
+                                    <h2>Nơi để mua</h2>
+                                    <a href="https://fibarovn.com/contact/"> <span>MUA NGAY</span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container sub">
+                        <div class="row">
+                            <div class="col-phoneS-12 col-tabletP-10 offset-tabletP-1 col-desktopS-8 offset-desktopS-2 col-desktopL-6 offset-desktopL-3">
+                                <div class="row">
+                                    <div class="col-phoneS-6">
+                                        <div class="content manuals">
+                                            <a href="https://manuals.fibaro.com/"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/manuals.svg" alt="Download manuals" /> <span>Tải về hướng dẫn</span> </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-phoneS-6">
+                                        <div class="content kbase">
+                                            <a href="https://manuals.fibaro.com/knowledge-base/">
+                                                <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/knowledge-base.svg" alt="Knowledge base" /> <span>Kiến thức cơ bản</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row custom-footer">
+                        <div class="custom-footer-menu col-phoneS-10 offset-phoneS-1">
+                            <div class="row">
+                                <div class="four-columns">
+                                    <h3>Hỗ trợ</h3>
+                                    <ul>
+                                        <li><a href="https://manuals.fibaro.com/" target="_blank" rel="nofollow">Hướng dẫn sử dụng</a></li>
+                                        <li><a href="https://manuals.fibaro.com/knowledge-base/" target="" rel="nofollow">Kiến thức cơ bản</a></li>
+                                        <li><a href="https://forum.fibaro.com/" target="" rel="nofollow">Diễn đàn FIBARO</a></li>
+                                        <li><a href="https://manuals.fibaro.com/faq/" target="" rel="nofollow">FAQ</a></li>
+                                        <li><a href="https://www.fibaro.com/files/FIBARO_Guarantee.pdf" target="">Sự bảo đảm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Người dùng</h3>
+                                    <ul>
+                                        <li><a href="https://id.cloud.fibaro.com/" target="" rel="nofollow">FIBARO ID</a></li>
+                                        <li><a href="https://marketplace.fibaro.com/" target="" rel="nofollow">Thị trường</a></li>
+                                        <li><a href="https://itunes.apple.com/us/app/fibaro-for-iphone/id511085659?mt=8" target="" rel="nofollow">Ứng dụng FIBARO iOS</a></li>
+                                        <li><a href="https://play.google.com/store/apps/details?id=com.fibaro&amp;hl=en" target="" rel="nofollow">Ứng dụng FIBARO Android</a></li>
+                                        <li><a href="https://www.fibaro.com/us/homekit/" target="">FIBARO HomeKit</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Doanh nghiệp</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/dai-ly/" target="">Nhà phân phối</a></li>
+                                        <li><a href="https://compatibility.fibaro.com/" target="">Khả năng tương thích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/events/training-for-installers/" target="">Trình cài đặt</a></li>
+                                        <li><a href="https://www.fibaro.com/en/partnership/architect/" target="">Kiến trúc</a></li>
+                                        <!--<li><a href="https://www.fibaro.com/en/partnership/developer/" target="">Nhà phát triển</a></li>-->
+                                        <li><a href="https://www.fibaro.com/us/support/" target="">Trình tìm kiếm FIBARO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Thông tin</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/tin-tuc/" target="">Tin tức</a></li>
+                                        <li><a href="https://www.fibaro.com/us/about-us/" target="">Giá trị của chúng tôi</a></li>
+                                        <li><a href="https://www.fibaro.com/us/why-fibaro/" target="">Những lợi ích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/compatibility/" target="">Việc làm với FIBARO</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Nơi để mua</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="links lighter-font col-phoneS-12 col-desktopS-10 col-desktopM-8 offset-desktopM-1">
+                            <ul>
+                                <li><a href="https://www.fibaro.com/us/patents/">Bằng sáng chế</a></li>
+                                <li><a href="https://www.fibaro.com/us/privacy-policy/">Chính sách bảo mật</a></li>
+                                <li><a href="https://www.fibaro.com/us/reach/">REACH</a></li>
+                                <li><a href="https://id.cloud.fibaro.com/" rel="nofollow">FIBARO ID</a></li>
+                                <li><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="social col-phoneS-12 col-desktopS-2">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/FIBAROVN/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/facebook-d.svg" alt="Facebook" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/nhathongminh/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/instagram-d.svg" alt="Instagram" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/fibarovn001" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/twitter-d.svg" alt="Twitter" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/2936170/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/linkedin-d.svg" alt="LinkedIn" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCRTX4A0btp062eRjcqmoEdg" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/youtube-d.svg" alt="YouTube" /> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="copyright col-phoneS-12">
+                            <p>&copy; 2020. FIBAR GROUP S.A. All rights reserved.</p>
+                            <img src="smart-home-system.png" alt="FIBARO Viet Nam" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopM-12 offset-desktopM-0 col-desktopL-10 offset-desktopL-1">
+                            <p>
+                                Chúng tôi sử dụng cookie để cá nhân hóa nội dung, tùy chỉnh và phân tích quảng cáo và đảm bảo sử dụng an toàn trang web. Bằng cách nhấp hoặc điều hướng trang web này, bạn đồng ý với việc thu thập thông tin tại
+                                www.fibaro.com và hơn thế nữa bằng cách sử dụng cookie. Thêm thông tin có sẵn trong tài liệu: <a href="https://www.fibaro.com/us/privacy-policy/">CHÍNH SÁCH RIÊNG TƯ VÀ CHÍNH SÁCH COOKIES</a>
+                            </p>
+                            <a href="#" class="cookie-ok">OK</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="close"></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="vendor.1912191358.js"></script>
+        <script type="text/javascript" src="main.2110191037.js"></script>
+        <script type="text/javascript" src="main-motion-sensor.0712171329.js"></script>
+    </body>
+    <!-- Mirrored from www.fibaro.com/us/products/motion-sensor/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2020 08:11:02 GMT -->
+</html>

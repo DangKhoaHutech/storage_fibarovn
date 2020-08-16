@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!-- Mirrored from www.fibaro.com/us/smart-home-app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jul 2020 08:17:36 GMT -->
+    <!-- Added by HTTrack -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <!-- /Added by HTTrack -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Ứng dụng điều khiển nhà thông minh FIBARO • Ứng dụng Home Center | FIBARO</title>
+        <meta
+            name="description"
+            content="Tìm hiểu các tính năng xuất sắc hàng đầu của ứng dụng quản lý nhà thông minh. FIBARO Home Center kết hợp máy học và trí tuệ nhân tạo AI để cho bạn trải nghiệm quản lý ngôi nhà thông minh. UX và UI được thiết kế lại giống như bạn luôn muốn sử dụng ứng dụng. Tìm hiểu thêm."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FIBARO | FIBARO smart home app • Home Center App" />
+        <meta
+            property="og:description"
+            content="Tìm hiểu các tính năng xuất sắc hàng đầu của ứng dụng quản lý nhà thông minh. FIBARO Home Center kết hợp máy học và trí tuệ nhân tạo AI để cho bạn trải nghiệm quản lý ngôi nhà thông minh. UX và UI được thiết kế lại giống như bạn luôn muốn sử dụng ứng dụng. Tìm hiểu thêm."
+        />
+        <meta property="og:site_name" content="fibaro.com" />
+        <meta property="og:image" content="smart-home-app-dashboards.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@fibaro_global" />
+        <meta name="twitter:title" content="FIBARO | FIBARO smart home app • Home Center App" />
+        <meta
+            name="twitter:description"
+            content="Tìm hiểu các tính năng xuất sắc hàng đầu của ứng dụng quản lý nhà thông minh. FIBARO Home Center kết hợp máy học và trí tuệ nhân tạo AI để cho bạn trải nghiệm quản lý ngôi nhà thông minh. UX và UI được thiết kế lại giống như bạn luôn muốn sử dụng ứng dụng. Tìm hiểu thêm."
+        />
+        <meta name="twitter:image" content="smart-home-app-dashboards.jpg" />
+        <meta property="og:url" content="index.html" />
+        <meta name="author" content="Fibaro Design Department" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="application-name" content="FIBARO" />
+        <meta name="baidu-site-verification" content="qwr0BSJvep" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.html" />
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="favicon-128x128.png" sizes="128x128" />
+        <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" sizes="57x57" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-60x60.png" sizes="60x60" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-72x72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-76x76.png" sizes="76x76" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-114x114.png" sizes="114x114" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-120x120.png" sizes="120x120" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-144x144.png" sizes="144x144" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-152x152.png" sizes="152x152" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180" />
+        <link rel="stylesheet" id="fibaro-main-css" href="main.2906200724.css" type="text/css" media="all" />
+        <script>
+            !(function (window, document, undefined) {
+                function is(e, t) {
+                    return typeof e === t;
+                }
+                function testRunner() {
+                    var e, t, n, o, r, i, a;
+                    for (var s in tests)
+                        if (tests.hasOwnProperty(s)) {
+                            if (((e = []), (t = tests[s]), t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length)))
+                                for (n = 0; n < t.options.aliases.length; n++) e.push(t.options.aliases[n].toLowerCase());
+                            for (o = is(t.fn, "function") ? t.fn() : t.fn, r = 0; r < e.length; r++)
+                                (i = e[r]),
+                                    (a = i.split(".")),
+                                    1 === a.length ? (Modernizr[a[0]] = o) : (!Modernizr[a[0]] || Modernizr[a[0]] instanceof Boolean || (Modernizr[a[0]] = new Boolean(Modernizr[a[0]])), (Modernizr[a[0]][a[1]] = o)),
+                                    classes.push((o ? "" : "no-") + a.join("-"));
+                        }
+                }
+                function setClasses(e) {
+                    var t = docElement.className,
+                        n = Modernizr._config.classPrefix || "";
+                    if ((isSVG && (t = t.baseVal), Modernizr._config.enableJSClass)) {
+                        var o = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+                        t = t.replace(o, "$1" + n + "js$2");
+                    }
+                    Modernizr._config.enableClasses && ((t += " " + n + e.join(" " + n)), isSVG ? (docElement.className.baseVal = t) : (docElement.className = t));
+                }
+                function addTest(e, t) {
+                    if ("object" == typeof e) for (var n in e) hasOwnProp(e, n) && addTest(n, e[n]);
+                    else {
+                        e = e.toLowerCase();
+                        var o = e.split("."),
+                            r = Modernizr[o[0]];
+                        if ((2 == o.length && (r = r[o[1]]), "undefined" != typeof r)) return Modernizr;
+                        (t = "function" == typeof t ? t() : t),
+                            1 == o.length ? (Modernizr[o[0]] = t) : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), (Modernizr[o[0]][o[1]] = t)),
+                            setClasses([(t && 0 != t ? "" : "no-") + o.join("-")]),
+                            Modernizr._trigger(e, t);
+                    }
+                    return Modernizr;
+                }
+                function contains(e, t) {
+                    return !!~("" + e).indexOf(t);
+                }
+                function createElement() {
+                    return "function" != typeof document.createElement
+                        ? document.createElement(arguments[0])
+                        : isSVG
+                        ? document.createElementNS.call(document, "http://www.w3.org/2000/svg", arguments[0])
+                        : document.createElement.apply(document, arguments);
+                }
+                function getBody() {
+                    var e = document.body;
+                    return e || ((e = createElement(isSVG ? "svg" : "body")), (e.fake = !0)), e;
+                }
+                function injectElementWithStyles(e, t, n, o) {
+                    var r,
+                        i,
+                        a,
+                        s,
+                        d = "modernizr",
+                        l = createElement("div"),
+                        c = getBody();
+                    if (parseInt(n, 10)) for (; n--; ) (a = createElement("div")), (a.id = o ? o[n] : d + (n + 1)), l.appendChild(a);
+                    return (
+                        (r = createElement("style")),
+                        (r.type = "text/css"),
+                        (r.id = "s" + d),
+                        (c.fake ? c : l).appendChild(r),
+                        c.appendChild(l),
+                        r.styleSheet ? (r.styleSheet.cssText = e) : r.appendChild(document.createTextNode(e)),
+                        (l.id = d),
+                        c.fake && ((c.style.background = ""), (c.style.overflow = "hidden"), (s = docElement.style.overflow), (docElement.style.overflow = "hidden"), docElement.appendChild(c)),
+                        (i = t(l, e)),
+                        c.fake ? (c.parentNode.removeChild(c), (docElement.style.overflow = s), docElement.offsetHeight) : l.parentNode.removeChild(l),
+                        !!i
+                    );
+                }
+                function domToCSS(e) {
+                    return e
+                        .replace(/([A-Z])/g, function (e, t) {
+                            return "-" + t.toLowerCase();
+                        })
+                        .replace(/^ms-/, "-ms-");
+                }
+                function computedStyle(e, t, n) {
+                    var o;
+                    if ("getComputedStyle" in window) {
+                        o = getComputedStyle.call(window, e, t);
+                        var r = window.console;
+                        if (null !== o) n && (o = o.getPropertyValue(n));
+                        else if (r) {
+                            var i = r.error ? "error" : "log";
+                            r[i].call(r, "getComputedStyle returning null, its possible modernizr test results are inaccurate");
+                        }
+                    } else o = !t && e.currentStyle && e.currentStyle[n];
+                    return o;
+                }
+                function nativeTestProps(e, t) {
+                    var n = e.length;
+                    if ("CSS" in window && "supports" in window.CSS) {
+                        for (; n--; ) if (window.CSS.supports(domToCSS(e[n]), t)) return !0;
+                        return !1;
+                    }
+                    if ("CSSSupportsRule" in window) {
+                        for (var o = []; n--; ) o.push("(" + domToCSS(e[n]) + ":" + t + ")");
+                        return (
+                            (o = o.join(" or ")),
+                            injectElementWithStyles("@supports (" + o + ") { #modernizr { position: absolute; } }", function (e) {
+                                return "absolute" == computedStyle(e, null, "position");
+                            })
+                        );
+                    }
+                    return undefined;
+                }
+                function cssToDOM(e) {
+                    return e
+                        .replace(/([a-z])-([a-z])/g, function (e, t, n) {
+                            return t + n.toUpperCase();
+                        })
+                        .replace(/^-/, "");
+                }
+                function testProps(e, t, n, o) {
+                    function r() {
+                        a && (delete mStyle.style, delete mStyle.modElem);
+                    }
+                    if (((o = !is(o, "undefined") && o), !is(n, "undefined"))) {
+                        var i = nativeTestProps(e, n);
+                        if (!is(i, "undefined")) return i;
+                    }
+                    for (var a, s, d, l, c, u = ["modernizr", "tspan", "samp"]; !mStyle.style && u.length; ) (a = !0), (mStyle.modElem = createElement(u.shift())), (mStyle.style = mStyle.modElem.style);
+                    for (d = e.length, s = 0; s < d; s++)
+                        if (((l = e[s]), (c = mStyle.style[l]), contains(l, "-") && (l = cssToDOM(l)), mStyle.style[l] !== undefined)) {
+                            if (o || is(n, "undefined")) return r(), "pfx" != t || l;
+                            try {
+                                mStyle.style[l] = n;
+                            } catch (p) {}
+                            if (mStyle.style[l] != c) return r(), "pfx" != t || l;
+                        }
+                    return r(), !1;
+                }
+                function fnBind(e, t) {
+                    return function () {
+                        return e.apply(t, arguments);
+                    };
+                }
+                var tests = [],
+                    ModernizrProto = {
+                        _version: "3.5.0",
+                        _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 },
+                        _q: [],
+                        on: function (e, t) {
+                            var n = this;
+                            setTimeout(function () {
+                                t(n[e]);
+                            }, 0);
+                        },
+                        addTest: function (e, t, n) {
+                            tests.push({ name: e, fn: t, options: n });
+                        },
+                        addAsyncTest: function (e) {
+                            tests.push({ name: null, fn: e });
+                        },
+                    },
+                    Modernizr = function () {};
+                (Modernizr.prototype = ModernizrProto), (Modernizr = new Modernizr());
+                var classes = [],
+                    docElement = document.documentElement,
+                    isSVG = "svg" === docElement.nodeName.toLowerCase(),
+                    hasOwnProp;
+                !(function () {
+                    var e = {}.hasOwnProperty;
+                    hasOwnProp =
+                        is(e, "undefined") || is(e.call, "undefined")
+                            ? function (e, t) {
+                                  return t in e && is(e.constructor.prototype[t], "undefined");
+                              }
+                            : function (t, n) {
+                                  return e.call(t, n);
+                              };
+                })(),
+                    (ModernizrProto._l = {}),
+                    (ModernizrProto.on = function (e, t) {
+                        this._l[e] || (this._l[e] = []),
+                            this._l[e].push(t),
+                            Modernizr.hasOwnProperty(e) &&
+                                setTimeout(function () {
+                                    Modernizr._trigger(e, Modernizr[e]);
+                                }, 0);
+                    }),
+                    (ModernizrProto._trigger = function (e, t) {
+                        if (this._l[e]) {
+                            var n = this._l[e];
+                            setTimeout(function () {
+                                var e, o;
+                                for (e = 0; e < n.length; e++) (o = n[e])(t);
+                            }, 0),
+                                delete this._l[e];
+                        }
+                    }),
+                    Modernizr._q.push(function () {
+                        ModernizrProto.addTest = addTest;
+                    });
+                var modElem = { elem: createElement("modernizr") };
+                Modernizr._q.push(function () {
+                    delete modElem.elem;
+                });
+                var mStyle = { style: modElem.elem.style };
+                Modernizr._q.unshift(function () {
+                    delete mStyle.style;
+                });
+                var testProp = (ModernizrProto.testProp = function (e, t, n) {
+                        return testProps([e], undefined, t, n);
+                    }),
+                    mq = (function () {
+                        var e = window.matchMedia || window.msMatchMedia;
+                        return e
+                            ? function (t) {
+                                  var n = e(t);
+                                  return (n && n.matches) || !1;
+                              }
+                            : function (e) {
+                                  var t = !1;
+                                  return (
+                                      injectElementWithStyles("@media " + e + " { #modernizr { position: absolute; } }", function (e) {
+                                          t = "absolute" == (window.getComputedStyle ? window.getComputedStyle(e, null) : e.currentStyle).position;
+                                      }),
+                                      t
+                                  );
+                              };
+                    })();
+                (ModernizrProto.mq = mq),
+                    Modernizr.addTest("video", function () {
+                        var e = createElement("video"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/, "")),
+                                    (t.h264 = e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/, "")),
+                                    (t.webm = e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/, "")),
+                                    (t.vp9 = e.canPlayType('video/webm; codecs="vp9"').replace(/^no$/, "")),
+                                    (t.hls = e.canPlayType('application/x-mpegURL; codecs="avc1.42E01E"').replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("dataset", function () {
+                        var e = createElement("div");
+                        return e.setAttribute("data-a-b", "c"), !(!e.dataset || "c" !== e.dataset.aB);
+                    }),
+                    Modernizr.addAsyncTest(function () {
+                        function e(e, t, n) {
+                            function o(t) {
+                                var o = !(!t || "load" !== t.type) && 1 == r.width,
+                                    i = "webp" === e;
+                                addTest(e, i && o ? new Boolean(o) : o), n && n(t);
+                            }
+                            var r = new Image();
+                            (r.onerror = o), (r.onload = o), (r.src = t);
+                        }
+                        var t = [
+                                { uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=", name: "webp" },
+                                { uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==", name: "webp.alpha" },
+                                { uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA", name: "webp.animation" },
+                                { uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=", name: "webp.lossless" },
+                            ],
+                            n = t.shift();
+                        e(n.name, n.uri, function (n) {
+                            if (n && "load" === n.type) for (var o = 0; o < t.length; o++) e(t[o].name, t[o].uri);
+                        });
+                    }),
+                    Modernizr.addTest("svg", !!document.createElementNS && !!document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect),
+                    Modernizr.addTest("texttrackapi", "function" == typeof createElement("video").addTextTrack),
+                    Modernizr.addTest("track", "kind" in createElement("track")),
+                    Modernizr.addTest("audio", function () {
+                        var e = createElement("audio"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/, "")),
+                                    (t.mp3 = e.canPlayType('audio/mpeg; codecs="mp3"').replace(/^no$/, "")),
+                                    (t.opus = e.canPlayType('audio/ogg; codecs="opus"') || e.canPlayType('audio/webm; codecs="opus"').replace(/^no$/, "")),
+                                    (t.wav = e.canPlayType('audio/wav; codecs="1"').replace(/^no$/, "")),
+                                    (t.m4a = (e.canPlayType("audio/x-m4a;") || e.canPlayType("audio/aac;")).replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("notification", function () {
+                        if (!window.Notification || !window.Notification.requestPermission) return !1;
+                        if ("granted" === window.Notification.permission) return !0;
+                        try {
+                            new window.Notification("");
+                        } catch (e) {
+                            if ("TypeError" === e.name) return !1;
+                        }
+                        return !0;
+                    }),
+                    Modernizr.addTest("time", "valueAsDate" in createElement("time")),
+                    Modernizr.addTest("arrow", function () {
+                        try {
+                            eval("()=>{}");
+                        } catch (e) {
+                            return !1;
+                        }
+                        return !0;
+                    });
+                var inputElem = createElement("input"),
+                    inputattrs = "autocomplete autofocus list placeholder max min multiple pattern required step".split(" "),
+                    attrs = {};
+                (Modernizr.input = (function (e) {
+                    for (var t = 0, n = e.length; t < n; t++) attrs[e[t]] = !!(e[t] in inputElem);
+                    return attrs.list && (attrs.list = !(!createElement("datalist") || !window.HTMLDataListElement)), attrs;
+                })(inputattrs)),
+                    Modernizr.addTest("hidden", "hidden" in createElement("a")),
+                    testRunner(),
+                    setClasses(classes),
+                    delete ModernizrProto.addTest,
+                    delete ModernizrProto.addAsyncTest;
+                for (var i = 0; i < Modernizr._q.length; i++) Modernizr._q[i]();
+                window.Modernizr = Modernizr;
+            })(window, document);
+        </script>
+        <link rel="stylesheet" id="timed-content-css-css" href="timed-contenta4b6.css?ver=2.61" type="text/css" media="all" />
+        <script type="text/javascript" src="jqueryb8ff.js?ver=1.12.4"></script>
+        <script type="text/javascript" src="jquery-migrate.min330a.js?ver=1.4.1"></script>
+        <script type="text/javascript" src="timed-contenta4b6.js?ver=2.61"></script>
+        <link rel="canonical" href="https://www.fibaro.com/en/smart-home-app/" />
+        <link rel="alternate" href="https://www.fibaro.com/en/smart-home-app/" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/pl/smart-home-app/" hreflang="pl-pl" />
+        <link rel="alternate" href="https://www.fibaro.com/cz/smart-home-app/" hreflang="cs-cz" />
+        <link rel="alternate" href="https://www.fibaro.com/ro/smart-home-app/" hreflang="ro-ro" />
+        <link rel="alternate" href="https://www.fibaro.com/de/smart-home-app/" hreflang="de-de" />
+        <link rel="alternate" href="https://www.fibaro.com/fr/smart-home-app/" hreflang="fr-fr" />
+        <link rel="alternate" href="https://www.fibaro.com/nl/smart-home-app/" hreflang="nl-nl" />
+        <link rel="alternate" href="https://www.fibaro.com/hu/smart-home-app/" hreflang="hu-hu" />
+        <link rel="alternate" href="https://www.fibaro.com/pt/smart-home-app/" hreflang="pt-br" />
+        <link rel="alternate" href="https://www.fibaro.com/se/smart-home-app/" hreflang="sv-se" />
+        <link rel="alternate" href="https://www.fibaro.com/cl/smart-home-app/" hreflang="es-es" />
+        <link rel="alternate" href="https://www.fibaro.com/gr/smart-home-app/" hreflang="el" />
+        <link rel="alternate" href="https://www.fibaro.com/no/smart-home-app/" hreflang="nb-no" />
+        <link rel="alternate" href="index.html" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/it/smart-home-app/" hreflang="it-it" />
+        <link rel="alternate" href="https://www.fibaro.com/cn/smart-home-app/" hreflang="zh-cn" />
+        <link rel="alternate" href="https://www.fibaro.com/en/smart-home-app/" hreflang="x-default" />
+        <style type="text/css">
+            #header .bg {
+                background-image: url("app_header_mobile.jpg");
+            }
+            #themes .bg-first {
+                background-image: url("day_mobile.jpg");
+            }
+            #themes .bg-second {
+                background-image: url("almost_night_mobile.jpg");
+            }
+            #themes .bg-third {
+                background-image: url("night_mobile.jpg");
+            }
+            #parallax .bg {
+                background-image: url("parallax_mobile.jpg");
+            }
+            #download .bg.mobile-bg {
+                background-image: url("download_mobile.jpg");
+            }
+            #access .home {
+                background-image: url("access_home_mobile.jpg");
+            }
+            #access .work {
+                background-image: url("access_work_mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #access .home {
+                    background-image: url("access_home.jpg");
+                }
+                #access .work {
+                    background-image: url("access_work.jpg");
+                }
+            }
+            @media screen and (min-width: 992px) {
+                #themes .bg-first {
+                    background-image: url("day.jpg");
+                }
+                #themes .bg-second {
+                    background-image: url("almost_night.jpg");
+                }
+                #themes .bg-third {
+                    background-image: url("night.jpg");
+                }
+                #parallax .bg {
+                    background-image: url("parallax.jpg");
+                }
+                #download .bg {
+                    background-image: url("circlebg.png");
+                }
+            }
+            @media screen and (min-width: 1200px) {
+            }
+            @keyframes iconHomeAnimation {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.05);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+            @keyframes rooms_bottom-animation {
+                0% {
+                    opacity: 0;
+                }
+                55.9441% {
+                    opacity: 0;
+                }
+                62.7972% {
+                    opacity: 1;
+                }
+                62.9371% {
+                    opacity: 0.59;
+                }
+                100% {
+                    opacity: 0.59;
+                }
+            }
+            @keyframes rooms_bottom_1-animation {
+                0% {
+                    left: 676.212px;
+                    opacity: 0.29;
+                }
+                62.9371% {
+                    left: 676.212px;
+                }
+                90.9091% {
+                    left: 114.61px;
+                    opacity: 0.29;
+                }
+                98.042% {
+                    opacity: 0;
+                }
+                100% {
+                    left: 114.61px;
+                    opacity: 0;
+                }
+            }
+            @keyframes devices_bottom-animation {
+                0% {
+                    left: 505.5px;
+                }
+                6.99301% {
+                    left: 505.5px;
+                }
+                27.972% {
+                    left: 505.06px;
+                }
+                55.9441% {
+                    left: 505.5px;
+                }
+                100% {
+                    left: 505.5px;
+                }
+            }
+            @keyframes bitmap-animation {
+                0% {
+                    left: 155.67px;
+                    opacity: 0;
+                }
+                27.972% {
+                    opacity: 0;
+                }
+                34.965% {
+                    left: 155.67px;
+                }
+                55.6643% {
+                    left: 855.75px;
+                }
+                55.8042% {
+                    left: 855.47px;
+                }
+                55.9441% {
+                    left: 853.4px;
+                    opacity: 1;
+                }
+                62.9371% {
+                    left: 854.74px;
+                    opacity: 0;
+                }
+                100% {
+                    left: 854.74px;
+                    opacity: 0;
+                }
+            }
+            @keyframes scenes_bottom-animation {
+                0% {
+                    opacity: 0.59;
+                }
+                6.99301% {
+                    opacity: 0.59;
+                }
+                27.972% {
+                    opacity: 0.25;
+                }
+                100% {
+                    opacity: 0.25;
+                }
+            }
+            @keyframes scenes_bottom_1-animation {
+                0% {
+                    left: 725.395px;
+                    opacity: 0.25;
+                }
+                6.99301% {
+                    left: 725.395px;
+                    opacity: 0.25;
+                }
+                27.972% {
+                    left: 159.39px;
+                    opacity: 0.5;
+                }
+                34.965% {
+                    opacity: 0;
+                }
+                100% {
+                    left: 159.39px;
+                    opacity: 0;
+                }
+            }
+            @keyframes rooms_1-animation {
+                0% {
+                    left: 446.212px;
+                }
+                62.9371% {
+                    left: 446.212px;
+                }
+                90.9091% {
+                    left: -116.19px;
+                }
+                100% {
+                    left: -116.19px;
+                }
+            }
+            @keyframes scenes_1-animation {
+                0% {
+                    left: 448.99px;
+                    top: 60.3px;
+                }
+                6.99301% {
+                    left: 448.99px;
+                    top: 60.3px;
+                }
+                27.972% {
+                    left: -118.61px;
+                }
+                90.9091% {
+                    top: 59.5px;
+                }
+                100% {
+                    left: -118.61px;
+                    top: 59.5px;
+                }
+            }
+            @keyframes bitmap_1-animation {
+                0% {
+                    left: -180.929px;
+                }
+                34.965% {
+                    left: -180.929px;
+                }
+                55.9441% {
+                    left: 516.67px;
+                }
+                100% {
+                    left: 516.67px;
+                }
+            }
+            @keyframes devices_1-animation {
+                0% {
+                    left: 652.5px;
+                }
+                34.965% {
+                    left: 652.5px;
+                }
+                55.9441% {
+                    left: 583px;
+                }
+                100% {
+                    left: 583px;
+                }
+            }
+            @keyframes scenes_2-animation {
+                0% {
+                    left: 584px;
+                }
+                6.99301% {
+                    left: 584px;
+                }
+                27.972% {
+                    left: 651px;
+                }
+                100% {
+                    left: 651px;
+                }
+            }
+            @keyframes rooms_2-animation {
+                0% {
+                    left: 584px;
+                }
+                62.9371% {
+                    left: 584px;
+                }
+                90.9091% {
+                    left: 649.71px;
+                }
+                100% {
+                    left: 649.71px;
+                }
+            }
+            @keyframes codeAnimation {
+                0% {
+                    transform: translateY(0px);
+                }
+                100% {
+                    transform: translateY(-4500px);
+                }
+            }
+        </style>
+        <script>
+            dataLayer = [];
+        </script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "gtm5445.html?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MF67KLD");
+        </script>
+    </head>
+    <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF67KLD" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <div class="site-wrapper single-page single-page application">
+            <header id="fibaro_main_header">
+                <div class="container">
+                    <div class="row">
+                        <div class="brand col-phoneS-10 offset-phoneS-1 col-desktopS-2 offset-desktopS-0 col-desktopL-3">
+                            <a href="../vi/"><img src="https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/img/common/FIBARO_logo.svg" alt="FIBARO Viet Nam" /></a>
+                            <button id="menu-toggle" class="hidden-desktopS-up"><span></span></button>
+                        </div>
+                        <nav class="col-phoneS-10 offset-phoneS-1 col-desktopS-10 offset-desktopS-0 col-desktopL-9">
+                            <ul>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2958"><a href="../vi/">Trang chủ FIBARO</a></li>
+                                <li class="menu-top-item products-redesign menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-17 menu-item-has-children">
+                                    <a href="#">Các sản phẩm</a>
+                                    <ul class="menu-sub menu-sub-products">
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2878 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Chiếu sáng</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-lighting">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2301">
+                                                    <a href="san-pham/dieu-chinh-do-sang-dimmer-2/"> <img src="nav-dimmer.jpg" alt="Chiết áp Dimmer 2 FIBARO" /> <span>Chiết áp Dimmer 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2310">
+                                                    <a href="san-pham/role-dong-ngat-doi-double-switch/"> <img src="nav-relay.jpg" alt="Switches" /> <span>Role thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2308">
+                                                    <a href="san-pham/dieu-khien-mau-sac-RGBW-controller-2/"> <img src="nav-rgbw-1.jpg" alt="RGBW Controller" /> <span>Bộ điều khiển màu sắc RGBW</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2375">
+                                                    <a href="san-pham/o-cam-thong-minh-wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2891">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2879 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Cổng và rèm cửa</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gates-and-blinds">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2777">
+                                                    <a href="san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Smart Implant - Bo tich hop dieu khien thong minh" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2890">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2880 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Điều khiển nhiêt, sưởi ấm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-heating">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2884">
+                                                    <a href="san-pham/tat-ca-san-pham/o-cam-thong-minh-wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2885">
+                                                    <a href="san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2889">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2881 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">An toàn và bảo mật</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-safety-and-security">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2307">
+                                                    <a href="san-pham/cam-bien-chuyen-dong-sensor-motion/"> <img src="nav-motion.jpg" alt="Motion Sensor" /> <span>Cảm biến chuyển động</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2302">
+                                                    <a href="san-pham/cam-bien-cua-door-sensor/"> <img src="nav-dws.jpg" alt="Door/Window Sensor" /> <span>Cảm biến mở cửa</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2303">
+                                                    <a href="san-pham/cam-bien-tran-nuoc-flood-sensor/"> <img src="nav-flood.jpg" alt="Flood Sensor" /> <span>Cảm biến ngập nước</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2886">
+                                                    <a href="san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Bộ tích hợp điều khiển thông minh Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2888">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2882 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Thiết bị kích hoạt</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-triggering">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2306">
+                                                    <a href="san-pham/remote-cam-tay-KeyFob/"> <img src="nav-keyfob.jpg" alt="KeyFob" /> <span>Remote KeyFob</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2311">
+                                                    <a href="san-pham/nut-nhan-the-button/"> <img src="nav-button.jpg" alt="The Button" /> <span>Nút nhấn</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2309">
+                                                    <a href="san-pham/bang-dieu-khien-swipe/"> <img src="nav-swipe.jpg" alt="Swipe" /> <span>Bảng điều khiển Swipe</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2883">
+                                                    <a href="https://www.fibaro.com/us/smart-home-app/"> <img src="nav_app.jpg" alt="Application FIBARO Home Center" /> <span>Ứng dụng FIBARO Home Center</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2887">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-675 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Bộ điều khiển trung tâm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gateways">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2304">
+                                                    <a href="san-pham/dieu-khien-trung-tam-home-center-2/"> <img src="nav-hc2.jpg" alt="Home Center 2" /> <span>Home Center 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2305">
+                                                    <a href="san-pham/home-center-lite/"> <img src="nav-hcl.jpg" alt="Home Center Lite" /> <span>Home Center Lite</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2892">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2664 menu-item-has-children">
+                                    <a href="#">Hoạt động với</a>
+                                    <ul class="menu-sub menu-sub-workswith">
+                                        <li
+                                            onclick="location.href='https://www.fibaro.com/us/compatibility/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2296"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-fibaro.png" class="page-icon" /> <span class="menu-description">Nhận biết các khả năng của một hệ thống nhà thông minh hoàn chỉnh.</span>
+                                            <a href="https://www.fibaro.com/us/compatibility/" class="menu-sub-toggle">Hệ thống nhà thông minh FIBARO</a> <a href="https://www.fibaro.com/us/compatibility/" class="menu-link">Tìm hiểu hệ thống</a>
+                                        </li>
+                                        <li
+                                            onclick="location.href='https://www.fibaro.com/us/smartthings/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2801"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-smartthings.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với SmartThings.</span>
+                                            <a href="https://www.fibaro.com/us/smartthings/" class="menu-sub-toggle">SmartThings</a> <a href="https://www.fibaro.com/us/smartthings/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                        <li onclick="location.href='https://www.fibaro.com/us/homekit/'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2665" data-level="1">
+                                            <img src="nav-homekit.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với Apple HomeKit.</span>
+                                            <a href="https://www.fibaro.com/us/homekit/" class="menu-sub-toggle">Apple HomeKit</a> <a href="https://www.fibaro.com/us/homekit/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2689"><a href="https://www.fibaro.com/us/why-fibaro/">Những lợi ích</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2931"><a href="https://fibarovn.com/contact/">Nơi để mua</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2298"><a href="https://fibarovn.com/contact/">Hỗ trợ</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2297"><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                            <div id="language-selector">
+                                <a href="index.html" id="lang-toggle">Tiếng Việt</a>
+                                <div id="lang-choices">
+                                    <a href="https://www.fibaro.com/cn/products/smart-implant/" title="中文">中文</a> <a href="https://www.fibaro.com/cz/products/smart-implant/" title="Čeština">Čeština</a>
+                                    <a href="https://www.fibaro.com/de/products/smart-implant/" title="Deutsch">Deutsch</a> <a href="https://www.fibaro.com/en/products/smart-implant/" title="English">English (International)</a>
+                                    <a href="index.html" title="English">Tiếng Việt</a> <a href="https://www.fibaro.com/cl/products/smart-implant/" title="Español">Español</a>
+                                    <a href="https://www.fibaro.com/fr/products/smart-implant/" title="Français">Français</a> <a href="https://www.fibaro.com/gr/products/smart-implant/" title="Ελληνικά">Ελληνικά</a>
+                                    <a href="https://www.fibaro.com/it/products/smart-implant/" title="Italiano">Italiano</a> <a href="https://www.fibaro.com/lt/products/smart-implant/" title="Lietuvių">Lietuvių</a>
+                                    <a href="https://www.fibaro.com/hu/products/smart-implant/" title="Magyar">Magyar</a> <a href="https://www.fibaro.com/nl/products/smart-implant/" title="Nederlands">Nederlands</a>
+                                    <a href="https://www.fibaro.com/ru/products/smart-implant/" title="Русский">Русский</a> <a href="https://www.fibaro.com/no/products/smart-implant/" title="Norsk bokmål">Norsk bokmål</a>
+                                    <a href="https://www.fibaro.com/ar/products/smart-implant/" title="العربية">العربية</a> <a href="https://www.fibaro.com/pl/products/smart-implant/" title="Polski">Polski</a>
+                                    <a href="https://www.fibaro.com/pt/products/smart-implant/" title="Português">Português</a> <a href="https://www.fibaro.com/ro/products/smart-implant/" title="Română">Română</a>
+                                    <a href="https://www.fibaro.com/sk/products/smart-implant/" title="Slovenčina">Slovenčina</a> <a href="https://www.fibaro.com/se/products/smart-implant/" title="Svenska">Svenska</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section id="header">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-6 offset-tabletP-3 col-tabletL-5 offset-tabletL-1 col-desktopS-4 offset-desktopS-1 offset-desktopM-0">
+                                    <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/CES_logo.svg" class="ces" alt="CES smart home app" />
+                                    <h1>Ứng dụng nhà thông minh mang tính cách mạng</h1>
+                                    <p>Ứng dụng FIBARO Home Center mới mang lại sự thoải mái và hiệu quả của việc quản lý nhà thông minh lên mức cao hơn.</p>
+                                    <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/logo_apple.svg" class="apple" alt="Apple smart home solutions" />
+                                    <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/logo_android.svg" class="android" alt="Android smart home application" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover">
+                        <div class="video hidden-tabletP-down">
+                            <img src="top_animation.jpg" alt="smart home APP" class="header-alt-image m-trans" />
+                            <video src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/header_animation.mp4" preload="auto" muted playsinline style="height: auto; width: 100%;"></video>
+                            <img src="header_reveal.png" class="reveal" alt="smart home app" />
+                        </div>
+                    </div>
+                </section>
+                <section id="dashboard">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-6 offset-tabletP-3 col-desktopS-3 offset-desktopS-1 push-desktopS-7 offset-desktopL-0">
+                                    <h2>Trái tim của ngôi nhà thông minh</h2>
+                                    <p>
+                                        Ứng dụng trên thiết bị di động với giao diện trực quan được thiết kế để quản lý ngôi nhà thông minh của bạn một cách hiệu quả ngay khi bạn bật ứng dụng. Xem tất cả thông tin cần thiết của toàn bộ ngôi nhà dù bạn ở đâu.
+                                    </p>
+                                    <div class="haptic col-tabletP-10 offset-tabletP-1 col-tabletL-8 offset-tabletL-2 col-desktopS-12 offset-desktopS-0">
+                                        <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/haptic_icon.svg" alt="Haptic khiếm thị" /> <span>Công nghệ Haptic giúp cuộc sống dễ dàng hơn cho những người khiếm thị.</span>
+                                    </div>
+                                </div>
+                                <div class="col-phoneS-12 col-desktopS-7 pull-desktopS-4 height-fix">
+                                    <div class="animation-wrapper">
+                                        <div class="flow-artboard">
+                                            <img id="circles" class="flow-layer" src="dashboard_circles.png" alt="ứng dụng nhà thông FIBARO" />
+                                            <svg class="flow-layer">
+                                                <defs>
+                                                    <clipPath id="rooms_bottom-mask"><path vector-effect="non-scaling-stroke" d="M0,0c0,0,794,0,794,0 0,0,0,120,0,120 0,0,-794,0,-794,0 0,0,0,-120,0,-120zM0,0"></path></clipPath>
+                                                </defs>
+                                            </svg>
+                                            <div id="rooms_bottom" class="flow-layer">
+                                                <div id="mask_1" class="flow-layer">
+                                                    <svg id="mask_1-svg" preserveAspectRatio="none" viewBox="0 0 794 120">
+                                                        <title>Mask</title>
+                                                        <defs>
+                                                            <linearGradient id="mask_1-fill">
+                                                                <stop offset="0%" stop-color="#000000" />
+                                                                <stop offset="100%" stop-color="#00000000" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <path vector-effect="non-scaling-stroke" d="M0,0c0,0,794,0,794,0 0,0,0,120,0,120 0,0,-794,0,-794,0 0,0,0,-120,0,-120zM0,0"></path>
+                                                    </svg>
+                                                </div>
+                                                <img id="rooms_bottom_1" class="flow-layer" src="dashboard_rooms_bottom.png" alt="desigenrs smart home app" />
+                                            </div>
+                                            <svg class="flow-layer">
+                                                <defs>
+                                                    <clipPath id="devices_bottom-mask"><path vector-effect="non-scaling-stroke" d="M0,0c0,0,1011,0,1011,0 0,0,0,120,0,120 0,0,-1011,0,-1011,0 0,0,0,-120,0,-120zM0,0"></path></clipPath>
+                                                </defs>
+                                            </svg>
+                                            <div id="devices_bottom" class="flow-layer">
+                                                <div id="mask_2" class="flow-layer">
+                                                    <svg id="mask_2-svg" preserveAspectRatio="none" viewBox="0 0 1011 120">
+                                                        <title>Mask</title>
+                                                        <path vector-effect="non-scaling-stroke" d="M0,0c0,0,1011,0,1011,0 0,0,0,120,0,120 0,0,-1011,0,-1011,0 0,0,0,-120,0,-120zM0,0"></path>
+                                                    </svg>
+                                                </div>
+                                                <img id="bitmap" class="flow-layer" src="dashboard_bitmap.png" alt="Bitmap" />
+                                            </div>
+                                            <svg class="flow-layer">
+                                                <defs>
+                                                    <clipPath id="scenes_bottom-mask">
+                                                        <path
+                                                            vector-effect="non-scaling-stroke"
+                                                            d="M13.395,0c0,0,864.349,0,864.349,0 0,0,8.128,27.563,10.314,53 2.186,25.437,0,67,0,67 0,0,-788.247,-1,-788.247,-1 0,0,-96.687,0,-96.687,0 0,0,-4.685,-26,-2.342,-56 2.343,-30.004,12.614,-63,12.614,-63zM13.395,0"
+                                                        ></path>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <div id="scenes_bottom" class="flow-layer">
+                                                <div id="mask_3" class="flow-layer">
+                                                    <svg id="mask_3-svg" preserveAspectRatio="none" viewBox="0 0 889.151 120">
+                                                        <title>Mask</title>
+                                                        <path
+                                                            vector-effect="non-scaling-stroke"
+                                                            d="M13.395,0c0,0,864.349,0,864.349,0 0,0,8.128,27.563,10.314,53 2.186,25.437,0,67,0,67 0,0,-788.247,-1,-788.247,-1 0,0,-96.687,0,-96.687,0 0,0,-4.685,-26,-2.342,-56 2.343,-30.004,12.614,-63,12.614,-63zM13.395,0"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                <img id="scenes_bottom_1" class="flow-layer" src="dashboard_scenes_bottom.png" alt="Scenes bottom" />
+                                            </div>
+                                            <div id="extra_bonus_motrpenis" class="flow-layer">
+                                                <div id="combined_shape" class="flow-layer">
+                                                    <svg id="combined_shape-svg" preserveAspectRatio="none" viewBox="0 0 1011 1024">
+                                                        <title>Thiết kế hoàn hảo</title>
+                                                        <defs>
+                                                            <linearGradient id="combined_shape-fill">
+                                                                <stop offset="0%" stop-color="#FFFFFF00" />
+                                                                <stop offset="14.8263%" stop-color="#FFFFFF" />
+                                                                <stop offset="81.9143%" stop-color="#FFFFFF" />
+                                                                <stop offset="100%" stop-color="#FFFFFF00" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <path
+                                                            vector-effect="non-scaling-stroke"
+                                                            d="M0,0c0,0,0,1024,0,1024 0,0,1011,0,1011,0 0,0,0,-1024,0,-1024 0,0,-1011,0,-1011,0zM501,917c-238.047,0,-431,-184.248,-431,-411.5 0,-227.252,192.953,-411.5,431,-411.5 238.047,0,431,184.248,431,411.5 0,227.252,-192.953,411.5,-431,411.5zM501,917"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                <img id="phone" class="flow-layer" src="dashboard_phone2.png" alt="phone smart home app" />
+                                            </div>
+                                            <svg class="flow-layer">
+                                                <defs>
+                                                    <clipPath id="rooms-mask"><path vector-effect="non-scaling-stroke" d="M0,0c0,0,333,0,333,0 0,0,0,71,0,71 0,0,-333,0,-333,0 0,0,0,-71,0,-71zM0,0"></path></clipPath>
+                                                </defs>
+                                            </svg>
+                                            <div id="rooms" class="flow-layer">
+                                                <div id="mask_4" class="flow-layer">
+                                                    <svg id="mask_4-svg" preserveAspectRatio="none" viewBox="0 0 333 71">
+                                                        <title>Mask</title>
+                                                        <path vector-effect="non-scaling-stroke" d="M0,0c0,0,333,0,333,0 0,0,0,71,0,71 0,0,-333,0,-333,0 0,0,0,-71,0,-71zM0,0"></path>
+                                                    </svg>
+                                                </div>
+                                                <img id="rooms_1" class="flow-layer" src="dashboard_rooms_bottom.png" alt="Rooms bottom" />
+                                            </div>
+                                            <svg class="flow-layer">
+                                                <defs>
+                                                    <clipPath id="scenes-mask"><path vector-effect="non-scaling-stroke" d="M0,0c0,0,333,0,333,0 0,0,0,120,0,120 0,0,-333,0,-333,0 0,0,0,-120,0,-120zM0,0"></path></clipPath>
+                                                </defs>
+                                            </svg>
+                                            <div id="scenes" class="flow-layer">
+                                                <div id="mask_5" class="flow-layer">
+                                                    <svg id="mask_5-svg" preserveAspectRatio="none" viewBox="0 0 333 120">
+                                                        <title>Mask</title>
+                                                        <path vector-effect="non-scaling-stroke" d="M0,0c0,0,333,0,333,0 0,0,0,120,0,120 0,0,-333,0,-333,0 0,0,0,-120,0,-120zM0,0"></path>
+                                                    </svg>
+                                                </div>
+                                                <img id="scenes_1" class="flow-layer" src="dashboard_scenes_bottom.png" alt="smart home app" />
+                                            </div>
+                                            <svg class="flow-layer">
+                                                <defs>
+                                                    <clipPath id="devices-mask"><path vector-effect="non-scaling-stroke" d="M0,0c0,0,333,0,333,0 0,0,0,151,0,151 0,0,-333,0,-333,0 0,0,0,-151,0,-151zM0,0"></path></clipPath>
+                                                </defs>
+                                            </svg>
+                                            <div id="devices" class="flow-layer">
+                                                <div id="mask_6" class="flow-layer">
+                                                    <svg id="mask_6-svg" preserveAspectRatio="none" viewBox="0 0 333 151">
+                                                        <title>mask</title>
+                                                        <path vector-effect="non-scaling-stroke" d="M0,0c0,0,333,0,333,0 0,0,0,151,0,151 0,0,-333,0,-333,0 0,0,0,-151,0,-151zM0,0"></path>
+                                                    </svg>
+                                                </div>
+                                                <img id="bitmap_1" class="flow-layer" src="dashboard_bitmap.png" alt="app for smart home" />
+                                            </div>
+                                            <div id="devices_1" class="flow-layer">
+                                                <svg id="devices_1-svg" preserveAspectRatio="none" viewBox="0 0 22 2">
+                                                    <title>devices</title>
+                                                    <path
+                                                        vector-effect="non-scaling-stroke"
+                                                        d="M0,1c0,-0.552,0.456,-1,1.019,-1 0,0,19.963,0,19.963,0 0.563,0,1.019,0.448,1.019,1 0,0,0,0,0,0 0,0.552,-0.456,1,-1.019,1 0,0,-19.963,0,-19.963,0 -0.563,0,-1.019,-0.448,-1.019,-1 0,0,0,0,0,0zM0,1"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                            <div id="scenes_2" class="flow-layer">
+                                                <svg id="scenes_2-svg" preserveAspectRatio="none" viewBox="0 0 22 2">
+                                                    <title>scenes</title>
+                                                    <path
+                                                        vector-effect="non-scaling-stroke"
+                                                        d="M0,1c0,-0.552,0.456,-1,1.019,-1 0,0,19.963,0,19.963,0 0.563,0,1.019,0.448,1.019,1 0,0,0,0,0,0 0,0.552,-0.456,1,-1.019,1 0,0,-19.963,0,-19.963,0 -0.563,0,-1.019,-0.448,-1.019,-1 0,0,0,0,0,0zM0,1"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                            <div id="rooms_2" class="flow-layer">
+                                                <svg id="rooms_2-svg" preserveAspectRatio="none" viewBox="0 0 22 2">
+                                                    <title>rooms</title>
+                                                    <path
+                                                        vector-effect="non-scaling-stroke"
+                                                        d="M0,1c0,-0.552,0.456,-1,1.019,-1 0,0,19.963,0,19.963,0 0.563,0,1.019,0.448,1.019,1 0,0,0,0,0,0 0,0.552,-0.456,1,-1.019,1 0,0,-19.963,0,-19.963,0 -0.563,0,-1.019,-0.448,-1.019,-1 0,0,0,0,0,0zM0,1"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <button class="button button-replay silver hidden-tabletL-down" onclick="dashboard_replay()">Quay lại</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="pre-parallax"></section>
+                <section id="parallax" class="section-scroll-slide">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-6 offset-tabletP-3 col-tabletL-4 offset-tabletL-1 offset-desktopS-1 col-desktopM-3 offset-desktopM-0">
+                                    <h2>1000 giờ làm việc của các chuyên gia</h2>
+                                    <p>
+                                        8 năm kinh nghiệm đã giúp chúng tôi rất nhiều. Chúng tôi đã tham gia vào một nhóm các chuyên gia tham gia phát triển ứng dụng di động nhà thông minh FIBARO trước đó, chúng tôi đã tổng hợp tất cả các yêu cầu của người dùng sử dụng nó với sự hợp tác của một nhóm hơn 1000 người dùng. Nhờ phản hồi từ cộng đồng FIBARO. Nhờ đó, ứng dụng của chúng tôi là hoàn toàn hoàn hảo với bạn.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="performance">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-10 offset-tabletL-1">
+                                    <h2>Ứng dụng di động đáp ứng hệ thống nhà thông minh FIBARO đáng tin cậy</h2>
+                                    <p>Các công nghệ đỉnh cao đã giúp tăng hiệu suất của ứng dụng một cách đáng kể. Mục tiêu là để đáp ứng mong đợi của bạn và cung cấp cho bạn một sự thoải mái và kinh nghiệm thực sự.</p>
+                                    <div class="row">
+                                        <div class="col-phoneS-6 col-phoneL-6 col-desktopS-3">
+                                            <div class="counter-area">
+                                                <div class="nr-container"><span id="counter-1">0</span>x</div>
+                                                <div class="description">
+                                                    Giao diện<br />
+                                                    ứng dụng nhanh hơn
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-phoneS-6 col-phoneL-6 col-desktopS-3">
+                                            <div class="counter-area">
+                                                <div class="nr-container"><span id="counter-2">0</span>x</div>
+                                                <div class="description">
+                                                    Tải ứng dụng <br />
+                                                    nhanh hơn
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-phoneS-6 col-phoneL-6 col-desktopS-3">
+                                            <div class="counter-area">
+                                                <div class="nr-container"><span id="counter-3">0</span>x</div>
+                                                <div class="description">
+                                                    Ít tốn pin hơn <br />
+                                                    khi sử dụng
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-phoneS-6 col-phoneL-6 col-desktopS-3">
+                                            <div class="counter-area">
+                                                <div class="nr-container"><span id="counter-4">0</span>%</div>
+                                                <div class="description">
+                                                    Kết nối nhanh <br />
+                                                    khi truy cập từ xa
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-desktopL-8 offset-desktopL-2">
+                                            <div class="phone-area" id="performance-phone-area">
+                                                <div class="phone">
+                                                    <div class="phone-element phone-app s-trans"><img src="performance_app.png" alt="smart home phone App" /></div>
+                                                    <div class="phone-element phone-body">
+                                                        <video
+                                                            src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/numbers_perspective6.mp4"
+                                                            preload="auto"
+                                                            muted
+                                                            playsinline
+                                                            loop
+                                                            autoplay
+                                                            style="height: auto; width: 100%;"
+                                                            class="hidden-tabletL-down"
+                                                        ></video>
+                                                        <img src="numbers_phone.jpg" alt="smartphone home app" class="hidden-desktopS-up" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="m-learning-mobile" class="hidden-tabletL-up">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-8 offset-phoneS-2 col-tabletL-12" style="padding: 0;">
+                                    <h2>Tương tác thông minh</h2>
+                                    <div class="message"><p>Công nghệ học máy cho phép FIBARO Home Center tìm hiểu thói quen và sở thích hàng ngày của bạn.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-area"><img src="machinelearning.jpg" alt="Phone" /></div>
+                </section>
+                <section id="m-learning-desktop" class="hidden-tabletP-down">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-tabletL-5 offset-tabletL-6 col-desktopS-4 offset-desktopS-7">
+                                    <div class="content-fade m-trans">
+                                        <h2>Tương tác thông minh</h2>
+                                        <div class="message"><p>Công nghệ học máy cho phép FIBARO Home Center tìm hiểu thói quen và sở thích hàng ngày của bạn.</p></div>
+                                        <button class="button button-replay silver hidden-tabletL-down" onclick="machine_learning_replay()">Quay lại</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover">
+                        <div class="video-area">
+                            <video src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/machine_learning_2560_new.mp4" id="learning_video" preload="auto" muted playsinline style="height: auto;"></video>
+                        </div>
+                    </div>
+                </section>
+                <section id="themes">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-6 offset-tabletP-3 col-tabletL-3 offset-tabletL-1 col-desktopS-3 offset-desktopS-1 offset-desktopM-0">
+                                    <h2>Giao diện nhiều màu sắc</h2>
+                                    <p>
+                                        Thiết kế ứng dụng bao gồm ba phiên bản màu khác nhau - Silver Light, Light Blue và Dark Blue. Chọn màu mà bạn thích nhất. Phiên bản sáng là tốt nhất vào ban ngày và bóng tối hoạt động tốt vào buổi tối. Giao diện ứng dụng thích nghi với các điều kiện hiện tại để thuận tiện cho mắt bạn.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover bg-first">
+                        <div class="bg bg-size-cover bg-second"><div class="bg bg-size-cover bg-third"></div></div>
+                    </div>
+                </section>
+                <section id="use-cases">
+                    <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-12 offset-tabletL-0" style="padding: 0;">
+                        <div class="swiper-container slides-wrapper swiper-container-horizontal">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide3 typo-light">
+                                    <div class="content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-tabletL-12">
+                                                    <div class="row slide1-content">
+                                                        <div class="col-tabletP-8 offset-tabletP-2 col-tabletL-3 offset-tabletL-8 col-desktopL-4 title-description">
+                                                            <h2>Một cú chạm, ngôi nhà được bảo mật</h2>
+                                                            <p>
+                                                                FIBARO Home Center không chỉ là quản lý cửa sổ từ xa hoặc bật / tắt các thiết bị điện. Có thể yên tâm rằng bạn luôn luôn kiểm soát ngôi nhà của bạn hoặc kích hoạt hệ thống báo động.
+                                                                Ứng dụng chắc chắn rằng ngôi nhà luôn được bảo vệ.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg bg-size-cover">
+                                        <div class="row">
+                                            <div class="col-tabletL-6">
+                                                <div class="video fireplace1"><img src="bg_alarm%402x.jpg" alt="smart home app" /></div>
+                                                <div class="siri-phone"><img src="app_alarm%402x.png" class="phone-bg" alt="smart home app" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide2 typo-light">
+                                    <div class="content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-tabletL-12">
+                                                    <div class="row slide1-content">
+                                                        <div class="col-tabletP-8 offset-tabletP-2 col-tabletL-3 offset-tabletL-8 col-desktopL-4 title-description">
+                                                            <h2>Quản lý rèm cửa từ xa</h2>
+                                                            <p>
+                                                                Quản lý rèm trong các phòng được chọn hoặc toàn bộ ngôi nhà, quản lý một hoặc nhiều rèm cuốn cùng một lúc. Phần tốt nhất là bạn không cần phải đứng dậy và chỉnh hay kéo rèm thủ công.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg bg-size-cover">
+                                        <div class="row">
+                                            <div class="col-tabletL-6">
+                                                <div class="video fireplace1"><img src="bg_shutters%402x.jpg" alt="smart home application" /></div>
+                                                <div class="siri-phone"><img src="app_shutters%402x.png" class="phone-bg" alt="smart home app" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide1 typo-light">
+                                    <div class="content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-tabletL-12">
+                                                    <div class="row slide1-content">
+                                                        <div class="col-tabletP-8 offset-tabletP-2 col-tabletL-3 offset-tabletL-8 col-desktopL-4 title-description">
+                                                            <h2>Điều chỉnh ánh sáng dễ dàng</h2>
+                                                            <p>
+                                                                Tắt đèn trong phòng khách dù bạn đang ở phòng ăn, hoặc bật đèn trong phòng khách khi nghi ngờ có ai đó vào nhà bạn. Nếu bạn rời khỏi
+                                                                nhà mà quên tắt đèn thì chỉ cẩn thông qua ứng dụng, tắt nó bằng một cú chạm đơn giản thông qua ứng dụng trên di động.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg bg-size-cover">
+                                        <div class="row">
+                                            <div class="col-tabletL-6">
+                                                <div class="video fireplace1"><img src="bg_lights%402x.jpg" alt="app smart home" /></div>
+                                                <div class="siri-phone"><img src="app_lights%402x.png" class="phone-bg" alt="Application smart home" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide4 typo-light">
+                                    <div class="content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-tabletL-12">
+                                                    <div class="row slide1-content">
+                                                        <div class="col-tabletP-8 offset-tabletP-2 col-tabletL-3 offset-tabletL-8 col-desktopL-4 title-description">
+                                                            <h2>Điều khiển nhiệt độ phù hợp</h2>
+                                                            <p>
+                                                                Khi bạn trở về nhà sau khi bị mắc kẹt dưới mưa hoặc một trận đá bóng đầy năng lượng, tất cả những gì bạn muốn là trở về nhà, nơi nhiệt độ ấm áp hoặc mát mẻ để làm cho tất cả các bạn cảm thấy vô cùng thuận tiện. Chỉ cần lấy điện thoại và chọn nhiệt độ bạn muốn có sau khi bạn trở về nhà.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg bg-size-cover">
+                                        <div class="row">
+                                            <div class="col-tabletL-6">
+                                                <div class="video fireplace1"><img src="bg_thermostat%402x.jpg" alt="smart home mobile app" /></div>
+                                                <div class="siri-phone"><img src="app_thermostat%402x.png" class="phone-bg" alt="mobile app smart home" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide5 typo-light">
+                                    <div class="content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-tabletL-12">
+                                                    <div class="row slide1-content">
+                                                        <div class="col-tabletP-8 offset-tabletP-2 col-tabletL-3 offset-tabletL-8 col-desktopL-4 title-description">
+                                                            <h2>Khung cảnh như một rạp chiếu phim</h2>
+                                                            <p>Bật kịch bản "xem phim" mà bạn đã thiết lập từ trước và rèm cửa đóng, đèn mờ và TV và loa điều chỉnh sang chế độ phù hợp nhất.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg bg-size-cover">
+                                        <div class="row">
+                                            <div class="col-tabletL-6">
+                                                <div class="video fireplace1"><img src="bg_moviescene%402x.jpg" /></div>
+                                                <div class="siri-phone"><img src="app_scenes%402x.png" class="phone-bg" alt="Application" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="container"><div class="swiper-pagination col-tabletL-3 offset-tabletL-8 col-desktopL-4"></div></div>
+                            </div>
+                            <div class="swiper-button-prev hidden-tabletP-down"></div>
+                            <div class="swiper-button-next hidden-tabletP-down"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="access">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-8 offset-tabletP-2 col-tabletL-6 offset-tabletL-3 col-desktopL-4 offset-desktopL-4">
+                                    <h2>Cuộc sống thông minh của bạn</h2>
+                                    <p>
+                                        Ứng dụng FIBARO Home Center tự động chuyển đổi giữa truy cập cục bộ và truy cập từ xa. 
+                                        Tất cả xảy ra trong nền nên không quan trọng bạn kiểm soát ngôi nhà thông minh của mình từ bên trong hay bên ngoài
+                                        nhà ở. Tự động thông minh hóa đáp ứng các tính năng cốt lõi của ứng dụng nhà thông minh.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="work"></div>
+                        <div class="home cover"></div>
+                        <div class="handle"></div>
+                    </div>
+                </section>
+                <section id="one-login">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-6 offset-tabletP-3">
+                                    <h2>Đăng nhập thuận tiện</h2>
+                                    <p>
+                                        Đăng nhập ID FIBARO cho phép bạn vận hành ứng dụng di động thông minh tại nhà và 
+                                        quản lý tất cả các thiết bị đang chạy trong hệ thống nhà thông minh FIBARO. Dễ dàng kết nối với ứng dụng 
+                                        nhà thông minh và Trung tâm điều khiển nhà thông minh, tất cả các mật khẩu được mã hóa. 
+                                        Quyền riêng tư và dữ liệu của bạn là ưu tiên hàng đầu của chúng tôi - 
+                                        chúng tôi giữ cho chúng được bảo vệ khi giao phó nhà của bạn cho Hệ thống FIBARO.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover">
+                        <div class="video-area">
+                            <video
+                                src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/login_start.mp4"
+                                id="login_start"
+                                preload="auto"
+                                muted
+                                playsinline
+                                style="height: auto; width: 100%; position: absolute;"
+                                class="video hidden-tabletL-down"
+                            ></video>
+                            <video
+                                src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/login_loop.mp4"
+                                id="login_loop"
+                                preload="auto"
+                                loop
+                                muted
+                                playsinline
+                                style="height: auto; width: 100%;"
+                                class="video hidden-tabletL-down"
+                            ></video>
+                            <img src="one_login_bg.jpg" alt="smart home app ios" class="video hidden-desktopS-up" style="height: auto; width: 100%;" />
+                        </div>
+                        <div class="code-area">
+                            <div class="code-slide codeAnimation m-trans"><img src="code_long.jpg" alt="smart homa app android" /></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="newsiri">
+                    <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-12 offset-tabletL-0" style="padding: 0;">
+                        <div class="swiper-container slides-wrapper swiper-container-horizontal">
+                            <div class="swiper-wrapper">
+                                <div id="control-slide" class="swiper-slide slide1 typo-light">
+                                    <div class="content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-tabletL-12">
+                                                    <div class="row slide1-content">
+                                                        <div class="col-tabletP-8 offset-tabletP-2 col-tabletL-3 offset-tabletL-1 offset-desktopM-0 col-desktopL-3 title-description">
+                                                            <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/logo_apple.svg" alt="Apple" />
+                                                            <h2>Apple Siri giúp bạn điều hành ngôi nhà của bạn</h2>
+                                                            <p>Điều khiển hệ thống ánh sáng bằng lệnh với iPhone của bạn và thay đổi ngôi nhà của bạn ngay lập tức.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg bg-size-cover">
+                                        <div class="row">
+                                            <div class="col-tabletL-6">
+                                                <div class="video hidden-tabletP-down">
+                                                    <img src="fireplace_blue.jpg" class="fireplace_blue s-trans active" alt="Fireplace" />
+                                                    <video src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/fireplace_1.mp4" preload="auto" muted autoplay loop style="height: auto; width: 100%;"></video>
+                                                </div>
+                                                <div class="video fireplace1 hidden-tabletL-up"><img src="fireplace_1.jpg" /></div>
+                                                <div class="siri-phone">
+                                                    <img src="phone_siri_2x.png" class="phone-bg" alt="Application" />
+                                                    <div class="siriwave hidden-tabletP-down"></div>
+                                                    <div
+                                                        class="col-phoneS-8 offset-phoneS-2 col-phoneL-6 offset-phoneL-3 col-tabletL-8 offset-tabletL-8 col-desktopS-6 offset-desktopS-9 col-desktopM-7 offset-desktopM-8 col-desktopL-6 offset-desktopL-9 notification-wrapper"
+                                                    >
+                                                        <div class="siri-notification-1 control-1 notification m-trans">
+                                                            <p>Này Siri, Bật lò sưởi trong phòng khách</p>
+                                                            <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/mic_icon.svg" alt="Mic" />
+                                                        </div>
+                                                        <div class="siri-notification-2 control-2 notification m-trans white">
+                                                            <img src="siri_avatar.png" alt="Siri" />
+                                                            <p>Tôi sẽ thiết lập ánh sáng lò sưởi trong phòng khách</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="suggestion-slide" class="swiper-slide slide3 typo-light">
+                                    <div class="content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-tabletL-12">
+                                                    <div class="row slide1-content">
+                                                        <div class="col-tabletP-8 offset-tabletP-2 col-tabletL-3 offset-tabletL-1 offset-desktopM-0 col-desktopL-3 title-description">
+                                                            <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/logo_apple.svg" alt="Apple siri shortcuts" />
+                                                            <h2>Cùng với các phím tắt Apple Siri</h2>
+                                                            <p>
+                                                                Phím tắt Siri là để làm cho lệnh thoại của bạn chính xác hơn nữa. Một lệnh đơn giản hơn được lưu dưới dạng kích hoạt tự động hóa ánh sáng sẽ giúp bạn thực hiện nhanh hơn bất kỳ giọng nói nào khác
+                                                                trợ lý.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg bg-size-cover">
+                                        <div class="row">
+                                            <div class="col-tabletL-6">
+                                                <div class="video hidden-tabletP-down">
+                                                    <img src="suggestion_1.jpg" class="suggestion1 s-trans active" alt="smart home app" /> <img src="suggestion_2.jpg" class="suggestion2" alt="smart home push notifications" />
+                                                </div>
+                                                <div class="video fireplace1 hidden-tabletL-up"><img src="suggestion_2.jpg" alt="smart home app" /></div>
+                                                <div class="siri-phone">
+                                                    <img src="siri_sugestions%402x.png" class="phone-bg" alt="smart home app" /> <img src="siri_final_stage%402x.png" class="phone-bg suggestions-phone" alt="ios smart home app" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="spotlight-slide" class="swiper-slide slide4 typo-light">
+                                    <div class="content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-tabletL-12">
+                                                    <div class="row slide1-content">
+                                                        <div class="col-tabletP-8 offset-tabletP-2 col-tabletL-3 offset-tabletL-1 offset-desktopM-0 col-desktopL-3 title-description">
+                                                            <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/logo_apple.svg" alt="Apple" />
+                                                            <h2>Dễ dàng tìm kiếm ứng dụng với Spotlight</h2>
+                                                            <p>Sử dụng tìm kiếm Spotlight để quản lý các kịch bản và thiết bị yêu thích của bạn thậm chí nhanh hơn.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg bg-size-cover">
+                                        <div class="row">
+                                            <div class="col-tabletL-6">
+                                                <div class="video hidden-tabletP-down"><img src="spotlight.jpg" class="spotlight s-trans active" alt="Spotlight" /> <img src="spotlight.jpg" class="suggestion2" alt="Suggestion" /></div>
+                                                <div class="video fireplace1 hidden-tabletL-up"><img src="spotlight.jpg" /></div>
+                                                <div class="siri-phone">
+                                                    <video src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/spotlight.mp4" preload="auto" muted loop playsinline style="" class="phone-bg spotlight-video"></video>
+                                                    <img src="phone_bg%402x.png" class="phone-bg" alt="Application" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="homepod-slide" class="swiper-slide slide2 typo-light">
+                                    <div class="content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-tabletL-12">
+                                                    <div class="row slide1-content">
+                                                        <div class="col-tabletP-8 offset-tabletP-2 col-tabletL-3 offset-tabletL-1 offset-desktopM-0 col-desktopL-3 title-description">
+                                                            <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/logo_apple.svg" alt="smart home valet" />
+                                                            <h2>Apple HomePod vs. ngôi nhà thông minh của bạn</h2>
+                                                            <p>Apple HomePod cho phép bạn điều khiển TV thông minh của mình bằng khẩu lệnh. Hãy để giọng nói thực hiện công việc của mình và bắt đầu sử dụng HomePod làm người phục vụ hàng ngày của bạn.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg bg-size-cover">
+                                        <div class="row">
+                                            <div class="col-tabletL-6">
+                                                <div class="video hidden-tabletP-down">
+                                                    <img src="homepod_bg_1.jpg" class="homepod1 s-trans active" alt="smart home Homepod" /> <img src="homepod_bg_2.jpg" class="homepod2" alt="Homepod smart home" />
+                                                </div>
+                                                <div class="video fireplace1 hidden-tabletL-up"><img src="homepod_bg_2.jpg" alt="smart home app apple" /></div>
+                                                <div class="siri-phone">
+                                                    <img src="homepod%402x.png" class="phone-bg" alt="smart home ios app" />
+                                                    <div class="siriwave homepod hidden-tabletP-down"></div>
+                                                    <div
+                                                        class="col-phoneS-8 offset-phoneS-2 col-phoneL-6 offset-phoneL-3 col-tabletL-8 offset-tabletL-8 col-desktopS-6 offset-desktopS-9 col-desktopM-7 offset-desktopM-8 col-desktopL-6 offset-desktopL-9 notification-wrapper homepod"
+                                                    >
+                                                        <div class="siri-notification-1 homepod-1 notification m-trans">
+                                                            <p>Này Siri, bật chương trình đã xem gần đây</p>
+                                                            <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2018/12/mic_icon.svg" alt="ios smart home application" />
+                                                        </div>
+                                                        <div class="siri-notification-2 homepod-2 notification m-trans white homepod">
+                                                            <img src="siri_avatar.png" alt="Siri smart home app" />
+                                                            <p>Tôi đã bật chương trình đã xem gần đây</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="container"><div class="swiper-pagination col-tabletL-3 offset-tabletL-1 offset-desktopM-0 col-desktopL-3"></div></div>
+                            </div>
+                            <div class="swiper-button-prev hidden-tabletP-down"></div>
+                            <div class="swiper-button-next hidden-tabletP-down"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="app-icon">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-12"><img src="app-icon_2x.png" alt="FIBARO APP" class="icon" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="download" class="section-app">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-8 offset-tabletP-2 col-desktopS-12 offset-desktopS-0">
+                                    <h2>Tải ứng dụng quản lý nhà thông minh FIBARO trên 2 nền tảng</h2>
+                                    <div class="badges">
+                                        <a href="https://itunes.apple.com/app/id1421839464" target="_blank" rel="nofollow">
+                                            <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2017/02/appstore-download.svg" alt="AppStore smart home app" class="a-store" />
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.fibaro.homecenter" target="_blank" rel="nofollow">
+                                            <img src="https://www.fibaro.com/us/wp-content/uploads/sites/5/2017/02/google-play-badge.svg" alt="Google Play smart home app" class="g-store" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg mobile-bg hidden-tabletL-up"></div>
+                    <div class="bg hidden-tabletP-down"><img src="android.png" alt="Android smart home app" class="android" /> <img src="iphonex.png" alt="iOS smart home app" class="ios" /></div>
+                </section>
+            </main>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row custom-footer">
+                        <div class="custom-footer-menu col-phoneS-10 offset-phoneS-1">
+                            <div class="row">
+                                <div class="four-columns">
+                                    <h3>Hỗ trợ</h3>
+                                    <ul>
+                                        <li><a href="https://manuals.fibaro.com/" target="_blank" rel="nofollow">Hướng dẫn sử dụng</a></li>
+                                        <li><a href="https://manuals.fibaro.com/knowledge-base/" target="" rel="nofollow">Kiến thức cơ bản</a></li>
+                                        <li><a href="https://forum.fibaro.com/" target="" rel="nofollow">Diễn đàn FIBARO</a></li>
+                                        <li><a href="https://manuals.fibaro.com/faq/" target="" rel="nofollow">FAQ</a></li>
+                                        <li><a href="https://www.fibaro.com/files/FIBARO_Guarantee.pdf" target="">Sự bảo đảm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Người dùng</h3>
+                                    <ul>
+                                        <li><a href="https://id.cloud.fibaro.com/" target="" rel="nofollow">FIBARO ID</a></li>
+                                        <li><a href="https://marketplace.fibaro.com/" target="" rel="nofollow">Thị trường</a></li>
+                                        <li><a href="https://itunes.apple.com/us/app/fibaro-for-iphone/id511085659?mt=8" target="" rel="nofollow">Ứng dụng FIBARO iOS</a></li>
+                                        <li><a href="https://play.google.com/store/apps/details?id=com.fibaro&amp;hl=en" target="" rel="nofollow">Ứng dụng FIBARO Android</a></li>
+                                        <li><a href="https://www.fibaro.com/us/homekit/" target="">FIBARO HomeKit</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Doanh nghiệp</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/dai-ly/" target="">Nhà phân phối</a></li>
+                                        <li><a href="https://compatibility.fibaro.com/" target="">Khả năng tương thích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/events/training-for-installers/" target="">Trình cài đặt</a></li>
+                                        <li><a href="https://www.fibaro.com/en/partnership/architect/" target="">Kiến trúc</a></li>
+                                        <!--<li><a href="https://www.fibaro.com/en/partnership/developer/" target="">Nhà phát triển</a></li>-->
+                                        <li><a href="https://www.fibaro.com/us/support/" target="">Trình tìm kiếm FIBARO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Thông tin</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/tin-tuc/" target="">Tin tức</a></li>
+                                        <li><a href="https://www.fibaro.com/us/about-us/" target="">Giá trị của chúng tôi</a></li>
+                                        <li><a href="https://www.fibaro.com/us/why-fibaro/" target="">Những lợi ích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/compatibility/" target="">Việc làm với FIBARO</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Nơi để mua</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="links lighter-font col-phoneS-12 col-desktopS-10 col-desktopM-8 offset-desktopM-1">
+                            <ul>
+                                <li><a href="https://www.fibaro.com/us/patents/">Bằng sáng chế</a></li>
+                                <li><a href="https://www.fibaro.com/us/privacy-policy/">Chính sách bảo mật</a></li>
+                                <li><a href="https://www.fibaro.com/us/reach/">REACH</a></li>
+                                <li><a href="https://id.cloud.fibaro.com/" rel="nofollow">FIBARO ID</a></li>
+                                <li><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="social col-phoneS-12 col-desktopS-2">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/FIBAROVN/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/facebook-d.svg" alt="Facebook" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/nhathongminh/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/instagram-d.svg" alt="Instagram" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/fibarovn001" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/twitter-d.svg" alt="Twitter" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/2936170/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/linkedin-d.svg" alt="LinkedIn" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCRTX4A0btp062eRjcqmoEdg" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/youtube-d.svg" alt="YouTube" /> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="copyright col-phoneS-12">
+                            <p>&copy; 2020. FIBARO VIỆT NAM</p>
+                            <img src="smart-home-system.png" alt="FIBARO Viet Nam" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopM-12 offset-desktopM-0 col-desktopL-10 offset-desktopL-1">
+                            <p>
+                                Chúng tôi sử dụng cookie để cá nhân hóa nội dung, tùy chỉnh và phân tích quảng cáo và đảm bảo sử dụng an toàn trang web. Bằng cách nhấp hoặc điều hướng trang web này, bạn đồng ý với việc thu thập thông tin tại
+                                www.fibaro.com và hơn thế nữa bằng cách sử dụng cookie. Thêm thông tin có sẵn trong tài liệu: <a href="https://www.fibaro.com/us/privacy-policy/">CHÍNH SÁCH RIÊNG TƯ VÀ CHÍNH SÁCH COOKIES</a>
+                            </p>
+                            <a href="#" class="cookie-ok">OK</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="close"></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="vendor.1912191358.js"></script>
+        <script type="text/javascript" src="main.2110191037.js"></script>
+        <script type="text/javascript" src="main-application.3101191134.js"></script>
+    </body>
+    <!-- Mirrored from www.fibaro.com/us/smart-home-app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jul 2020 08:17:59 GMT -->
+</html>

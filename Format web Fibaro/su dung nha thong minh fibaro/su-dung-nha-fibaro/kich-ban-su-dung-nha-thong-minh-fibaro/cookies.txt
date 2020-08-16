@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.fibaro.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+.fibaro.com	TRUE	/	FALSE	1999999999	__cfduid	d772e0f1ecf9d4a8843daeced265833361596444609
+fibaro.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+

@@ -1,0 +1,293 @@
+.input {
+    padding: 0;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: -10px;
+}
+
+.custom-dropdown select {
+    background-color: #fff;
+    color: #444;
+    font-size: inherit;
+    padding: .5em 2.5em .5em .5em;
+    margin: 0;
+    border-radius: 3px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /*Hiding the select arrow for firefox*/
+    -moz-appearance: none;
+    /*Hiding the select arrow for chrome*/
+    -webkit-appearance:none;
+    /*Hiding the select arrow default implementation*/
+    appearance: none;
+    border: 1px solid #0090ff;
+}
+/*Hiding the select arrow for IE10*/
+.custom-dropdown select::-ms-expand {
+    display: none;
+}
+
+
+.custom-dropdown::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.2em;
+    top: 4.5em;
+    margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+    width: 2em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,.2);
+}
+
+.custom-dropdown::after {
+    color: #0090ff;
+}
+
+#header {
+    height: 100px;
+}
+
+#wtb-header h1 {
+   color: #ffffff;
+}
+
+#wtb-header p {
+    color: #ffffff;
+}
+
+.section-header .content {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem
+}
+
+
+.homekit-store-locator #header .content {
+    padding-bottom: 0
+}
+
+.homekit-store-locator .radio label {
+    margin-right: .5rem
+}
+
+.homekit-store-locator .select,
+.homekit-store-locator .input {
+    padding-top: 2rem
+}
+
+.homekit-store-locator .select select {
+    width: 100%;
+}
+
+.homekit-store-locator .select select:focus {
+    outline: 0
+}
+
+.homekit-store-locator .input input {
+    width: 100%;
+    border: 1px solid #0090FF;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    color: #0090FF;
+    font-size: 125%
+}
+
+.homekit-store-locator .input input:focus {
+    outline: 0
+}
+
+.homekit-store-locator #map {
+    margin-top: 4rem;
+    height: 260px
+}
+
+.homekit-store-locator .map-filters .content,
+.homekit-store-locator .map-wrapper .content {
+    padding-bottom: 0
+}
+
+.homekit-store-locator .map-results .content {
+    text-align: left
+}
+
+.homekit-store-locator .result-item {
+    padding-top: 2.4rem;
+    padding-bottom: 1.9rem;
+    border-bottom: 1px solid #d3d3d3
+}
+
+.homekit-store-locator .result-item h3 {
+    padding-bottom: .5rem
+}
+
+.homekit-store-locator .result-item p {
+    padding-bottom: .5rem
+}
+
+.homekit-store-locator #results>div {
+    width: 100%
+}
+
+.homekit-store-locator #no-results {
+    display: none;
+    text-align: center
+}
+
+.homekit-store-locator form {
+    width: 100%
+}
+
+@media (min-width: 768px) {
+
+    .section-product-header {
+        height: 660px
+    }
+    .section-product-header .bg {
+        height: 660px
+    }
+    .section-product-header .content {
+        padding-top: 10rem
+    }
+    .select-selected:after {
+        top: 17px;
+    }
+    .select-selected.select-arrow-active:after {
+        top: 10px;
+    }
+
+    #wtb-header .bg {
+        padding-bottom: 0;
+        height: 350px;
+    }
+
+    .custom-dropdown::after {
+        top: 50%;
+    }
+
+    .homekit-store-locator #map {
+        height: 360px
+    }
+    .homekit-store-locator .radio {
+        text-align: left
+    }
+    .homekit-store-locator .select {
+        padding-top: 0
+    }
+
+    .map-filters {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-product-header {
+        height: 730px
+    }
+
+    .section-product-header .bg {
+        height: 730px
+    }
+
+    .section-product-header .content {
+        padding-top: 12rem
+    }
+
+    .section-header .content {
+        padding-top: 3.6rem;
+        padding-bottom: 3.6rem
+    }
+}
+
+@media (min-width: 1200px) {
+    #header {
+        height: 120px;
+    }
+
+    .map-filters {
+        margin-top: 3rem;
+    }
+
+    .select-selected:after {
+        top: 20px;
+    }
+    .select-selected.select-arrow-active:after {
+        top: 13px;
+    }
+    .homekit-store-locator #map {
+        margin-top: 6rem;
+        height: 420px
+    }
+    .homekit-store-locator .map-filters .content {
+        padding-top: 3rem
+    }
+    .homekit-store-locator .result-item h3 {
+        padding-left: 3rem;
+        padding-right: 1rem
+    }
+    .homekit-store-locator .result-item a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+    .homekit-store-locator .result-item a:hover {
+        text-decoration: none;
+        border-bottom: 1px solid #0090FF
+    }
+    .homekit-store-locator .input {
+        padding-top: 4rem
+    }
+    .homekit-store-locator .input input {
+        padding: 1.5rem 3rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+}
+
+@media (min-width: 1600px) {
+    .homekit-store-locator #map {
+        margin-top: 8.5rem;
+        height: 480px
+    }
+
+    #header {
+        height: 160px;
+    }
+
+    .map-filters {
+        margin-top: 5rem;
+    }
+
+    .section-header .content {
+        padding-top: 8.5rem;
+        padding-bottom: 8.5rem
+    }
+}
+
+@media (min-width: 2100px) {
+
+    #header {
+        height: 220px;
+    }
+
+    .map-filters {
+        margin-top: 7rem;
+    }
+}

@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 27 Jul 2020 09:28:13 at https://www.fibaro.com/us/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN3%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.fibaro.com/us/ -O1 "D:\Cong ty\Format web Fibaro\Trang chu FIBARO\trang-chu" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:28:50	Error: 	"Not Found" (404) at link https://www.fibaro.com/favicons/mstile-144x144.png (from https://www.fibaro.com/us/)
+09:30:22	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://www.fibaro.com/us/)
+09:39:14	Error: 	"Not Found" (404) at link https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/img/common/iconpin.svg (from https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/css/main.2906200724.css)
+09:39:14	Error: 	"Not Found" (404) at link https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/img/cant-find.png (from https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/css/main.2906200724.css)
+09:41:01	Error: 	"Forbidden" (403) at link https://stage.fibaro.com/us/wp-content/uploads/sites/3/2017/11/hk-device-flood.png (from https://www.fibaro.com/us/homekit/)
+09:41:01	Error: 	"Forbidden" (403) at link https://stage.fibaro.com/us/wp-content/uploads/sites/3/2017/11/hk-device-motion.png (from https://www.fibaro.com/us/homekit/)
+09:41:01	Error: 	"Forbidden" (403) at link https://stage.fibaro.com/us/wp-content/uploads/sites/3/2017/11/hk-device-dws.png (from https://www.fibaro.com/us/homekit/)
+09:41:01	Error: 	"Forbidden" (403) at link https://stage.fibaro.com/us/wp-content/uploads/sites/3/2017/11/buttons-hk.jpg (from https://www.fibaro.com/us/homekit/)
+09:41:01	Error: 	"Not Found" (404) at link https://www.fibaro.com/us/homekit/GET (from https://www.fibaro.com/us/homekit/)
+09:41:01	Error: 	"Not Found" (404) at link https://www.fibaro.com/us/homekit/Error pJS - No image.src (from https://www.fibaro.com/us/homekit/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 12 minutes 58 seconds : 1429 links scanned, 1418 files written (193951533 bytes overall) [183564684 bytes received at 235944 bytes/sec], 17195810 bytes transferred using HTTP compression in 328 files, ratio 32%, 46.1 requests per connection
+(10 errors, 0 warnings, 0 messages)

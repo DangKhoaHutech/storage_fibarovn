@@ -1,0 +1,129 @@
+<header id="fibaro_main_header">
+                <div class="container">
+                    <div class="row">
+                        <div class="brand col-phoneS-10 offset-phoneS-1 col-desktopS-2 offset-desktopS-0 col-desktopL-3">
+                            <a href="https://fibarovn.com/"><img src="https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/img/common/FIBARO_logo.svg" alt="FIBARO Viet Nam" /></a>
+                            <button id="menu-toggle" class="hidden-desktopS-up"><span></span></button>
+                        </div>
+                        <nav class="col-phoneS-10 offset-phoneS-1 col-desktopS-10 offset-desktopS-0 col-desktopL-9">
+                            <ul>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2958"><a href="https://fibarovn.com/">Trang chủ FIBARO</a></li>
+                                <li class="menu-top-item products-redesign menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-17 menu-item-has-children">
+                                    <a href="#">Các sản phẩm</a>
+                                    <ul class="menu-sub menu-sub-products">
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2878 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Chiếu sáng</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-lighting">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2301">
+                                                    <a href="../dieu-chinh-do-sang-dimmer-2/"> <img src="nav-dimmer.jpg" alt="Chiết áp Dimmer 2 FIBARO" /> <span>Chiết áp Dimmer 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2310">
+                                                    <a href="../role-dong-ngat-doi-double-switch/"> <img src="nav-relay.jpg" alt="Switches" /> <span>Role thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2308">
+                                                    <a href="san-pham/dieu-khien-mau-sac-RGBW-controller-2/"> <img src="nav-rgbw-1.jpg" alt="RGBW Controller" /> <span>Bộ điều khiển màu sắc RGBW</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2375">
+                                                    <a href="san-pham/o-cam-thong-minh-wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2891">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2879 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Cổng và rèm cửa</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gates-and-blinds">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2777">
+                                                    <a href="san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Smart Implant - Bo tich hop dieu khien thong minh" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2890">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2880 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Điều khiển nhiêt, sưởi ấm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-heating">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2884">
+                                                    <a href="san-pham/tat-ca-san-pham/o-cam-thong-minh-wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2885">
+                                                    <a href="san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2889">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2881 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">An toàn và bảo mật</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-safety-and-security">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2307">
+                                                    <a href="san-pham/cam-bien-chuyen-dong-sensor-motion/"> <img src="nav-motion.jpg" alt="Motion Sensor" /> <span>Cảm biến chuyển động</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2302">
+                                                    <a href="san-pham/cam-bien-cua-door-sensor/"> <img src="nav-dws.jpg" alt="Door/Window Sensor" /> <span>Cảm biến mở cửa</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2303">
+                                                    <a href="san-pham/cam-bien-tran-nuoc-flood-sensor/"> <img src="nav-flood.jpg" alt="Flood Sensor" /> <span>Cảm biến ngập nước</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2886">
+                                                    <a href="san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Bộ tích hợp điều khiển thông minh Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2888">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2882 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Thiết bị kích hoạt</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-triggering">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2306">
+                                                    <a href="san-pham/remote-cam-tay-KeyFob/"> <img src="nav-keyfob.jpg" alt="KeyFob" /> <span>Remote KeyFob</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2311">
+                                                    <a href="san-pham/nut-nhan-the-button/"> <img src="nav-button.jpg" alt="The Button" /> <span>Nút nhấn</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2309">
+                                                    <a href="san-pham/bang-dieu-khien-swipe/"> <img src="nav-swipe.jpg" alt="Swipe" /> <span>Bảng điều khiển Swipe</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2883">
+                                                    <a href="https://www.fibaro.com/us/smart-home-app/"> <img src="nav_app.jpg" alt="Application FIBARO Home Center" /> <span>Ứng dụng FIBARO Home Center</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2887">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-675 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Bộ điều khiển trung tâm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gateways">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2304">
+                                                    <a href="san-pham/dieu-khien-trung-tam-home-center-2/"> <img src="nav-hc2.jpg" alt="Home Center 2" /> <span>Home Center 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2305">
+                                                    <a href="san-pham/home-center-lite/"> <img src="nav-hcl.jpg" alt="Home Center Lite" /> <span>Home Center Lite</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2892">
+                                                    <a href="san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>

@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Thiết kế hệ thống chiếu sáng thông minh • Nhà thông minh FIBARO | FIBARO</title>
+        <meta
+            name="description"
+            content="Nhà thông minh bao gồm lĩnh vực chiếu sáng thông minh. Tìm hiểu thêm về các cảnh ánh sáng thông minh tích hợp trong ngôi nhà của bạn. Kết hợp các ý tưởng chiếu sáng ngôi nhà và ngoài trời của bạn với các kịch bản tạo nên một khung cảnh tự động hóa ngôi nhà hoàn hảo. Chỉ cần làm cho cuộc sống của bạn dễ dàng hơn với FIBARO."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FIBARO | Thiết kế chiếu sáng thông minh • Nhà thông minh FIBARO" />
+        <meta property="og:description" content="Thiết kế mô hình chiếu sáng thông minh tại nhà của bạn. Đưa nhà thông minh vào cuộc sống của bạn. Ý tưởng chiếu sáng ngoài trời thông minh và nhiều hơn nữa!" />
+        <meta property="og:site_name" content="fibarovn.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@fibaro_global" />
+        <meta name="twitter:title" content="FIBARO | Thiết kế chiếu sáng thông minh • Nhà thông minh FIBARO" />
+        <meta name="twitter:description" content="Thiết kế mô hình chiếu sáng thông minh tại nhà của bạn. Đưa nhà thông minh vào cuộc sống của bạn. Ý tưởng chiếu sáng ngoài trời thông minh và nhiều hơn nữa!" />
+        <meta property="og:url" content="index.html" />
+        <meta name="author" content="Fibaro Design Department" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="application-name" content="FIBARO" />
+        <meta name="baidu-site-verification" content="qwr0BSJvep" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.html" />
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="favicon-128x128.png" sizes="128x128" />
+        <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" sizes="57x57" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-60x60.png" sizes="60x60" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-72x72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-76x76.png" sizes="76x76" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-114x114.png" sizes="114x114" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-120x120.png" sizes="120x120" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-144x144.png" sizes="144x144" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-152x152.png" sizes="152x152" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180" />
+        <link rel="stylesheet" id="fibaro-main-css" href="main.2906200724.css" type="text/css" media="all" />
+        <script>
+            !(function (window, document, undefined) {
+                function is(e, t) {
+                    return typeof e === t;
+                }
+                function testRunner() {
+                    var e, t, n, o, r, i, a;
+                    for (var s in tests)
+                        if (tests.hasOwnProperty(s)) {
+                            if (((e = []), (t = tests[s]), t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length)))
+                                for (n = 0; n < t.options.aliases.length; n++) e.push(t.options.aliases[n].toLowerCase());
+                            for (o = is(t.fn, "function") ? t.fn() : t.fn, r = 0; r < e.length; r++)
+                                (i = e[r]),
+                                    (a = i.split(".")),
+                                    1 === a.length ? (Modernizr[a[0]] = o) : (!Modernizr[a[0]] || Modernizr[a[0]] instanceof Boolean || (Modernizr[a[0]] = new Boolean(Modernizr[a[0]])), (Modernizr[a[0]][a[1]] = o)),
+                                    classes.push((o ? "" : "no-") + a.join("-"));
+                        }
+                }
+                function setClasses(e) {
+                    var t = docElement.className,
+                        n = Modernizr._config.classPrefix || "";
+                    if ((isSVG && (t = t.baseVal), Modernizr._config.enableJSClass)) {
+                        var o = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+                        t = t.replace(o, "$1" + n + "js$2");
+                    }
+                    Modernizr._config.enableClasses && ((t += " " + n + e.join(" " + n)), isSVG ? (docElement.className.baseVal = t) : (docElement.className = t));
+                }
+                function addTest(e, t) {
+                    if ("object" == typeof e) for (var n in e) hasOwnProp(e, n) && addTest(n, e[n]);
+                    else {
+                        e = e.toLowerCase();
+                        var o = e.split("."),
+                            r = Modernizr[o[0]];
+                        if ((2 == o.length && (r = r[o[1]]), "undefined" != typeof r)) return Modernizr;
+                        (t = "function" == typeof t ? t() : t),
+                            1 == o.length ? (Modernizr[o[0]] = t) : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), (Modernizr[o[0]][o[1]] = t)),
+                            setClasses([(t && 0 != t ? "" : "no-") + o.join("-")]),
+                            Modernizr._trigger(e, t);
+                    }
+                    return Modernizr;
+                }
+                function contains(e, t) {
+                    return !!~("" + e).indexOf(t);
+                }
+                function createElement() {
+                    return "function" != typeof document.createElement
+                        ? document.createElement(arguments[0])
+                        : isSVG
+                        ? document.createElementNS.call(document, "http://www.w3.org/2000/svg", arguments[0])
+                        : document.createElement.apply(document, arguments);
+                }
+                function getBody() {
+                    var e = document.body;
+                    return e || ((e = createElement(isSVG ? "svg" : "body")), (e.fake = !0)), e;
+                }
+                function injectElementWithStyles(e, t, n, o) {
+                    var r,
+                        i,
+                        a,
+                        s,
+                        d = "modernizr",
+                        l = createElement("div"),
+                        c = getBody();
+                    if (parseInt(n, 10)) for (; n--; ) (a = createElement("div")), (a.id = o ? o[n] : d + (n + 1)), l.appendChild(a);
+                    return (
+                        (r = createElement("style")),
+                        (r.type = "text/css"),
+                        (r.id = "s" + d),
+                        (c.fake ? c : l).appendChild(r),
+                        c.appendChild(l),
+                        r.styleSheet ? (r.styleSheet.cssText = e) : r.appendChild(document.createTextNode(e)),
+                        (l.id = d),
+                        c.fake && ((c.style.background = ""), (c.style.overflow = "hidden"), (s = docElement.style.overflow), (docElement.style.overflow = "hidden"), docElement.appendChild(c)),
+                        (i = t(l, e)),
+                        c.fake ? (c.parentNode.removeChild(c), (docElement.style.overflow = s), docElement.offsetHeight) : l.parentNode.removeChild(l),
+                        !!i
+                    );
+                }
+                function domToCSS(e) {
+                    return e
+                        .replace(/([A-Z])/g, function (e, t) {
+                            return "-" + t.toLowerCase();
+                        })
+                        .replace(/^ms-/, "-ms-");
+                }
+                function computedStyle(e, t, n) {
+                    var o;
+                    if ("getComputedStyle" in window) {
+                        o = getComputedStyle.call(window, e, t);
+                        var r = window.console;
+                        if (null !== o) n && (o = o.getPropertyValue(n));
+                        else if (r) {
+                            var i = r.error ? "error" : "log";
+                            r[i].call(r, "getComputedStyle returning null, its possible modernizr test results are inaccurate");
+                        }
+                    } else o = !t && e.currentStyle && e.currentStyle[n];
+                    return o;
+                }
+                function nativeTestProps(e, t) {
+                    var n = e.length;
+                    if ("CSS" in window && "supports" in window.CSS) {
+                        for (; n--; ) if (window.CSS.supports(domToCSS(e[n]), t)) return !0;
+                        return !1;
+                    }
+                    if ("CSSSupportsRule" in window) {
+                        for (var o = []; n--; ) o.push("(" + domToCSS(e[n]) + ":" + t + ")");
+                        return (
+                            (o = o.join(" or ")),
+                            injectElementWithStyles("@supports (" + o + ") { #modernizr { position: absolute; } }", function (e) {
+                                return "absolute" == computedStyle(e, null, "position");
+                            })
+                        );
+                    }
+                    return undefined;
+                }
+                function cssToDOM(e) {
+                    return e
+                        .replace(/([a-z])-([a-z])/g, function (e, t, n) {
+                            return t + n.toUpperCase();
+                        })
+                        .replace(/^-/, "");
+                }
+                function testProps(e, t, n, o) {
+                    function r() {
+                        a && (delete mStyle.style, delete mStyle.modElem);
+                    }
+                    if (((o = !is(o, "undefined") && o), !is(n, "undefined"))) {
+                        var i = nativeTestProps(e, n);
+                        if (!is(i, "undefined")) return i;
+                    }
+                    for (var a, s, d, l, c, u = ["modernizr", "tspan", "samp"]; !mStyle.style && u.length; ) (a = !0), (mStyle.modElem = createElement(u.shift())), (mStyle.style = mStyle.modElem.style);
+                    for (d = e.length, s = 0; s < d; s++)
+                        if (((l = e[s]), (c = mStyle.style[l]), contains(l, "-") && (l = cssToDOM(l)), mStyle.style[l] !== undefined)) {
+                            if (o || is(n, "undefined")) return r(), "pfx" != t || l;
+                            try {
+                                mStyle.style[l] = n;
+                            } catch (p) {}
+                            if (mStyle.style[l] != c) return r(), "pfx" != t || l;
+                        }
+                    return r(), !1;
+                }
+                function fnBind(e, t) {
+                    return function () {
+                        return e.apply(t, arguments);
+                    };
+                }
+                var tests = [],
+                    ModernizrProto = {
+                        _version: "3.5.0",
+                        _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 },
+                        _q: [],
+                        on: function (e, t) {
+                            var n = this;
+                            setTimeout(function () {
+                                t(n[e]);
+                            }, 0);
+                        },
+                        addTest: function (e, t, n) {
+                            tests.push({ name: e, fn: t, options: n });
+                        },
+                        addAsyncTest: function (e) {
+                            tests.push({ name: null, fn: e });
+                        },
+                    },
+                    Modernizr = function () {};
+                (Modernizr.prototype = ModernizrProto), (Modernizr = new Modernizr());
+                var classes = [],
+                    docElement = document.documentElement,
+                    isSVG = "svg" === docElement.nodeName.toLowerCase(),
+                    hasOwnProp;
+                !(function () {
+                    var e = {}.hasOwnProperty;
+                    hasOwnProp =
+                        is(e, "undefined") || is(e.call, "undefined")
+                            ? function (e, t) {
+                                  return t in e && is(e.constructor.prototype[t], "undefined");
+                              }
+                            : function (t, n) {
+                                  return e.call(t, n);
+                              };
+                })(),
+                    (ModernizrProto._l = {}),
+                    (ModernizrProto.on = function (e, t) {
+                        this._l[e] || (this._l[e] = []),
+                            this._l[e].push(t),
+                            Modernizr.hasOwnProperty(e) &&
+                                setTimeout(function () {
+                                    Modernizr._trigger(e, Modernizr[e]);
+                                }, 0);
+                    }),
+                    (ModernizrProto._trigger = function (e, t) {
+                        if (this._l[e]) {
+                            var n = this._l[e];
+                            setTimeout(function () {
+                                var e, o;
+                                for (e = 0; e < n.length; e++) (o = n[e])(t);
+                            }, 0),
+                                delete this._l[e];
+                        }
+                    }),
+                    Modernizr._q.push(function () {
+                        ModernizrProto.addTest = addTest;
+                    });
+                var modElem = { elem: createElement("modernizr") };
+                Modernizr._q.push(function () {
+                    delete modElem.elem;
+                });
+                var mStyle = { style: modElem.elem.style };
+                Modernizr._q.unshift(function () {
+                    delete mStyle.style;
+                });
+                var testProp = (ModernizrProto.testProp = function (e, t, n) {
+                        return testProps([e], undefined, t, n);
+                    }),
+                    mq = (function () {
+                        var e = window.matchMedia || window.msMatchMedia;
+                        return e
+                            ? function (t) {
+                                  var n = e(t);
+                                  return (n && n.matches) || !1;
+                              }
+                            : function (e) {
+                                  var t = !1;
+                                  return (
+                                      injectElementWithStyles("@media " + e + " { #modernizr { position: absolute; } }", function (e) {
+                                          t = "absolute" == (window.getComputedStyle ? window.getComputedStyle(e, null) : e.currentStyle).position;
+                                      }),
+                                      t
+                                  );
+                              };
+                    })();
+                (ModernizrProto.mq = mq),
+                    Modernizr.addTest("video", function () {
+                        var e = createElement("video"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/, "")),
+                                    (t.h264 = e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/, "")),
+                                    (t.webm = e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/, "")),
+                                    (t.vp9 = e.canPlayType('video/webm; codecs="vp9"').replace(/^no$/, "")),
+                                    (t.hls = e.canPlayType('application/x-mpegURL; codecs="avc1.42E01E"').replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("dataset", function () {
+                        var e = createElement("div");
+                        return e.setAttribute("data-a-b", "c"), !(!e.dataset || "c" !== e.dataset.aB);
+                    }),
+                    Modernizr.addAsyncTest(function () {
+                        function e(e, t, n) {
+                            function o(t) {
+                                var o = !(!t || "load" !== t.type) && 1 == r.width,
+                                    i = "webp" === e;
+                                addTest(e, i && o ? new Boolean(o) : o), n && n(t);
+                            }
+                            var r = new Image();
+                            (r.onerror = o), (r.onload = o), (r.src = t);
+                        }
+                        var t = [
+                                { uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=", name: "webp" },
+                                { uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==", name: "webp.alpha" },
+                                { uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA", name: "webp.animation" },
+                                { uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=", name: "webp.lossless" },
+                            ],
+                            n = t.shift();
+                        e(n.name, n.uri, function (n) {
+                            if (n && "load" === n.type) for (var o = 0; o < t.length; o++) e(t[o].name, t[o].uri);
+                        });
+                    }),
+                    Modernizr.addTest("svg", !!document.createElementNS && !!document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect),
+                    Modernizr.addTest("texttrackapi", "function" == typeof createElement("video").addTextTrack),
+                    Modernizr.addTest("track", "kind" in createElement("track")),
+                    Modernizr.addTest("audio", function () {
+                        var e = createElement("audio"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/, "")),
+                                    (t.mp3 = e.canPlayType('audio/mpeg; codecs="mp3"').replace(/^no$/, "")),
+                                    (t.opus = e.canPlayType('audio/ogg; codecs="opus"') || e.canPlayType('audio/webm; codecs="opus"').replace(/^no$/, "")),
+                                    (t.wav = e.canPlayType('audio/wav; codecs="1"').replace(/^no$/, "")),
+                                    (t.m4a = (e.canPlayType("audio/x-m4a;") || e.canPlayType("audio/aac;")).replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("notification", function () {
+                        if (!window.Notification || !window.Notification.requestPermission) return !1;
+                        if ("granted" === window.Notification.permission) return !0;
+                        try {
+                            new window.Notification("");
+                        } catch (e) {
+                            if ("TypeError" === e.name) return !1;
+                        }
+                        return !0;
+                    }),
+                    Modernizr.addTest("time", "valueAsDate" in createElement("time")),
+                    Modernizr.addTest("arrow", function () {
+                        try {
+                            eval("()=>{}");
+                        } catch (e) {
+                            return !1;
+                        }
+                        return !0;
+                    });
+                var inputElem = createElement("input"),
+                    inputattrs = "autocomplete autofocus list placeholder max min multiple pattern required step".split(" "),
+                    attrs = {};
+                (Modernizr.input = (function (e) {
+                    for (var t = 0, n = e.length; t < n; t++) attrs[e[t]] = !!(e[t] in inputElem);
+                    return attrs.list && (attrs.list = !(!createElement("datalist") || !window.HTMLDataListElement)), attrs;
+                })(inputattrs)),
+                    Modernizr.addTest("hidden", "hidden" in createElement("a")),
+                    testRunner(),
+                    setClasses(classes),
+                    delete ModernizrProto.addTest,
+                    delete ModernizrProto.addAsyncTest;
+                for (var i = 0; i < Modernizr._q.length; i++) Modernizr._q[i]();
+                window.Modernizr = Modernizr;
+            })(window, document);
+        </script>
+        <link rel="stylesheet" id="timed-content-css-css" href="timed-contenta4b6.css?ver=2.61" type="text/css" media="all" />
+        <script type="text/javascript" src="jqueryb8ff.js?ver=1.12.4"></script>
+        <script type="text/javascript" src="jquery-migrate.min330a.js?ver=1.4.1"></script>
+        <script type="text/javascript" src="timed-contenta4b6.js?ver=2.61"></script>
+        <link rel="canonical" href="index.html" />
+        <link rel="alternate" href="https://www.fibaro.com/en/smart-home-in-use/the-smart-light/" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/pl/smart-home-in-use/inteligentne-oswietlenie-domu/" hreflang="pl-pl" />
+        <link rel="alternate" href="https://www.fibaro.com/cz/smart-home-in-use/the-smart-light/" hreflang="cs-cz" />
+        <link rel="alternate" href="https://www.fibaro.com/ro/smart-home-in-use/the-smart-light/" hreflang="ro-ro" />
+        <link rel="alternate" href="index.html" hreflang="de-de" />
+        <link rel="alternate" href="https://www.fibaro.com/fr/smart-home-in-use/the-smart-light/" hreflang="fr-fr" />
+        <link rel="alternate" href="https://www.fibaro.com/se/smart-home-in-use/the-smart-light/" hreflang="sv-se" />
+        <link rel="alternate" href="https://www.fibaro.com/cl/smart-home-in-use/the-smart-light/" hreflang="es-es" />
+        <link rel="alternate" href="https://www.fibaro.com/gr/smart-home-in-use/the-smart-light/" hreflang="el" />
+        <link rel="alternate" href="https://www.fibaro.com/no/smart-home-in-use/the-smart-light/" hreflang="nb-no" />
+        <link rel="alternate" href="https://www.fibaro.com/us/smart-home-in-use/the-smart-light/" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/it/smart-home-in-use/the-smart-light/" hreflang="it-it" />
+        <link rel="alternate" href="https://www.fibaro.com/cn/smart-home-in-use/the-smart-light/" hreflang="zh-cn" />
+        <link rel="alternate" href="https://www.fibaro.com/en/smart-home-in-use/the-smart-light/" hreflang="x-default" />
+        <style type="text/css">
+            .section-header .bg {
+                background-image: url("use-cases-lighting-header.jpg");
+            }
+            #use-case-nav {
+                background-image: url("uc-nav-bg-gates.jpg");
+            }
+        </style>
+        <script>
+            dataLayer = [];
+        </script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "gtm5445.html?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MF67KLD");
+        </script>
+    </head>
+    <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF67KLD" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <div class="site-wrapper single-page single-page fixed-grid use-cases lighting has-secondary-nav">
+		<header id="fibaro_main_header">
+                <div class="container">
+                    <div class="row">
+                        <div class="brand col-phoneS-10 offset-phoneS-1 col-desktopS-2 offset-desktopS-0 col-desktopL-3">
+                            <a href="/vi/"><img src="https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/img/common/FIBARO_logo.svg" alt="FIBARO Viet Nam" /></a>
+                            <button id="menu-toggle" class="hidden-desktopS-up"><span></span></button>
+                        </div>
+                        <nav class="col-phoneS-10 offset-phoneS-1 col-desktopS-10 offset-desktopS-0 col-desktopL-9">
+                            <ul>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2958"><a href="/vi/kich-ban-su-dung-nha-thong-minh-fibaro/">Trang chủ FIBARO</a></li>
+                                <li class="menu-top-item products-redesign menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-17 menu-item-has-children">
+                                    <a href="#">Các sản phẩm</a>
+                                    <ul class="menu-sub menu-sub-products">
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2878 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Chiếu sáng</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-lighting">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2301">
+                                                    <a href="/vi/san-pham/dieu-chinh-do-sang-dimmer-2/"> <img src="nav-dimmer.jpg" alt="Chiết áp Dimmer 2 FIBARO" /> <span>Chiết áp Dimmer 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2310">
+                                                    <a href="/vi/san-pham/role-dong-ngat-doi-double-switch/"> <img src="nav-relay.jpg" alt="Switches" /> <span>Role thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2308">
+                                                    <a href="/vi/san-pham/dieu-khien-mau-sac-RGBW-controller-2/"> <img src="nav-rgbw-1.jpg" alt="RGBW Controller" /> <span>Bộ điều khiển màu sắc RGBW</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2375">
+                                                    <a href="/vi/san-pham/o-cam-thong-minh-wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2891">
+                                                    <a href="/vi/san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2879 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Cổng và rèm cửa</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gates-and-blinds">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2777">
+                                                    <a href="/vi/san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Smart Implant - Bo tich hop dieu khien thong minh" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2890">
+                                                    <a href="/vi/san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2880 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Điều khiển nhiêt, sưởi ấm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-heating">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2884">
+                                                    <a href="/vi/san-pham/o-cam-thong-minh-wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2885">
+                                                    <a href="/vi/san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2889">
+                                                    <a href="/vi/san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2881 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">An toàn và bảo mật</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-safety-and-security">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2307">
+                                                    <a href="/vi/san-pham/cam-bien-chuyen-dong-sensor-motion/"> <img src="nav-motion.jpg" alt="Motion Sensor" /> <span>Cảm biến chuyển động</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2302">
+                                                    <a href="/vi/san-pham/cam-bien-cua-door-sensor/"> <img src="nav-dws.jpg" alt="Door/Window Sensor" /> <span>Cảm biến mở cửa</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2303">
+                                                    <a href="/vi/san-pham/cam-bien-tran-nuoc-flood-sensor/"> <img src="nav-flood.jpg" alt="Flood Sensor" /> <span>Cảm biến ngập nước</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2886">
+                                                    <a href="/vi/san-pham/bo-tich-hop-cam-bien-smart-implant/"> <img src="nav_smartimplant.png" alt="Bộ tích hợp điều khiển thông minh Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2888">
+                                                    <a href="/vi/san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2882 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Thiết bị kích hoạt</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-triggering">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2306">
+                                                    <a href="/vi/san-pham/remote-cam-tay-KeyFob/"> <img src="nav-keyfob.jpg" alt="KeyFob" /> <span>Remote KeyFob</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2311">
+                                                    <a href="/vi/san-pham/nut-nhan-the-button/"> <img src="nav-button.jpg" alt="The Button" /> <span>Nút nhấn</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2309">
+                                                    <a href="/vi/san-pham/bang-dieu-khien-swipe/"> <img src="nav-swipe.jpg" alt="Swipe" /> <span>Bảng điều khiển Swipe</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2883">
+                                                    <a href="/vi/san-pham/smart-home-app/"> <img src="nav_app.jpg" alt="Application FIBARO Home Center" /> <span>Ứng dụng FIBARO Home Center</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2887">
+                                                    <a href="/vi/san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-675 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Bộ điều khiển trung tâm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gateways">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2304">
+                                                    <a href="/vi/san-pham/dieu-khien-trung-tam-home-center-2/"> <img src="nav-hc2.jpg" alt="Home Center 2" /> <span>Home Center 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2305">
+                                                    <a href="/vi/san-pham/home-center-lite/"> <img src="nav-hcl.jpg" alt="Home Center Lite" /> <span>Home Center Lite</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2892">
+                                                    <a href="/vi/san-pham/tat-ca-san-pham/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2664 menu-item-has-children">
+                                    <a href="#">Hoạt động với</a>
+                                    <ul class="menu-sub menu-sub-workswith">
+                                        <li
+                                            onclick="location.href='/vi/kha-nang-tuong-thich-nha-thong-minh-fibaro/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2296"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-fibaro.png" class="page-icon" /> <span class="menu-description">Nhận biết các khả năng của một hệ thống nhà thông minh hoàn chỉnh.</span>
+                                            <a href="/vi/kha-nang-tuong-thich-nha-thong-minh-fibaro/" class="menu-sub-toggle">Hệ thống nhà thông minh FIBARO</a> 
+                                            <a href="/vi/kha-nang-tuong-thich-nha-thong-minh-fibaro/" class="menu-link">Tìm hiểu hệ thống</a>
+                                        </li>
+                                        <li
+                                            onclick="location.href='/vi/smart-things-nha-thong-minh-fibaro/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2801"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-smartthings.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với SmartThings.</span>
+                                            <a href="/vi/smart-things-nha-thong-minh-fibaro/" class="menu-sub-toggle">SmartThings</a> <a href="/vi/smart-things-nha-thong-minh-fibaro/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                        <li onclick="location.href='/vi/homekit-nha-thong-minh-fibaro/'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2665" data-level="1">
+                                            <img src="nav-homekit.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với Apple HomeKit.</span>
+                                            <a href="/vi/homekit-nha-thong-minh-fibaro/" class="menu-sub-toggle">Apple HomeKit</a> <a href="/vi/homekit-nha-thong-minh-fibaro/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2689"><a href="/vi/loi-ich-su-dung-nha-thong-minh-fibaro/">Những lợi ích</a></li>
+                                <!--<li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2931"><a href="https://fibarovn.com/contact/">Nơi để mua</a></li>!-->
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2298"><a href="https://fibarovn.com/contact/">Hỗ trợ</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2297"><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                            <div id="language-selector">
+                                <a href="index.html" id="lang-toggle">Việt Nam</a>
+                                <div id="lang-choices">
+                                    <a href="index.html" title="Việt Nam">Việt Nam</a>
+									<a href="https://www.fibaro.com/cz/" title="Čeština">Čeština</a>
+                                    <a href="https://www.fibaro.com/de/" title="Deutsch">Deutsch</a>
+									<a href="https://www.fibaro.com/en/" title="English">English (International)</a>
+                                    <a href="https://www.fibaro.com/us/" title="English">English (United States)</a>
+									<a href="https://www.fibaro.com/cl/" title="Español (Chile)">Español (Chile)</a>
+                                    <a href="https://www.fibaro.com/fr/" title="Français">Français</a>
+									<a href="https://www.fibaro.com/gr/" title="Ελληνικά">Ελληνικά</a>
+                                    <a href="https://www.fibaro.com/it/" title="Italiano">Italiano</a>
+									<a href="https://www.fibaro.com/no/" title="Norsk bokmål">Norsk bokmål</a>
+                                    <a href="https://www.fibaro.com/pl/" title="Polski">Polski</a>
+									<a href="https://www.fibaro.com/ro/" title="Română">Română</a>
+                                    <a href="https://www.fibaro.com/se/" title="Svenska">Svenska</a>
+                                     <a href="https://www.fibaro.com/cn/"title="中文">中文</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div id="secondary-nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-12 offset-desktopS-0">
+                                <div class="items">
+                                    <div class="title"></div>
+                                    <div class="links mobile-hidden">
+                                        <a href="index.html" class="current"> <p class="use_case_second_menu_desktop">Chiếu sáng</p> </a>
+                                        <a href="https://www.fibaro.com/de/smart-home-in-use/home-access-center/" class=""> <p class="use_case_second_menu_desktop">Cổng và rèm cửa</p> </a>
+                                        <a href="https://www.fibaro.com/de/smart-home-in-use/smart-hvac/" class=""> <p class="use_case_second_menu_desktop">Nhiệt độ</p> </a>
+                                        <a href="https://www.fibaro.com/de/smart-home-in-use/home-safety/" class=""> <p class="use_case_second_menu_desktop">An ninh</p> </a>
+                                        <a href="https://www.fibaro.com/de/smart-home-in-use/smart-surveillance-system/" class=""> <p class="use_case_second_menu_desktop">Hệ thống báo động</p> </a>
+                                        <a href="https://www.fibaro.com/de/smart-home-in-use/smart-interactive-media/" class=""> <p class="use_case_second_menu_desktop">Hệ thống âm thanh</p> </a>
+                                        <a href="https://www.fibaro.com/de/smart-home-in-use/smart-home-comfort/" class=""> <p class="use_case_second_menu_desktop">Thư giãn</p> </a>
+                                        <a href="https://www.fibaro.com/de/smart-home-in-use/smart-garden/" class=""> <p class="use_case_second_menu_desktop">Vườn thông minh</p> </a>
+                                    </div>
+                                    <div class="actions">
+                                        <a href="javascript:" class="link-toggle hidden-desktopS-up"><span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="section-header">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-11 offset-phoneS-1 col-desktopS-12 offset-desktopS-0">
+                                    <h1>Hệ thống chiếu sáng nhà thông minh FIBARO<span>trên ngôi nhà của bạn</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover">
+                        <img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/icon-scroll-down.svg" alt="Read more..." />
+                        <div class="copy">
+                            <p>
+                                Hãy tưởng tượng rằng không phải suy nghĩ về việc bật và tắt đèn thủ công trong ngôi nhà của bạn. 
+                                Bây giờ bạn có thể làm điều đó nếu bạn ngồi trên ghế với điện thoại thông minh của bạn hoặc thậm chí khi đang di chuyển.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="features">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-12">
+                                    <h2 class="hidden">Các lợi ích tính năng sẽ làm bạn ngạc nhiên</h2>
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="wrapper">
+                                                    <h2 class="hidden-tabletL-up">Quản lý một cách tiện lợi</h2>
+                                                    <img src="use-cases-lighting-comfort.jpg" alt="Comfort first" />
+                                                    <p class="hidden-tabletP-down">Quản lý một cách tiện lợi</p>
+                                                    <ul>
+                                                        <li>Điều khiển ánh sáng từ xa.</li>
+                                                        <li>Ánh sáng đi theo các thành viên trong gia đình</li>
+                                                        <li>Điều khiển bật tắt hệ thống ánh sáng bằng giọng nói thông minh</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wrapper">
+                                                    <h2 class="hidden-tabletL-up">Kết hợp với hệ thống báo động thông minh</h2>
+                                                    <img src="use-cases-lighting-security.jpg" alt="Choose safety" />
+                                                    <p class="hidden-tabletP-down">Kết hợp với hệ thống báo động thông minh</p>
+                                                    <ul>
+                                                        <li>Hệ thống ánh sáng kết hợp với báo động</li>
+                                                        <li>Ánh sáng sẽ được kích hoạt khi có cảnh báo.</li>
+                                                        <li>Khi các thành viên trong gia đình mở cửa hay đi vào cổng thì ánh sáng sẽ kích hoạt</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="wrapper">
+                                                    <h2 class="hidden-tabletL-up">Ánh sáng thông minh</h2>
+                                                    <img src="use-cases-lighting-savings.jpg" alt="Save consciously" />
+                                                    <p class="hidden-tabletP-down">Ánh sáng thông minh</p>
+                                                    <ul>
+                                                        <li>Ánh sáng sẽ được kích hoạt khi phát hiện có người di chuyển</li>
+                                                        <li>Độ sáng được điều hòa phù hợp với ánh sáng tự nhiên</li>
+                                                        <li>Quản lý chi phí một cách hiệu quả</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination hidden-tabletL-up"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="cases-wrapper">
+                    <section class="cases">
+                        <div class="content">
+                            <div class="container">
+                                <div class="col-phoneS-10 offset-phoneS-1"><h2>Cùng khám phá khả năng của các thiết bị nhà thông minh FIBARO</h2></div>
+                            </div>
+                        </div>
+                        <div class="case" id="case1">
+                            <div class="content">
+                                <div class="case-tag head hidden-desktopS-up"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/lamp-icon.svg" alt="Subtle night lighting" /></div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopS-8 offset-desktopS-1">
+                                            <h3>Ánh sáng tinh tế vào ban đêm</h3>
+                                            <hr />
+                                            <p>
+                                                Thức dậy vào ban đêm để xem con của chúng ta đã ngủ chưa hay vào bếp để uống một ngụm nước là một thói quen hàng ngày. 
+                                                Nếu bạn đi bộ trong nhà vào ban đêm, bạn có cảm giác khó chịu khi bị ánh sáng làm mờ mắt. 
+                                                Định cấu hình ánh sáng tới 30% cường độ ở các phần của ngôi nhà nơi bạn cần đến, ví dụ: chẳng hạn như hành langs.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-8 offset-desktopS-1">
+                                            <ul>
+                                                <li>
+                                                    <a href="/vi/san-pham/cam-bien-chuyen-dong-sensor-motion/" title="Motion Sensor" target="_blank"> <img src="use-cases-motion.jpg" alt="Cảm biến chuyển động nhà thông minh FIBARO" /> <span>Cảm biến chuyển đông</span> </a>
+                                                </li>
+                                                <li class="plus"></li>
+                                                <li>
+                                                    <a href="/vi/san-pham/dieu-chinh-do-sang-dimmer-2/" title="Dimmer" target="_blank"> <img src="use-cases-switch.jpg" alt="Chiết áp Dimmer nhà thông minh FIBARO" /> <span>Chiết áp Dimmer 2</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="use-cases-lighting-_usecase_1.jpg" alt="Subtle night lighting" />
+                                <div class="case-tag side hidden-tabletL-down"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/lamp-icon.svg" alt="Subtle night lighting" /></div>
+                            </div>
+                        </div>
+                        <div class="case right" id="case2">
+                            <div class="content">
+                                <div class="case-tag head hidden-desktopS-up"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/scene-icon.svg" alt="True cinema experience" /></div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopS-8 offset-desktopS-3">
+                                            <h3>Rạp chiếu phim tại nhà</h3>
+                                            <hr />
+                                            <p>
+                                                Xem một bộ phim hay là một ý tưởng hoàn hảo cho một buổi tối ở nhà. Bạn đã chuẩn bị bỏng ngô và bạn đang ngồi thoải mái? 
+                                                Nhấn nút để điều chỉnh ánh sáng và trong "như trong rạp chiếu phim" chỉ bằng một cú nhấn.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-8 offset-desktopS-3">
+                                            <ul>
+                                                <li>
+                                                    <a href="/vi/san-pham/nut-nhan-the-button/" title="The Button" target="_blank"> <img src="use-cases-the-button.jpg" alt="Nút nhấn thông minh nhà thông minh FIBARO" /> <span>Nút nhấn thông minh</span></a>
+                                                </li>
+                                                <li class="plus"></li>
+                                                <li>
+                                                    <a href="/vi/san-pham/dieu-khien-mau-sac-RGBW-controller-2/" title="Điều chỉnh màu sắc RGBW" target="_blank">
+                                                        <img src="use-cases-switch.jpg" alt="Điều chỉnh màu sắc RGBW" /> <span>Điều chỉnh màu sắc RGBW</span>
+                                                    </a>
+                                                </li>
+                                                <li class="plus"></li>
+                                                <li>
+                                                    <a href="/vi/san-pham/role-dong-ngat-doi-double-switch/" title="Double Switch" target="_blank"> <img src="use-cases-switch.jpg" alt="Role thông minh FIBARO" /> <span>Role thông minh</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="use-cases-lighting-_usecase_2.jpg" alt="True cinema experience" />
+                                <div class="case-tag side hidden-tabletL-down"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/scene-icon.svg" alt="Rạp chiếu phim tại nhà - nhà thông minh FIBARO" /></div>
+                            </div>
+                        </div>
+                        <div class="case" id="case3">
+                            <div class="content">
+                                <div class="case-tag head hidden-desktopS-up"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/smartphone-icon.svg" alt="Tắt hệ thông ánh sáng chỉ cầm m cú nhấn "/> </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopS-8 offset-desktopS-1">
+                                            <h3>Tắt đèn <span>chỉ cần một cú chạm</span></h3>
+                                            <hr />
+                                            <p>
+                                                Nếu có một vài người trong nhà có trẻ em đi bộ xung quanh, thì hầu hết các phòng đều để đèn sáng. 
+                                                Bám sát hoạt động yêu thích của bạn, tiết kiệm tiền và giảm chi phí năng lượng của bạn. 
+                                                Từ bất cứ nơi nào bạn đến, sử dụng ứng dụng để tắt đèn trong phòng khi không có người.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-8 offset-desktopS-1">
+                                            <ul>
+                                                <li>
+                                                    <a href="/vi/san-pham/dieu-khien-mau-sac-RGBW-controller-2/" title="Điều chỉnh màu sắc RGBW nhà thông minh FIBARO" target="_blank">
+                                                        <img src="use-cases-switch.jpg" alt="Điều chỉnh màu sắc RGBW nhà thông minh FIBARO" /> <span>Điều chỉnh màu sắc RGBW</span>
+                                                    </a>
+                                                </li>
+                                                <li class="plus"></li>
+                                                <li>
+                                                    <a href="/vi/san-pham/dieu-chinh-do-sang-dimmer-2/" title="Dimmer" target="_blank"> <img src="use-cases-switch.jpg" alt="Dimmer" /> <span>Chiết áp Dimmer</span></a>
+                                                </li>
+                                                <li class="plus"></li>
+                                                <li>
+                                                    <a href="/vi/san-pham/role-dong-ngat-doi-double-switch/" title="Single Switch" target="_blank"> <img src="use-cases-switch.jpg" alt="Role thông minh" /> <span>Role thông minh</span></a>
+                                                </li>
+                                                <li class="plus"></li>
+                                                <li>
+                                                    <a href="/vi/san-pham/o-cam-thong-minh-wall-plug/" title="Wall Plug" target="_blank"> <img src="use-cases-wallplug.jpg" alt="Ổ cắm thông minh Wall Plug" /> <span>Ổ cắm Wall Plug</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="use-cases-lighting-_usecase_3.jpg" alt="Switch the lights off with one click" />
+                                <div class="case-tag side hidden-tabletL-down"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/smartphone-icon.svg" alt="Switch the lights off with one click" /></div>
+                            </div>
+                        </div>
+                        <div class="case right" id="case4">
+                            <div class="content">
+                                <div class="case-tag head hidden-desktopS-up"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/motion-icon.svg" alt="Let the light be with you" /></div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopS-8 offset-desktopS-3">
+                                            <h3>Ánh sáng sẽ theo bạn</h3>
+                                            <hr />
+                                            <p>
+                                                Hãy tưởng tượng rằng bạn không phải bật và tắt đèn mọi lúc, dựa vào cảm biến ánh sáng đèn sẽ tự bật khi bạn bước vào. 
+                                                Bằng cách nào?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-8 offset-desktopS-3">
+                                            <ul>
+                                                <li>
+                                                    <a href="/vi/san-pham/cam-bien-chuyen-dong-sensor-motion/" title="Cảm biến chuyển động nhà thông minh FIBARO" target="_blank"> <img src="use-cases-motion.jpg" alt="Cảm biến chuyển động nhà thông minh FIBARO" /> <span>Cảm biến chuyển động</span></a>
+                                                </li>
+                                                <li class="plus"></li>
+                                                <li>
+                                                    <a href="/vi/san-pham/role-dong-ngat-doi-double-switch/" title="Role thông minh nhà thông minh FIBARO" target="_blank"> <img src="use-cases-switch.jpg" alt="Role thông minh nhà thông minh FIBARO" /> <span>Role thông minh</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="use-cases-lighting-_usecase_4.jpg" alt="Let the light be with you" />
+                                <div class="case-tag side hidden-tabletL-down"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/motion-icon.svg" alt="Let the light be with you" /></div>
+                            </div>
+                        </div>
+                        <div class="case" id="case5">
+                            <div class="content">
+                                <div class="case-tag head hidden-desktopS-up"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/night-icon.svg" alt="Have a very good night" /></div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopS-8 offset-desktopS-1">
+                                            <h3>Một đêm ngon giấc với nhà thông minh FIBARO</h3>
+                                            <hr />
+                                            <p>
+                                                Tôi đã đóng cửa trước? Tôi đã tắt đèn bếp? Chắc chắn chưa, bạn biết rằng những suy nghĩ đáng lo ngại này 
+                                                xuất hiện ngay trước khi bạn đi ngủ. Chuẩn bị cho giấc ngủ - bật báo thức, tắt đèn toàn bộ ngôi nhà mà không 
+                                                rời khỏi giường. Bây giờ ngủ ngon nhé!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-8 offset-desktopS-1">
+                                            <ul>
+                                                <li><img src="use-cases-night.jpg" alt="Buổi tối cùng nhà thông minh FIBARO" /> <span>Buổi tối</span></li>
+                                                <li class="plus"></li>
+                                                <li>
+                                                    <a href="/vi/san-pham/dieu-chinh-do-sang-dimmer-2/" title="Chiết áp Dimmer điều chỉnh độ sáng" target="_blank"> <img src="use-cases-switch.jpg" alt="Dimmer" /> <span>Chiết áp Dimmer</span></a>
+                                                </li>
+                                                <li class="plus"></li>
+                                                <li>
+                                                    <a href="/vi/san-pham/role-dong-ngat-doi-double-switch/" title="Rơle đóng ngắt đôi FIBARO Double Switch" target="_blank"> <img src="use-cases-switch.jpg" alt="Rơle đóng ngắt đôi FIBARO Double Switch" /> <span>Role thông minh</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="use-cases-lighting-_usecase_5.jpg" alt="Chúc bạn ngủ ngon nhà thông minh fibaro" />
+                                <div class="case-tag side hidden-tabletL-down"><img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/night-icon.svg" alt="Chúc bạn ngủ ngon" /></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="use-case-nav-wrapper">
+                    <div id="use-case-nav"><a href="javascript:" id="use-case-nav-open" title="All categories">Tất cả danh mục kịch bản</a></div>
+                </div>
+                <div id="use-case-nav-desktop">
+                    <div id="menu-wrapper">
+                        <div class="slides-wrapper swiper-container" id="use-case-nav-items">
+                            <div class="slides swiper-wrapper">
+                                <a href="index.html" class="slide swiper-slide">
+                                    <img alt="Chiếu sáng thông minh FIBARO" src="use-cases-lighting-header-small.jpg" />
+                                    <h3>Chiếu sáng thông minh<span>ngôi nhà của bạn</span></h3>
+                                    <div class="category">Chiếu sáng thông minh</div>
+                                </a>
+                                <a href="https://www.fibaro.com/de/smart-home-in-use/home-access-center/" class="slide swiper-slide">
+                                    <img alt="Cổng và rèm cửa nhà thông minh fibaro" src="use-cases-gates-header-small.jpg" />
+                                    <h3>Cổng và rèm cửa <span>dễ dàng kiểm soát</span></h3>
+                                    <div class="category">Cổng và rèm cửa</div>
+                                </a>
+                                <a href="https://www.fibaro.com/de/smart-home-in-use/smart-hvac/" class="slide swiper-slide">
+                                    <img alt="Nhiệt độ hoàn hảo nhà thông minh FIBARO" src="use-cases-climate-header-small.jpg" />
+                                    <h3 class="dark-font">Nhiệt độ hoàn hảo<span>với ngôi nhà</span></h3>
+                                    <div class="category">Nhiệt độ phù hợp</div>
+                                </a>
+                                <a href="https://www.fibaro.com/de/smart-home-in-use/home-safety/" class="slide swiper-slide">
+                                    <img alt="Hệ thống an ninh cao" src="use-cases-safety-header-small.jpg" />
+                                    <h3>Hệ thống an ninh cao<span> điều quan trọng nhất</span></h3>
+                                    <div class="category">An toàn tuyệt đối</div>
+                                </a>
+                                <a href="https://www.fibaro.com/de/smart-home-in-use/smart-surveillance-system/" class="slide swiper-slide">
+                                    <img alt="intelligente Überwachung" src="use-cases-security-header-small.jpg" />
+                                    <h3 class="dark-font">Hệ thống cảnh báo, <span>mọi sự bất thường</span></h3>
+                                    <div class="category">Cảnh báo trước những rủi ro</div>
+                                </a>
+                                <a href="https://www.fibaro.com/de/smart-home-in-use/smart-interactive-media/" class="slide swiper-slide">
+                                    <img alt="Hệ thống âm thanh nhà thông minh FIBARO" src="use-cases-multimedia-header-small.jpg" />
+                                    <h3>Hệ thống âm thanh đa phương tiện,<span>giải trí đỉnh cao</span></h3>
+                                    <div class="category">Hệ thống âm thanh</div>
+                                </a>
+                                <a href="https://www.fibaro.com/de/smart-home-in-use/smart-home-comfort/" class="slide swiper-slide">
+                                    <img alt="Thư giãn thoải mái nhà thông minh FIBARO" src="use-cases-mood-header-small.jpg" />
+                                    <h3>Thư giãn thoải mái,<span>phù hợp với bạn</span></h3>
+                                    <div class="category">Thư giãn</div>
+                                </a>
+                                <a href="https://www.fibaro.com/de/smart-home-in-use/smart-garden/" class="slide swiper-slide">
+                                    <img alt="Vườn nhà thông minh nhà thông minh FIBARO" src="use-cases-garden-header-small.jpg" />
+                                    <h3 class="garden-font">Một khu vườn đẹp<span>tươi tốt quanh năm</span></h3>
+                                    <div class="category">Vườn nhà thông minh</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div id="use-case-nav-overlay" class="">
+                    <a href="javascript:" id="use-case-nav-close" title="Close"> <img src="https://www.fibaro.com/de/wp-content/uploads/sites/5/2018/05/close-btn-light.svg" alt="Close" /> </a>
+                    <div class="wrapper">
+                        <h2>Nhà thông minh FIBARO</h2>
+                        <div class="col-phoneS-10 offset-phoneS-1">
+                            <div class="slides-wrapper swiper-container" id="use-case-nav-items">
+                                <div class="slides swiper-wrapper">
+                                    <a href="index.html" class="slide swiper-slide">
+                                        <img alt="Chiếu sáng thông minh FIBARO" src="use-cases-lighting-header-small.jpg" />
+                                    <h3>Chiếu sáng thông minh<span>ngôi nhà của bạn</span></h3>
+                                    <div class="category">Chiếu sáng thông minh</div>
+                                    </a>
+                                    <a href="https://www.fibaro.com/de/smart-home-in-use/home-access-center/" class="slide swiper-slide">
+                                        <img alt="Cổng và rèm cửa nhà thông minh fibaro" src="use-cases-gates-header-small.jpg" />
+                                    <h3>Cổng và rèm cửa <span>dễ dàng kiểm soát</span></h3>
+                                    <div class="category">Cổng và rèm cửa</div>
+                                    </a>
+                                    <a href="https://www.fibaro.com/de/smart-home-in-use/smart-hvac/" class="slide swiper-slide">
+                                        <img alt="Nhiệt độ hoàn hảo nhà thông minh FIBARO" src="use-cases-climate-header-small.jpg" />
+                                    <h3 class="dark-font">Nhiệt độ hoàn hảo<span>với ngôi nhà</span></h3>
+                                    <div class="category">Nhiệt độ phù hợp</div>
+                                    </a>
+                                    <a href="https://www.fibaro.com/de/smart-home-in-use/home-safety/" class="slide swiper-slide">
+                                        <img alt="Hệ thống an ninh cao" src="use-cases-safety-header-small.jpg" />
+                                    <h3>Hệ thống an ninh cao<span> điều quan trọng nhất</span></h3>
+                                    <div class="category">An toàn tuyệt đối</div>
+                                    </a>
+                                    <a href="https://www.fibaro.com/de/smart-home-in-use/smart-surveillance-system/" class="slide swiper-slide">
+                                        <img alt="intelligente Überwachung" src="use-cases-security-header-small.jpg" />
+                                    <h3 class="dark-font">Hệ thống cảnh báo, <span>mọi sự bất thường</span></h3>
+                                    <div class="category">Cảnh báo trước những rủi ro</div>
+                                    </a>
+                                    <a href="https://www.fibaro.com/de/smart-home-in-use/smart-interactive-media/" class="slide swiper-slide">
+                                        <img alt="Hệ thống âm thanh nhà thông minh FIBARO" src="use-cases-multimedia-header-small.jpg" />
+                                    <h3>Hệ thống âm thanh đa phương tiện,<span>giải trí đỉnh cao</span></h3>
+                                    <div class="category">Hệ thống âm thanh</div>
+                                    </a>
+                                    <a href="https://www.fibaro.com/de/smart-home-in-use/smart-home-comfort/" class="slide swiper-slide">
+                                        <img alt="Thư giãn thoải mái nhà thông minh FIBARO" src="use-cases-mood-header-small.jpg" />
+                                    <h3>Thư giãn thoải mái,<span>phù hợp với bạn</span></h3>
+                                    <div class="category">Thư giãn</div>
+                                    </a>
+                                    <a href="https://www.fibaro.com/de/smart-home-in-use/smart-garden/" class="slide swiper-slide">
+                                         <img alt="Vườn nhà thông minh nhà thông minh FIBARO" src="use-cases-garden-header-small.jpg" />
+                                    <h3 class="garden-font">Một khu vườn đẹp<span>tươi tốt quanh năm</span></h3>
+                                    <div class="category">Vườn nhà thông minh</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div id="top-use-case-nav-wrapper" style="display: none;">
+                    <div id="top-use-case-nav">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-12 offset-desktopS-0">
+                                    <div class="use-cases-link">Nhà thông minh FIBARO: <a href="#">Hệ thống ánh sáng</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    (function ($) {
+                        $(function () {
+                            // Append mobile top nav to header menu
+                            var secondMenu = $("#top-use-case-nav-wrapper").html();
+                            $("header").append(secondMenu);
+                        });
+                    })(jQuery);
+                </script>
+            </main>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row custom-footer">
+                        <div class="custom-footer-menu col-phoneS-10 offset-phoneS-1">
+                            <div class="row">
+                                <div class="four-columns">
+                                    <h3>Hỗ trợ</h3>
+                                    <ul>
+                                        <li><a href="https://manuals.fibaro.com/" target="_blank" rel="nofollow">Hướng dẫn sử dụng</a></li>
+                                        <li><a href="https://manuals.fibaro.com/knowledge-base/" target="" rel="nofollow">Kiến thức cơ bản</a></li>
+                                        <li><a href="https://forum.fibaro.com/" target="" rel="nofollow">Diễn đàn FIBARO</a></li>
+                                        <li><a href="https://manuals.fibaro.com/faq/" target="" rel="nofollow">FAQ</a></li>
+                                        <li><a href="https://www.fibaro.com/files/FIBARO_Guarantee.pdf" target="">Sự bảo đảm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Người dùng</h3>
+                                    <ul>
+                                        <li><a href="https://id.cloud.fibaro.com/" target="" rel="nofollow">FIBARO ID</a></li>
+                                        <li><a href="https://marketplace.fibaro.com/" target="" rel="nofollow">Thị trường</a></li>
+                                        <li><a href="https://itunes.apple.com/us/app/fibaro-for-iphone/id511085659?mt=8" target="" rel="nofollow">Ứng dụng FIBARO iOS</a></li>
+                                        <li><a href="https://play.google.com/store/apps/details?id=com.fibaro&amp;hl=en" target="" rel="nofollow">Ứng dụng FIBARO Android</a></li>
+                                        <li><a href="https://www.fibaro.com/us/homekit/" target="">FIBARO HomeKit</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Doanh nghiệp</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/dai-ly/" target="">Nhà phân phối</a></li>
+                                        <li><a href="https://compatibility.fibaro.com/" target="">Khả năng tương thích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/events/training-for-installers/" target="">Trình cài đặt</a></li>
+                                        <li><a href="https://www.fibaro.com/en/partnership/architect/" target="">Kiến trúc</a></li>
+                                        <!--<li><a href="https://www.fibaro.com/en/partnership/developer/" target="">Nhà phát triển</a></li>-->
+                                        <li><a href="https://www.fibaro.com/us/support/" target="">Trình tìm kiếm FIBARO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Thông tin</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/tin-tuc/" target="">Tin tức</a></li>
+                                        <li><a href="https://www.fibaro.com/us/about-us/" target="">Giá trị của chúng tôi</a></li>
+                                        <li><a href="https://www.fibaro.com/us/why-fibaro/" target="">Những lợi ích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/compatibility/" target="">Việc làm với FIBARO</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Nơi để mua</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="links lighter-font col-phoneS-12 col-desktopS-10 col-desktopM-8 offset-desktopM-1">
+                            <ul>
+                                <li><a href="https://www.fibaro.com/us/patents/">Bằng sáng chế</a></li>
+                                <li><a href="https://www.fibaro.com/us/privacy-policy/">Chính sách bảo mật</a></li>
+                                <li><a href="https://www.fibaro.com/us/reach/">REACH</a></li>
+                                <li><a href="https://id.cloud.fibaro.com/" rel="nofollow">FIBARO ID</a></li>
+                                <li><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="social col-phoneS-12 col-desktopS-2">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/FIBAROVN/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/facebook-d.svg" alt="Facebook" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/nhathongminh/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/instagram-d.svg" alt="Instagram" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/fibarovn001" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/twitter-d.svg" alt="Twitter" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/2936170/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/linkedin-d.svg" alt="LinkedIn" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCRTX4A0btp062eRjcqmoEdg" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/youtube-d.svg" alt="YouTube" /> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="copyright col-phoneS-12">
+                            <p>&copy; 2020. FIBAR0 Việt Nam</p>
+                            <img src="smart-home-system.png" alt="FIBARO Viet Nam" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopM-12 offset-desktopM-0 col-desktopL-10 offset-desktopL-1">
+                            <p>
+                                Chúng tôi sử dụng cookie để cá nhân hóa nội dung, tùy chỉnh và phân tích quảng cáo và đảm bảo sử dụng an toàn trang web. Bằng cách nhấp hoặc điều hướng trang web này, bạn đồng ý với việc thu thập thông tin tại
+                                www.fibaro.com và hơn thế nữa bằng cách sử dụng cookie. Thêm thông tin có sẵn trong tài liệu: <a href="https://www.fibaro.com/us/privacy-policy/">CHÍNH SÁCH RIÊNG TƯ VÀ CHÍNH SÁCH COOKIES</a>
+                            </p>
+                            <a href="#" class="cookie-ok">OK</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="close"></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="vendor.1912191358.js"></script>
+        <script type="text/javascript" src="main.2110191037.js"></script>
+        <script type="text/javascript" src="main-use-cases.0810191109.js"></script>
+    </body>
+    <!-- Mirrored from www.fibaro.com/de/smart-home-in-use/the-smart-light/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Aug 2020 08:39:05 GMT -->
+</html>

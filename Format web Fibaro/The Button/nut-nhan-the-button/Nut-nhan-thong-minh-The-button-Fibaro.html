@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Nút nhấn thông minh - The Button - Điều khiển từ xa, nút khẩn cấp | FIBARO</title>
+        <meta name="description" content="Nút nhấn thông minh kích hoạt hoặc hủy kích hoạt tự động bất kỳ thiết bị và hành động nào trong hệ thống nhà thông minh FIBARO. Tìm hiểu các giải pháp và thiết bị tự động hóa nhà hàng đầu." />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FIBARO | Nút nhất thông minh" />
+        <meta property="og:description" content="Kích hoạt hoặc hủy kích hoạt tự động bất kỳ thiết bị và hành động nào trong Hệ thống FIBARO." />
+        <meta property="og:site_name" content="fibarovn.com" />
+        <meta property="og:image" content="facebook-the-button.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@fibaro_global" />
+        <meta name="twitter:title" content="FIBARO | Nút nhấn thông minh" />
+        <meta name="twitter:description" content="Kích hoạt hoặc hủy kích hoạt tự động bất kỳ thiết bị và hành động nào trong Hệ thống FIBARO." />
+        <meta name="twitter:image" content="twitter-the-button.jpg" />
+        <meta property="og:url" content="index.html" />
+        <meta name="author" content="Fibaro Design Department" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="application-name" content="FIBARO" />
+        <meta name="baidu-site-verification" content="qwr0BSJvep" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.html" />
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="favicon-128x128.png" sizes="128x128" />
+        <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" sizes="57x57" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-60x60.png" sizes="60x60" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-72x72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-76x76.png" sizes="76x76" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-114x114.png" sizes="114x114" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-120x120.png" sizes="120x120" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-144x144.png" sizes="144x144" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-152x152.png" sizes="152x152" />
+        <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180" />
+        <link rel="stylesheet" id="fibaro-main-css" href="main.2906200724.css" type="text/css" media="all" />
+        <script>
+            !(function (window, document, undefined) {
+                function is(e, t) {
+                    return typeof e === t;
+                }
+                function testRunner() {
+                    var e, t, n, o, r, i, a;
+                    for (var s in tests)
+                        if (tests.hasOwnProperty(s)) {
+                            if (((e = []), (t = tests[s]), t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length)))
+                                for (n = 0; n < t.options.aliases.length; n++) e.push(t.options.aliases[n].toLowerCase());
+                            for (o = is(t.fn, "function") ? t.fn() : t.fn, r = 0; r < e.length; r++)
+                                (i = e[r]),
+                                    (a = i.split(".")),
+                                    1 === a.length ? (Modernizr[a[0]] = o) : (!Modernizr[a[0]] || Modernizr[a[0]] instanceof Boolean || (Modernizr[a[0]] = new Boolean(Modernizr[a[0]])), (Modernizr[a[0]][a[1]] = o)),
+                                    classes.push((o ? "" : "no-") + a.join("-"));
+                        }
+                }
+                function setClasses(e) {
+                    var t = docElement.className,
+                        n = Modernizr._config.classPrefix || "";
+                    if ((isSVG && (t = t.baseVal), Modernizr._config.enableJSClass)) {
+                        var o = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+                        t = t.replace(o, "$1" + n + "js$2");
+                    }
+                    Modernizr._config.enableClasses && ((t += " " + n + e.join(" " + n)), isSVG ? (docElement.className.baseVal = t) : (docElement.className = t));
+                }
+                function addTest(e, t) {
+                    if ("object" == typeof e) for (var n in e) hasOwnProp(e, n) && addTest(n, e[n]);
+                    else {
+                        e = e.toLowerCase();
+                        var o = e.split("."),
+                            r = Modernizr[o[0]];
+                        if ((2 == o.length && (r = r[o[1]]), "undefined" != typeof r)) return Modernizr;
+                        (t = "function" == typeof t ? t() : t),
+                            1 == o.length ? (Modernizr[o[0]] = t) : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), (Modernizr[o[0]][o[1]] = t)),
+                            setClasses([(t && 0 != t ? "" : "no-") + o.join("-")]),
+                            Modernizr._trigger(e, t);
+                    }
+                    return Modernizr;
+                }
+                function contains(e, t) {
+                    return !!~("" + e).indexOf(t);
+                }
+                function createElement() {
+                    return "function" != typeof document.createElement
+                        ? document.createElement(arguments[0])
+                        : isSVG
+                        ? document.createElementNS.call(document, "http://www.w3.org/2000/svg", arguments[0])
+                        : document.createElement.apply(document, arguments);
+                }
+                function getBody() {
+                    var e = document.body;
+                    return e || ((e = createElement(isSVG ? "svg" : "body")), (e.fake = !0)), e;
+                }
+                function injectElementWithStyles(e, t, n, o) {
+                    var r,
+                        i,
+                        a,
+                        s,
+                        d = "modernizr",
+                        l = createElement("div"),
+                        c = getBody();
+                    if (parseInt(n, 10)) for (; n--; ) (a = createElement("div")), (a.id = o ? o[n] : d + (n + 1)), l.appendChild(a);
+                    return (
+                        (r = createElement("style")),
+                        (r.type = "text/css"),
+                        (r.id = "s" + d),
+                        (c.fake ? c : l).appendChild(r),
+                        c.appendChild(l),
+                        r.styleSheet ? (r.styleSheet.cssText = e) : r.appendChild(document.createTextNode(e)),
+                        (l.id = d),
+                        c.fake && ((c.style.background = ""), (c.style.overflow = "hidden"), (s = docElement.style.overflow), (docElement.style.overflow = "hidden"), docElement.appendChild(c)),
+                        (i = t(l, e)),
+                        c.fake ? (c.parentNode.removeChild(c), (docElement.style.overflow = s), docElement.offsetHeight) : l.parentNode.removeChild(l),
+                        !!i
+                    );
+                }
+                function domToCSS(e) {
+                    return e
+                        .replace(/([A-Z])/g, function (e, t) {
+                            return "-" + t.toLowerCase();
+                        })
+                        .replace(/^ms-/, "-ms-");
+                }
+                function computedStyle(e, t, n) {
+                    var o;
+                    if ("getComputedStyle" in window) {
+                        o = getComputedStyle.call(window, e, t);
+                        var r = window.console;
+                        if (null !== o) n && (o = o.getPropertyValue(n));
+                        else if (r) {
+                            var i = r.error ? "error" : "log";
+                            r[i].call(r, "getComputedStyle returning null, its possible modernizr test results are inaccurate");
+                        }
+                    } else o = !t && e.currentStyle && e.currentStyle[n];
+                    return o;
+                }
+                function nativeTestProps(e, t) {
+                    var n = e.length;
+                    if ("CSS" in window && "supports" in window.CSS) {
+                        for (; n--; ) if (window.CSS.supports(domToCSS(e[n]), t)) return !0;
+                        return !1;
+                    }
+                    if ("CSSSupportsRule" in window) {
+                        for (var o = []; n--; ) o.push("(" + domToCSS(e[n]) + ":" + t + ")");
+                        return (
+                            (o = o.join(" or ")),
+                            injectElementWithStyles("@supports (" + o + ") { #modernizr { position: absolute; } }", function (e) {
+                                return "absolute" == computedStyle(e, null, "position");
+                            })
+                        );
+                    }
+                    return undefined;
+                }
+                function cssToDOM(e) {
+                    return e
+                        .replace(/([a-z])-([a-z])/g, function (e, t, n) {
+                            return t + n.toUpperCase();
+                        })
+                        .replace(/^-/, "");
+                }
+                function testProps(e, t, n, o) {
+                    function r() {
+                        a && (delete mStyle.style, delete mStyle.modElem);
+                    }
+                    if (((o = !is(o, "undefined") && o), !is(n, "undefined"))) {
+                        var i = nativeTestProps(e, n);
+                        if (!is(i, "undefined")) return i;
+                    }
+                    for (var a, s, d, l, c, u = ["modernizr", "tspan", "samp"]; !mStyle.style && u.length; ) (a = !0), (mStyle.modElem = createElement(u.shift())), (mStyle.style = mStyle.modElem.style);
+                    for (d = e.length, s = 0; s < d; s++)
+                        if (((l = e[s]), (c = mStyle.style[l]), contains(l, "-") && (l = cssToDOM(l)), mStyle.style[l] !== undefined)) {
+                            if (o || is(n, "undefined")) return r(), "pfx" != t || l;
+                            try {
+                                mStyle.style[l] = n;
+                            } catch (p) {}
+                            if (mStyle.style[l] != c) return r(), "pfx" != t || l;
+                        }
+                    return r(), !1;
+                }
+                function fnBind(e, t) {
+                    return function () {
+                        return e.apply(t, arguments);
+                    };
+                }
+                var tests = [],
+                    ModernizrProto = {
+                        _version: "3.5.0",
+                        _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 },
+                        _q: [],
+                        on: function (e, t) {
+                            var n = this;
+                            setTimeout(function () {
+                                t(n[e]);
+                            }, 0);
+                        },
+                        addTest: function (e, t, n) {
+                            tests.push({ name: e, fn: t, options: n });
+                        },
+                        addAsyncTest: function (e) {
+                            tests.push({ name: null, fn: e });
+                        },
+                    },
+                    Modernizr = function () {};
+                (Modernizr.prototype = ModernizrProto), (Modernizr = new Modernizr());
+                var classes = [],
+                    docElement = document.documentElement,
+                    isSVG = "svg" === docElement.nodeName.toLowerCase(),
+                    hasOwnProp;
+                !(function () {
+                    var e = {}.hasOwnProperty;
+                    hasOwnProp =
+                        is(e, "undefined") || is(e.call, "undefined")
+                            ? function (e, t) {
+                                  return t in e && is(e.constructor.prototype[t], "undefined");
+                              }
+                            : function (t, n) {
+                                  return e.call(t, n);
+                              };
+                })(),
+                    (ModernizrProto._l = {}),
+                    (ModernizrProto.on = function (e, t) {
+                        this._l[e] || (this._l[e] = []),
+                            this._l[e].push(t),
+                            Modernizr.hasOwnProperty(e) &&
+                                setTimeout(function () {
+                                    Modernizr._trigger(e, Modernizr[e]);
+                                }, 0);
+                    }),
+                    (ModernizrProto._trigger = function (e, t) {
+                        if (this._l[e]) {
+                            var n = this._l[e];
+                            setTimeout(function () {
+                                var e, o;
+                                for (e = 0; e < n.length; e++) (o = n[e])(t);
+                            }, 0),
+                                delete this._l[e];
+                        }
+                    }),
+                    Modernizr._q.push(function () {
+                        ModernizrProto.addTest = addTest;
+                    });
+                var modElem = { elem: createElement("modernizr") };
+                Modernizr._q.push(function () {
+                    delete modElem.elem;
+                });
+                var mStyle = { style: modElem.elem.style };
+                Modernizr._q.unshift(function () {
+                    delete mStyle.style;
+                });
+                var testProp = (ModernizrProto.testProp = function (e, t, n) {
+                        return testProps([e], undefined, t, n);
+                    }),
+                    mq = (function () {
+                        var e = window.matchMedia || window.msMatchMedia;
+                        return e
+                            ? function (t) {
+                                  var n = e(t);
+                                  return (n && n.matches) || !1;
+                              }
+                            : function (e) {
+                                  var t = !1;
+                                  return (
+                                      injectElementWithStyles("@media " + e + " { #modernizr { position: absolute; } }", function (e) {
+                                          t = "absolute" == (window.getComputedStyle ? window.getComputedStyle(e, null) : e.currentStyle).position;
+                                      }),
+                                      t
+                                  );
+                              };
+                    })();
+                (ModernizrProto.mq = mq),
+                    Modernizr.addTest("video", function () {
+                        var e = createElement("video"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/, "")),
+                                    (t.h264 = e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/, "")),
+                                    (t.webm = e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/, "")),
+                                    (t.vp9 = e.canPlayType('video/webm; codecs="vp9"').replace(/^no$/, "")),
+                                    (t.hls = e.canPlayType('application/x-mpegURL; codecs="avc1.42E01E"').replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("dataset", function () {
+                        var e = createElement("div");
+                        return e.setAttribute("data-a-b", "c"), !(!e.dataset || "c" !== e.dataset.aB);
+                    }),
+                    Modernizr.addAsyncTest(function () {
+                        function e(e, t, n) {
+                            function o(t) {
+                                var o = !(!t || "load" !== t.type) && 1 == r.width,
+                                    i = "webp" === e;
+                                addTest(e, i && o ? new Boolean(o) : o), n && n(t);
+                            }
+                            var r = new Image();
+                            (r.onerror = o), (r.onload = o), (r.src = t);
+                        }
+                        var t = [
+                                { uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=", name: "webp" },
+                                { uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==", name: "webp.alpha" },
+                                { uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA", name: "webp.animation" },
+                                { uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=", name: "webp.lossless" },
+                            ],
+                            n = t.shift();
+                        e(n.name, n.uri, function (n) {
+                            if (n && "load" === n.type) for (var o = 0; o < t.length; o++) e(t[o].name, t[o].uri);
+                        });
+                    }),
+                    Modernizr.addTest("svg", !!document.createElementNS && !!document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect),
+                    Modernizr.addTest("texttrackapi", "function" == typeof createElement("video").addTextTrack),
+                    Modernizr.addTest("track", "kind" in createElement("track")),
+                    Modernizr.addTest("audio", function () {
+                        var e = createElement("audio"),
+                            t = !1;
+                        try {
+                            (t = !!e.canPlayType),
+                                t &&
+                                    ((t = new Boolean(t)),
+                                    (t.ogg = e.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/, "")),
+                                    (t.mp3 = e.canPlayType('audio/mpeg; codecs="mp3"').replace(/^no$/, "")),
+                                    (t.opus = e.canPlayType('audio/ogg; codecs="opus"') || e.canPlayType('audio/webm; codecs="opus"').replace(/^no$/, "")),
+                                    (t.wav = e.canPlayType('audio/wav; codecs="1"').replace(/^no$/, "")),
+                                    (t.m4a = (e.canPlayType("audio/x-m4a;") || e.canPlayType("audio/aac;")).replace(/^no$/, "")));
+                        } catch (n) {}
+                        return t;
+                    }),
+                    Modernizr.addTest("notification", function () {
+                        if (!window.Notification || !window.Notification.requestPermission) return !1;
+                        if ("granted" === window.Notification.permission) return !0;
+                        try {
+                            new window.Notification("");
+                        } catch (e) {
+                            if ("TypeError" === e.name) return !1;
+                        }
+                        return !0;
+                    }),
+                    Modernizr.addTest("time", "valueAsDate" in createElement("time")),
+                    Modernizr.addTest("arrow", function () {
+                        try {
+                            eval("()=>{}");
+                        } catch (e) {
+                            return !1;
+                        }
+                        return !0;
+                    });
+                var inputElem = createElement("input"),
+                    inputattrs = "autocomplete autofocus list placeholder max min multiple pattern required step".split(" "),
+                    attrs = {};
+                (Modernizr.input = (function (e) {
+                    for (var t = 0, n = e.length; t < n; t++) attrs[e[t]] = !!(e[t] in inputElem);
+                    return attrs.list && (attrs.list = !(!createElement("datalist") || !window.HTMLDataListElement)), attrs;
+                })(inputattrs)),
+                    Modernizr.addTest("hidden", "hidden" in createElement("a")),
+                    testRunner(),
+                    setClasses(classes),
+                    delete ModernizrProto.addTest,
+                    delete ModernizrProto.addAsyncTest;
+                for (var i = 0; i < Modernizr._q.length; i++) Modernizr._q[i]();
+                window.Modernizr = Modernizr;
+            })(window, document);
+        </script>
+        <link rel="stylesheet" id="timed-content-css-css" href="timed-contenta4b6.css?ver=2.61" type="text/css" media="all" />
+        <script type="text/javascript" src="jqueryb8ff.js?ver=1.12.4"></script>
+        <script type="text/javascript" src="jquery-migrate.min330a.js?ver=1.4.1"></script>
+        <script type="text/javascript" src="timed-contenta4b6.js?ver=2.61"></script>
+        <link rel="canonical" href="https://www.fibaro.com/en/products/the-button/" />
+        <link rel="alternate" href="https://www.fibaro.com/en/products/the-button/" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/cn/products/the-button/" hreflang="zh-cn" />
+        <link rel="alternate" href="https://www.fibaro.com/pl/products/the-button/" hreflang="pl-pl" />
+        <link rel="alternate" href="https://www.fibaro.com/cz/products/the-button/" hreflang="cs-cz" />
+        <link rel="alternate" href="https://www.fibaro.com/ro/products/the-button/" hreflang="ro-ro" />
+        <link rel="alternate" href="https://www.fibaro.com/de/products/the-button/" hreflang="de-de" />
+        <link rel="alternate" href="https://www.fibaro.com/fr/products/the-button/" hreflang="fr-fr" />
+        <link rel="alternate" href="https://www.fibaro.com/it/products/the-button/" hreflang="it-it" />
+        <link rel="alternate" href="https://www.fibaro.com/hu/products/the-button/" hreflang="hu-hu" />
+        <link rel="alternate" href="https://www.fibaro.com/pt/products/the-button/" hreflang="pt-br" />
+        <link rel="alternate" href="https://www.fibaro.com/nl/products/the-button/" hreflang="nl-nl" />
+        <link rel="alternate" href="https://www.fibaro.com/se/products/the-button/" hreflang="sv-se" />
+        <link rel="alternate" href="https://www.fibaro.com/cl/products/the-button/" hreflang="es-cl" />
+        <link rel="alternate" href="https://www.fibaro.com/gr/products/the-button/" hreflang="el" />
+        <link rel="alternate" href="https://www.fibaro.com/no/products/nodknapp-the-button/" hreflang="nb-no" />
+        <link rel="alternate" href="index.html" hreflang="en-us" />
+        <link rel="alternate" href="https://www.fibaro.com/en/products/the-button/" hreflang="x-default" />
+        <style type="text/css">
+            #section1 .big-button .button-on {
+                background-image: url("button-on.png");
+            }
+            #section1 .big-button .button-off {
+                background-image: url("button-off.png");
+            }
+            #section2.section-video-player {
+                background-image: url("movie-poster-4.jpg");
+            }
+            @media screen and (min-width: 1200px) {
+                #section2.section-video-player {
+                    background-image: none;
+                }
+            }
+            #section5 .bg {
+                background-image: url("hands-mobile.jpg");
+            }
+            #section5 img {
+                width: 100%;
+            }
+            @media screen and (min-width: 768px) {
+                #section5 .bg {
+                    background-image: url("hands.png");
+                }
+            }
+            .button.button-buy {
+                padding: 6px 46px;
+            }
+            @media screen and (min-width: 1200px) {
+                .the-button .section-homekit-enabled .bg {
+                    height: 550px;
+                }
+            }
+            @media screen and (min-width: 1600px) {
+                .the-button .section-homekit-enabled .bg {
+                    height: 710px;
+                }
+            }
+            #section7 .bg {
+                background-image: url("always-close-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section7 .bg {
+                    background-image: url("always-close.jpg");
+                }
+            }
+            #section8 .bg {
+                background-image: url("hidden.jpg");
+            }
+            #section9 .bg {
+                background-image: url("care-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section9 .bg {
+                    background-image: url("care.jpg");
+                }
+            }
+            #section10 .bg {
+                background-image: url("notifications-mobile-4.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section10 .bg {
+                    background-image: url("notifications-2.jpg");
+                }
+            }
+            #section11 .bg {
+                background-image: url("family-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section11 .bg {
+                    background-image: url("family.jpg");
+                }
+            }
+            #section12 .content {
+                position: relative;
+            }
+            #section12 .hands-on {
+                background-image: url("hands-on.jpg");
+            }
+            #section12 .hands-off {
+                background-image: url("hands-off.jpg");
+            }
+            #section12 .light {
+                background-image: url("bulb.png");
+            }
+            #section12 .projector {
+                background-image: url("projector.png");
+            }
+            #section12 .fan {
+                background-image: url("fan.png");
+            }
+            #section13 .bg {
+                background-image: url("pizza-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section13 .bg {
+                    background-image: url("pizza.jpg");
+                }
+            }
+            #section14 .bg {
+                background-image: url("cinema-on-mobile.jpg");
+            }
+            #section14 .bg-second {
+                background-image: url("cinema-off-mobile.jpg");
+            }
+            #section14 span.button {
+                background: url("https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/complex-scenes.svg") no-repeat 0 100%;
+            }
+            @media screen and (min-width: 768px) {
+                #section14 .bg {
+                    background-image: url("cinema-on.jpg");
+                }
+                #section14 .bg-second {
+                    background-image: url("cinema-off.jpg");
+                }
+            }
+            #section15 .bg {
+                background-image: url("kid-reach-mobile.jpg");
+            }
+            @media screen and (min-width: 992px) {
+                #section15 .bg {
+                    background-image: url("kid-reach.jpg");
+                }
+            }
+            #section16 .bg {
+                background-image: url("hotel-mobile.jpg");
+            }
+            @media screen and (min-width: 992px) {
+                #section16 .bg {
+                    background-image: url("hotel.jpg");
+                }
+            }
+            #section17 .bg .off,
+            #section17.on .bg .on {
+                visibility: visible;
+            }
+            #section17 .bg .on,
+            #section17.on .bg .off {
+                visibility: hidden;
+            }
+            #section17 .bg picture img {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            #section18 .bg {
+                background-image: url("synchronize-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section18 .bg {
+                    background-image: url("synchronize.jpg");
+                }
+            }
+            #section19 .bg {
+                background-image: url("be-late-off-mobile.jpg");
+            }
+            #section19 .bg-second {
+                background-image: url("be-late-on-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section19 .bg {
+                    background-image: url("be-late-off.jpg");
+                }
+                #section19 .bg-second {
+                    background-image: url("be-late-on.jpg");
+                }
+            }
+            #section20 .bg {
+                background-image: url("goodnight-mobile.jpg");
+            }
+            @media screen and (min-width: 768px) {
+                #section20 .bg {
+                    background-image: url("goodnight.jpg");
+                }
+            }
+        </style>
+        <script>
+            dataLayer = [];
+        </script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "gtm5445.html?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MF67KLD");
+        </script>
+    </head>
+    <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF67KLD" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <div class="site-wrapper single-product the-button has-secondary-nav">
+<header id="fibaro_main_header">
+                <div class="container">
+                    <div class="row">
+                        <div class="brand col-phoneS-10 offset-phoneS-1 col-desktopS-2 offset-desktopS-0 col-desktopL-3">
+                            <a href="https://fibarovn.com/"><img src="https://www.fibaro.com/us/wp-content/themes/fibaro-wp-theme/img/common/FIBARO_logo.svg" alt="FIBARO Viet Nam" /></a>
+                            <button id="menu-toggle" class="hidden-desktopS-up"><span></span></button>
+                        </div>
+                        <nav class="col-phoneS-10 offset-phoneS-1 col-desktopS-10 offset-desktopS-0 col-desktopL-9">
+                            <ul>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2958"><a href="https://fibarovn.com/">Trang chủ FIBARO</a></li>
+                                <li class="menu-top-item products-redesign menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-17 menu-item-has-children">
+                                    <a href="#">Các sản phẩm</a>
+                                    <ul class="menu-sub menu-sub-products">
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2878 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Chiếu sáng</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-lighting">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2301">
+                                                    <a href="https://www.fibaro.com/us/products/dimmer-2/"> <img src="nav-dimmer.jpg" alt="Dimmer 2" /> <span>Chiết áp Dimmer 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2310">
+                                                    <a href="https://www.fibaro.com/us/products/switches/"> <img src="nav-relay.jpg" alt="Switches" /> <span>Role thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2308">
+                                                    <a href="https://www.fibaro.com/us/products/rgbw-controller/"> <img src="nav-rgbw-1.jpg" alt="RGBW Controller" /> <span>Bộ điều khiển màu sắc RGBW</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2375">
+                                                    <a href="https://www.fibaro.com/us/products/wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2891">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2879 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Cổng và rèm cửa</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gates-and-blinds">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2777">
+                                                    <a href="index.html"> <img src="nav_smartimplant.png" alt="Smart Implant - Bo tich hop dieu khien thong minh" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2890">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2880 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Điều khiển nhiêt, sưởi ấm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-heating">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2884">
+                                                    <a href="https://www.fibaro.com/us/products/wall-plug/"> <img src="ikona_wp_us_menu.jpg" alt="Wall Plug" /> <span>Ổ cắm thông minh Wallplug</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2885">
+                                                    <a href="index.html"> <img src="nav_smartimplant.png" alt="Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2889">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li
+                                            onclick="location.href='#'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-2881 menu-item-has-children"
+                                            data-level="1"
+                                        >
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">An toàn và bảo mật</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-safety-and-security">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2307">
+                                                    <a href="https://www.fibaro.com/us/products/motion-sensor/"> <img src="nav-motion.jpg" alt="Motion Sensor" /> <span>Cảm biến chuyển động</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2302">
+                                                    <a href="https://www.fibaro.com/us/products/door-window-sensor/"> <img src="nav-dws.jpg" alt="Door/Window Sensor" /> <span>Cảm biến mở cửa</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2303">
+                                                    <a href="https://www.fibaro.com/us/products/flood-sensor/"> <img src="nav-flood.jpg" alt="Flood Sensor" /> <span>Cảm biến ngập nước</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products current-menu-item menu-item-2886">
+                                                    <a href="index.html"> <img src="nav_smartimplant.png" alt="Bộ tích hợp điều khiển thông minh Smart Implant" /> <span>Smart Implant - Bộ tích hợp điều khiển thông minh</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2888">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2882 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Thiết bị kích hoạt</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-triggering">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2306">
+                                                    <a href="https://www.fibaro.com/us/products/keyfob/"> <img src="nav-keyfob.jpg" alt="KeyFob" /> <span>Remote KeyFob</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2311">
+                                                    <a href="https://www.fibaro.com/us/products/the-button/"> <img src="nav-button.jpg" alt="The Button" /> <span>Nút nhấn</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2309">
+                                                    <a href="https://www.fibaro.com/us/products/swipe/"> <img src="nav-swipe.jpg" alt="Swipe" /> <span>Bảng điều khiển Swipe</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2883">
+                                                    <a href="https://www.fibaro.com/us/smart-home-app/"> <img src="nav_app.jpg" alt="Application FIBARO Home Center" /> <span>Ứng dụng FIBARO Home Center</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2887">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li onclick="location.href='#'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-custom menu-item-object-custom menu-item-675 menu-item-has-children" data-level="1">
+                                            <img src="#" class="page-icon" /> <span class="menu-description"></span> <a href="#" class="menu-sub-toggle">Bộ điều khiển trung tâm</a> <a href="#" class="menu-link"></a>
+                                            <ul class="menu-sub menu-sub-gateways">
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2304">
+                                                    <a href="https://www.fibaro.com/us/products/home-center-2/"> <img src="nav-hc2.jpg" alt="Home Center 2" /> <span>Home Center 2</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-products menu-item-2305">
+                                                    <a href="https://www.fibaro.com/us/products/home-center-lite/"> <img src="nav-hcl.jpg" alt="Home Center Lite" /> <span>Home Center Lite</span> </a>
+                                                </li>
+                                                <li class="menu-sub-item all-products full-width menu-item menu-item-type-post_type menu-item-object-products menu-item-2892">
+                                                    <a href="https://www.fibaro.com/us/products/all-domotica-devices/"> <img src="#" alt="All devices" /> <span>Tất cả thiết bị</span> </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-custom menu-item-object-custom menu-item-2664 menu-item-has-children">
+                                    <a href="#">Hoạt động với</a>
+                                    <ul class="menu-sub menu-sub-workswith">
+                                        <li
+                                            onclick="location.href='https://www.fibaro.com/us/compatibility/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2296"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-fibaro.png" class="page-icon" /> <span class="menu-description">Nhận biết các khả năng của một hệ thống nhà thông minh hoàn chỉnh.</span>
+                                            <a href="https://www.fibaro.com/us/compatibility/" class="menu-sub-toggle">Hệ thống nhà thông minh FIBARO</a> <a href="https://www.fibaro.com/us/compatibility/" class="menu-link">Tìm hiểu hệ thống</a>
+                                        </li>
+                                        <li
+                                            onclick="location.href='https://www.fibaro.com/us/smartthings/'"
+                                            style="cursor: pointer;"
+                                            class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2801"
+                                            data-level="1"
+                                        >
+                                            <img src="nav-smartthings.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với SmartThings.</span>
+                                            <a href="https://www.fibaro.com/us/smartthings/" class="menu-sub-toggle">SmartThings</a> <a href="https://www.fibaro.com/us/smartthings/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                        <li onclick="location.href='https://www.fibaro.com/us/homekit/'" style="cursor: pointer;" class="menu-sub-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2665" data-level="1">
+                                            <img src="nav-homekit.png" class="page-icon" /> <span class="menu-description">Tìm hiểu các thiết bị thông minh FIBARO hoạt động với Apple HomeKit.</span>
+                                            <a href="https://www.fibaro.com/us/homekit/" class="menu-sub-toggle">Apple HomeKit</a> <a href="https://www.fibaro.com/us/homekit/" class="menu-link">Xem thêm</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2689"><a href="https://www.fibaro.com/us/why-fibaro/">Những lợi ích</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2931"><a href="https://fibarovn.com/contact/">Nơi để mua</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2298"><a href="https://fibarovn.com/contact/">Hỗ trợ</a></li>
+                                <li class="menu-top-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2297"><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                            <div id="language-selector">
+                                <a href="index.html" id="lang-toggle">Tiếng Việt</a>
+                                <div id="lang-choices">
+                                    <a href="https://www.fibaro.com/cn/products/smart-implant/" title="中文">中文</a> <a href="https://www.fibaro.com/cz/products/smart-implant/" title="Čeština">Čeština</a>
+                                    <a href="https://www.fibaro.com/de/products/smart-implant/" title="Deutsch">Deutsch</a> <a href="https://www.fibaro.com/en/products/smart-implant/" title="English">English (International)</a>
+                                    <a href="index.html" title="English">Tiếng Việt</a> <a href="https://www.fibaro.com/cl/products/smart-implant/" title="Español">Español</a>
+                                    <a href="https://www.fibaro.com/fr/products/smart-implant/" title="Français">Français</a> <a href="https://www.fibaro.com/gr/products/smart-implant/" title="Ελληνικά">Ελληνικά</a>
+                                    <a href="https://www.fibaro.com/it/products/smart-implant/" title="Italiano">Italiano</a> <a href="https://www.fibaro.com/lt/products/smart-implant/" title="Lietuvių">Lietuvių</a>
+                                    <a href="https://www.fibaro.com/hu/products/smart-implant/" title="Magyar">Magyar</a> <a href="https://www.fibaro.com/nl/products/smart-implant/" title="Nederlands">Nederlands</a>
+                                    <a href="https://www.fibaro.com/ru/products/smart-implant/" title="Русский">Русский</a> <a href="https://www.fibaro.com/no/products/smart-implant/" title="Norsk bokmål">Norsk bokmål</a>
+                                    <a href="https://www.fibaro.com/ar/products/smart-implant/" title="العربية">العربية</a> <a href="https://www.fibaro.com/pl/products/smart-implant/" title="Polski">Polski</a>
+                                    <a href="https://www.fibaro.com/pt/products/smart-implant/" title="Português">Português</a> <a href="https://www.fibaro.com/ro/products/smart-implant/" title="Română">Română</a>
+                                    <a href="https://www.fibaro.com/sk/products/smart-implant/" title="Slovenčina">Slovenčina</a> <a href="https://www.fibaro.com/se/products/smart-implant/" title="Svenska">Svenska</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div id="secondary-nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-phoneS-10 offset-phoneS-1 col-desktopS-12 offset-desktopS-0">
+                                <div class="items">
+                                    <div class="title">Nút nhấn thông minh FIBARO</div>
+                                    <div class="links mobile-hidden"></div>
+                                    <div class="actions"><a href="https://fibarovn.com/contact/" class="bin">MUA</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section id="section1" class="section-product-header">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1">
+                                    <h1>NÚT NHẤN THÔNG MINH FIBARO <img src="home-on.png" alt="Nút nhấn thông minh - Fibaro the button" /></h1>
+                                    <p>Kích hoạt hoặc hủy kích hoạt thủ công bất kỳ thiết bị nào và hành động nào trong Hệ thống nhà thông minh FIBARO</p>
+                                </div>
+                                <div class="col-phoneS-12">
+                                    <p class="start">Nhấn</p>
+                                    <div class="big-button">
+                                        <div class="button-on invisible"></div>
+                                        <div class="button-off"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section2" class="section-video-player typo-light">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-12">
+                                    <h2>Xem video</h2>
+                                    <a href="#" class="button button-play" data-video-id="dvF195jZenE"><span>Phát</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <video src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/2016-12-27_WWW_Button_ZW.mp4" preload loop autoplay class="hidden-tabletL-down"></video>
+                </section>
+                <section id="section3" class="section-inter">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-12 col-tabletP-4">
+                                    <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/for-home.svg" alt="For home" />
+                                    <h2>Giành cho gia đình</h2>
+                                    <p>Là một công tắt tiện lợi cho các thiết bị điện và các kịch bản có sẵn.</p>
+                                </div>
+                                <div class="col-phoneS-12 col-tabletP-4">
+                                    <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/for-business.svg" alt="smart business button" />
+                                    <h2>Doanh nghiệp</h2>
+                                    <p>Là một công cụ tiện dụng hỗ trợ các hoạt động hàng ngày và dịch vụ khách hàng.</p>
+                                </div>
+                                <div class="col-phoneS-12 col-tabletP-4">
+                                    <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/for-emergencies.svg" alt="home automation" />
+                                    <h2>Trường hợp khẩn cấp</h2>
+                                    <p>Như một nút để liên hệ khẩn cấp với người chăm sóc hoặc gọi trợ giúp.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section4" class="section-interactive multi-swap light anim-textcontent anim-textcontent-l2r">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-8 col-phoneL-6 offset-phoneS-1">
+                                    <h2>Lựa chọn màu sắc cho bạn</h2>
+                                    <p>Nút nhấn thông minh FIBARO có nhiều màu sắc khác nhau. Nó giúp một căn phòng trở nên hài hòa nếu được chọn một màu sắc thích hợp.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover">
+                        <picture data-typo-class="light">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/color-bg-blue.jpg" media="(min-width: 768px)" />
+                            <img src="color-bg-m-blue.jpg" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                        </picture>
+                        <picture data-typo-class="dark">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/color-bg-yellow.jpg" media="(min-width: 768px)" />
+                            <img src="color-bg-m-yellow.jpg" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                        </picture>
+                        <picture data-typo-class="dark">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/color-bg-green.jpg" media="(min-width: 768px)" />
+                            <img src="color-bg-m-green.jpg" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                        </picture>
+                        <picture data-typo-class="light">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/color-bg-orange.jpg" media="(min-width: 768px)" />
+                            <img src="color-bg-m-orange.jpg" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                        </picture>
+                        <picture data-typo-class="dark">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/color-bg-brown.jpg" media="(min-width: 768px)" />
+                            <img src="color-bg-m-brown.jpg" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                        </picture>
+                        <picture data-typo-class="light">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/color-bg-red.jpg" media="(min-width: 768px)" />
+                            <img src="color-bg-m-red.jpg" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                        </picture>
+                        <picture data-typo-class="dark">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/color-bg-black.jpg" media="(min-width: 768px)" />
+                            <img src="color-bg-m-black.jpg" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                        </picture>
+                        <picture data-typo-class="dark">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/color-bg-white.jpg" media="(min-width: 768px)" />
+                            <img src="color-bg-m-white.jpg" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                        </picture>
+                        <div class="button">
+                            <img src="color-bt-blue.png" class="invisible" alt="The Button FIBARO - nút nhấn thông minh FIBARO" /> 
+                            <img src="color-bt-yellow.png" class="invisible" alt="The Button FIBARO - nút nhấn thông minh FIBARO" /> 
+                            <img src="color-bt-green.png" class="invisible" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                            <img src="color-bt-orange.png" class="invisible" alt="The Button FIBARO - nút nhấn thông minh FIBARO" /> 
+                            <img src="color-bt-brown.png" class="invisible" alt="The Button FIBARO - nút nhấn thông minh FIBARO" /> 
+                            <img src="color-bt-red.png" class="invisible" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                            <img src="color-bt-black.png" class="invisible" alt="The Button FIBARO - nút nhấn thông minh FIBARO" /> 
+                            <img src="color-bt-white.png" alt="The Button FIBARO - nút nhấn thông minh FIBARO" />
+                        </div>
+                    </div>
+                </section>
+                <section id="section5" class="section-big-image anim-textcontent anim-textcontent-l2r">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-6 offset-phoneS-1">
+                                    <h2>Nút nhấn thông minh FIBARO có kích thức nhỏ gọn và di động</h2>
+                                    <p>Nút nhấn có thể được đặt hầu như bất cứ nơi nào. Nó có thể được cố định vào một điểm và di chuyển khi cần thiết.</p>
+                                </div>
+                                <div class="col-phoneS-10 offset-phoneS-1"><img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/thebutton-sizes-imperial.svg" alt="The Button FIBARO - nút nhấn thông minh FIBARO" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section6" class="section-video-reveal anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopS-12 offset-desktopS-0">
+                                    <h2>Chất lượng cao và chạy bằng pin</h2>
+                                    <p>Các tiêu chuẩn tốt nhất của sản xuất được đưa vào thiết bị này, nút nhấn thông minh FIBARO hoạt động hoàn hảo và tồn tại trong một thời gian dài. Nút vận hành bởi pin và không cần bất kỳ kết nối có dây.</p>
+                                    <img class="hidden-desktopS-up" src="sequence.png" alt="Nút nhấn thông minh FIBARO - The Button Fibaro" />
+                                    <video class="hidden-tabletL-down" src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/parts-reveal-1.mp4" muted preload></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="homekit-enabled" class="section-homekit-enabled">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-5 col-tabletL-4">
+                                    <h2>Phù hợp với Apple HomeKit</h2>
+                                    <p>
+                                        Để đáp ứng nhu cầu của người dùng công nghệ Apple và theo sứ mệnh của chúng tôi, để tự động hóa mọi hộ gia đình, chúng tôi đang giới thiệu Nút nhấn thông minh FIBARO cho Apple HomeKit. Từ giờ bạn có thể tận hưởng các tính năng của thiết bị FIBARO trên nền tảng yêu thích của bạn. <a href="https://www.fibaro.com/en/homekit/">Tìm hiểu thêm.</a>
+                                    </p>
+                                    <p><a href="https://fibarovn.com/contact/" class="button button-buy hidden-phoneL-down" rel="nofollow noopener" target="_blank">Đặt hàng ngay</a></p>
+                                    <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/homekit-logo-new.svg" alt="Phù hợp với Apple HomeKit" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                    <style type="text/css">
+                        .section-homekit-enabled .bg {
+                            background-image: url("button-hk-enabled-mobile-us.jpg");
+                        }
+                        @media screen and (min-width: 768px) {
+                            .section-homekit-enabled .bg {
+                                background-image: url("button-hk-enabled-us.jpg");
+                            }
+                        }
+                    </style>
+                </section>
+                <section id="section7" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-4 offset-tabletP-7 offset-desktopS-8 offset-desktopM-7">
+                                    <h2>Nút nhấn thông minh Fibaro luôn luôn hoạt động</h2>
+                                    <p>
+                                       Sử dụng Nút bất cứ khi nào <br/>và bất cứ nơi nào bạn cần.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section8" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-8 offset-phoneS-3 col-phoneL-7 offset-phoneL-4 col-tabletP-6 offset-tabletP-5 col-tabletL-5 offset-tabletL-6 offset-desktopS-7 col-desktopM-4 col-desktopL-3 offset-desktopL-8">
+                                    <h2>Có thể giấu đi hoặc nhìn thấy</h2>
+                                    <p>Nút nhấn rất nhỏ gọn. <br/>Tùy thuộc vào nhu cầu của bạn, bạn có thể giữ Nút trong tầm nhìn hoặc đặt nó ngoài tầm nhìn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section9" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-12 col-phoneL-10 offset-phoneL-1 col-tabletL-6 offset-tabletL-3 col-desktopM-6 offset-desktopM-3">
+                                    <h2>Chăm sóc những người thân yên của bạn</h2>
+                                    <p>Nút nhấn thông minh FIBARO là một tiện lợi cho người cao tuổi, người bệnh và trẻ nhỏ. Khi họ nhấn nút, một thông báo sẽ gửi đến bạn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section10" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-5 offset-tabletL-6 offset-desktopS-7 offset-desktopL-6">
+                                    <h2>Thông báo<br/> trên thiết bị di động</h2>
+                                    <p>
+                                        Những người thân yêu của bạn chỉ cần một cú nhấn nút và nút nhấn có thể thông báo cho bạn về nhu cầu của họ hoặc gọi trợ giúp.*<br />
+                                        <br />
+                                        <span style="font-size: 1.1rem; margin-top: 20px;">* Chức năng chỉ khả dụng trong công nghệ Z-Wave.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section11" class="section-big-image anim-textcontent anim-textcontent-l2r">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-4 offset-desktopS-0 offset-desktopL-1">
+                                    <h2>Giành cho tất cả thành viên gia đình</h2>
+                                    <p>Bạn có thể gán màu Nút nhấn thông minh FIBARO cho từng thành viên trong gia đình hoặc cho phép trẻ em biến chúng thành những tác phẩm nghệ thuật nhỏ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section12" class="section-interactive multi-click anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-desktopM-8 offset-desktopM-2">
+                                    <h2>Nút có thể nhận ra tối đa 6 hành động. Một lần nhấp có thể tắt đèn, hai lần nhấp có thể kích hoạt thiết bị AC, nhấn và giữ nút có thể kích hoạt cảnh, v.v.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-phoneS-12 col-tabletP-7 col-tabletL-7 col-desktopS-8"></div>
+                                <div class="col-phoneS-12 col-tabletP-5 col-tabletL-4">
+                                    <div class="feature">
+                                        <div class="icon light"></div>
+                                        <div class="desc">
+                                            <h3>1 x <span>nhấn</span></h3>
+                                            <p>Tắt/Mở đèn</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon projector"></div>
+                                        <div class="desc">
+                                            <h3>2 x <span>nhấn</span></h3>
+                                            <p>Tắt/Mở máy chiếu</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="icon fan"></div>
+                                        <div class="desc">
+                                            <h3>3 x <span>nhấn</span></h3>
+                                            <p>Tắt/Mở máy quạt</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg">
+                        <div class="hands-on invisible"></div>
+                        <div class="hands-off"></div>
+                    </div>
+                </section>
+                <section id="section14" class="section-big-image section-short-scroll">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-8 offset-tabletP-2 col-tabletL-6 offset-tabletL-3 col-desktopS-8 offset-desktopS-2">
+                                    <h2>Kích hoạt những kịch bản phức tạp, thật dễ dàng!</h2>
+                                    <p>Các tình huống trong cuộc sống được đồng bộ hóa vào một số thiết bị. Với Nút nhấn thông minh FIBARO, bạn có thể chạy chúng chỉ bằng một công tắc.</p>
+                                    <span class="button"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"><div class="bg bg-second"></div></div>
+                </section>
+                <section id="section15" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2 col-desktopM-6 offset-desktopM-3">
+                                    <h2>Nút nhấn thông minh FIBARO được cố định chắc chắn</h2>
+                                    <p>Đặt Nút nhấn chính xác một nơi cố đinh, bạn có thể yên tâm rằng Nút nhấn không thể rơi rớt hay bị tác động.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section16" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2">
+                                    <h2>Nhấn để thành công</h2>
+                                    <p>Kích hoạt trí tưởng tượng của bạn và tìm cách sử dụng cho chuyển đổi sáng tạo này trong doanh nghiệp của bạn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section17" class="section-big-image section-swap anim-textcontent" data-swap-class="on">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-5 offset-tabletL-6 offset-desktopS-7 col-desktopM-4 offset-desktopM-8 col-desktopL-5 offset-desktopL-6">
+                                    <h2>Cảm thấy đơn giản trong công việc</h2>
+                                    <p>
+                                        Nhiều tính năng của Nút nhấn thông minh FIBARO được thiết kế cho gia đình cũng có thể được sử dụng tại nơi làm việc!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover">
+                        <picture class="off">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/board-on-en.jpg" media="(min-width: 768px)" />
+                            <img src="board-on-en-mobile.jpg" alt="Nút nhấn thông minh FIBARO" />
+                        </picture>
+                        <picture class="on">
+                            <source srcset="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/board-off-en.jpg" media="(min-width: 768px)" />
+                            <img src="board-off-en-mobile.jpg" alt="Nút nhấn thông minh FIBARO" />
+                        </picture>
+                    </div>
+                </section>
+                <section id="section18" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletL-8 offset-tabletL-2">
+                                    <h2>Nút nhấn thông minh FIBARO <br/>Dễ dàng đồng bộ hóa với hệ thống</h2>
+                                    <p>Thêm Nút vào hệ thống FIBARO gần như rất đơn giản như sử dụng nó.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section19" class="section-big-image section-short-scroll anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1">
+                                    <h2>Không bao giờ bỏ quên gì cả</h2>
+                                    <p>Rèm cửa, báo thức, thiết bị điện - khi bạn rời đi, bạn có thể bảo vệ ngôi nhà của mình chỉ bằng một cú nhấp chuột.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"><div class="bg bg-second"></div></div>
+                </section>
+                <section id="section20" class="section-big-image anim-textcontent">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1">
+                                    <h2>Chỉ một nhấn chúc ngủ ngon</h2>
+                                    <p>
+                                        Nút không chỉ cung cấp cho bạn nhiều cách sử dụng. Nó cũng thú vị để sử dụng mỗi ngày, chặn hạn như tắt hoặc mở tất cả đèn khi bạn ngủ hoặc thức.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg bg-size-cover"></div>
+                </section>
+                <section id="section22" class="section-packshot-slider">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-phoneS-10 offset-phoneS-1 col-tabletP-8 offset-tabletP-2 col-tabletL-6 offset-tabletL-3">
+                                    <h2>Bắt đầu với</h2>
+                                    <p>
+                                        Đồng bộ hóa Nút với HỆ THỐNG FIBARO và kết nối nó với các thiết bị khác. Hệ thống của chúng tôi cung cấp cho bạn nhiều tính năng, mang đến cho bạn khả năng tự động hóa to lớn ở mọi nơi bạn cần nhất.
+                                    </p>
+                                </div>
+                                <div class="col-phoneS-12 col-phoneL-10 offset-phoneL-1 col-tabletL-12 offset-tabletL-0 col-desktopM-10 offset-desktopM-1">
+                                    <div class="swiper-container">
+                                        <div class="buttons"><a href="#" class="swiper-button active">Apple HomeKit</a> <a href="#" class="swiper-button">Z-Wave</a></div>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide slide1">
+                                                <div class="row">
+                                                    <div class="col-2 col-phoneS-10 offset-phoneS-1"><img src="packshot_button_hk.png" alt="Button" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide slide2">
+                                                <div class="row">
+                                                    <div class="col-2 col-phoneS-10 offset-phoneS-1"><img src="packshot_button_zw.png" alt="Button" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-product-footer typo-align-center">
+                    <div class="container-fluid top">
+                        <div class="row">
+                            <div class="col-phoneS-12">
+                                <div class="content where-to-buy">
+                                    <h2>Mua ở đâu</h2>
+                                    <a href="https://fibarovn.com/contact/"> <span>Mua</span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="container sub">
+                        <div class="row">
+                            <div class="col-phoneS-12 col-tabletP-10 offset-tabletP-1 col-desktopS-8 offset-desktopS-2 col-desktopL-6 offset-desktopL-3">
+                                <div class="row">
+                                    <div class="col-phoneS-6">
+                                        <div class="content manuals">
+                                            <a href="https://manuals.fibaro.com/"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/manuals.svg" alt="Download manuals" /> <span>Tải về hướng dẫn</span> </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-phoneS-6">
+                                        <div class="content kbase">
+                                            <a href="https://manuals.fibaro.com/knowledge-base/">
+                                                <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/knowledge-base.svg" alt="Knowledge base" /> <span>Kiến thức cơ bản</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row custom-footer">
+                        <div class="custom-footer-menu col-phoneS-10 offset-phoneS-1">
+                            <div class="row">
+                                <div class="four-columns">
+                                    <h3>Hỗ trợ</h3>
+                                    <ul>
+                                        <li><a href="https://manuals.fibaro.com/" target="_blank" rel="nofollow">Hướng dẫn sử dụng</a></li>
+                                        <li><a href="https://manuals.fibaro.com/knowledge-base/" target="" rel="nofollow">Kiến thức cơ bản</a></li>
+                                        <li><a href="https://forum.fibaro.com/" target="" rel="nofollow">Diễn đàn FIBARO</a></li>
+                                        <li><a href="https://manuals.fibaro.com/faq/" target="" rel="nofollow">FAQ</a></li>
+                                        <li><a href="https://www.fibaro.com/files/FIBARO_Guarantee.pdf" target="">Sự bảo đảm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Người dùng</h3>
+                                    <ul>
+                                        <li><a href="https://id.cloud.fibaro.com/" target="" rel="nofollow">FIBARO ID</a></li>
+                                        <li><a href="https://marketplace.fibaro.com/" target="" rel="nofollow">Thị trường</a></li>
+                                        <li><a href="https://itunes.apple.com/us/app/fibaro-for-iphone/id511085659?mt=8" target="" rel="nofollow">Ứng dụng FIBARO iOS</a></li>
+                                        <li><a href="https://play.google.com/store/apps/details?id=com.fibaro&amp;hl=en" target="" rel="nofollow">Ứng dụng FIBARO Android</a></li>
+                                        <li><a href="https://www.fibaro.com/us/homekit/" target="">FIBARO HomeKit</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Doanh nghiệp</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/dai-ly/" target="">Nhà phân phối</a></li>
+                                        <li><a href="https://compatibility.fibaro.com/" target="">Khả năng tương thích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/events/training-for-installers/" target="">Trình cài đặt</a></li>
+                                        <li><a href="https://www.fibaro.com/en/partnership/architect/" target="">Kiến trúc</a></li>
+                                        <!--<li><a href="https://www.fibaro.com/en/partnership/developer/" target="">Nhà phát triển</a></li>-->
+                                        <li><a href="https://www.fibaro.com/us/support/" target="">Trình tìm kiếm FIBARO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="four-columns">
+                                    <h3>Thông tin</h3>
+                                    <ul>
+                                        <li><a href="https://fibarovn.com/tin-tuc/" target="">Tin tức</a></li>
+                                        <li><a href="https://www.fibaro.com/us/about-us/" target="">Giá trị của chúng tôi</a></li>
+                                        <li><a href="https://www.fibaro.com/us/why-fibaro/" target="">Những lợi ích</a></li>
+                                        <li><a href="https://www.fibaro.com/us/compatibility/" target="">Việc làm với FIBARO</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Nơi để mua</a></li>
+                                        <li><a href="https://fibarovn.com/contact/" target="">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="links lighter-font col-phoneS-12 col-desktopS-10 col-desktopM-8 offset-desktopM-1">
+                            <ul>
+                                <li><a href="https://www.fibaro.com/us/patents/">Bằng sáng chế</a></li>
+                                <li><a href="https://www.fibaro.com/us/privacy-policy/">Chính sách bảo mật</a></li>
+                                <li><a href="https://www.fibaro.com/us/reach/">REACH</a></li>
+                                <li><a href="https://id.cloud.fibaro.com/" rel="nofollow">FIBARO ID</a></li>
+                                <li><a href="https://fibarovn.com/contact/">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="social col-phoneS-12 col-desktopS-2">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/FIBAROVN/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/facebook-d.svg" alt="Facebook" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/nhathongminh/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/instagram-d.svg" alt="Instagram" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/fibarovn001" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/twitter-d.svg" alt="Twitter" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/2936170/" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/08/linkedin-d.svg" alt="LinkedIn" /> </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCRTX4A0btp062eRjcqmoEdg" target="_blank" rel="nofollow"> <img src="https://www.fibaro.com/us/wp-content/uploads/sites/18/2017/02/youtube-d.svg" alt="YouTube" /> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="copyright col-phoneS-12">
+                            <p>&copy; 2020. FIBAR GROUP S.A. All rights reserved.</p>
+                            <img src="smart-home-system.png" alt="FIBARO Viet Nam" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-phoneS-10 offset-phoneS-1 col-desktopM-12 offset-desktopM-0 col-desktopL-10 offset-desktopL-1">
+                            <p>
+                                Chúng tôi sử dụng cookie để cá nhân hóa nội dung, tùy chỉnh và phân tích quảng cáo và đảm bảo sử dụng an toàn trang web. Bằng cách nhấp hoặc điều hướng trang web này, bạn đồng ý với việc thu thập thông tin tại
+                                www.fibaro.com và hơn thế nữa bằng cách sử dụng cookie. Thêm thông tin có sẵn trong tài liệu: <a href="https://www.fibaro.com/us/privacy-policy/">CHÍNH SÁCH RIÊNG TƯ VÀ CHÍNH SÁCH COOKIES</a>
+                            </p>
+                            <a href="#" class="cookie-ok">OK</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="close"></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="vendor.1912191358.js"></script>
+        <script type="text/javascript" src="main.2110191037.js"></script>
+        <script type="text/javascript" src="main-button.2211170905.js"></script>
+    </body>
+    <!-- Mirrored from www.fibaro.com/us/products/the-button/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jul 2020 03:13:09 GMT -->
+</html>

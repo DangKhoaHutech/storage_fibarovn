@@ -1,0 +1,30 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 03 Aug 2020 15:48:29 at https://www.fibaro.com/en/smart-home-in-use/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN3%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.fibaro.com/en/smart-home-in-use/ -O1 "D:\Cong ty\Format web Fibaro\su dung nha thong minh fibaro\su-dung-nha-thong-minh-fibaro\su-dung-nha-thong-minh-fibaro" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:50:06	Error: 	"Not Found" (404) at link https://www.fibaro.com/favicons/mstile-144x144.png (from https://www.fibaro.com/en/smart-home-in-use/)
+15:50:10	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://www.fibaro.com/en/smart-home-in-use/)
+15:50:39	Warning: 	Moved Permanently for https://www.fibaro.com/en/smart-home-in-use/inteligentna-automatyka-do-bram/
+15:50:39	Warning: 	File has moved from https://www.fibaro.com/en/smart-home-in-use/inteligentna-automatyka-do-bram/ to https://www.fibaro.com/en/smart-home-in-use/home-access-center/
+15:50:39	Warning: 	Moved Permanently for https://www.fibaro.com/en/smart-home-in-use/inteligentne-systemy-alarmowe/
+15:50:39	Warning: 	File has moved from https://www.fibaro.com/en/smart-home-in-use/inteligentne-systemy-alarmowe/ to https://www.fibaro.com/en/smart-home-in-use/home-safety/
+15:50:39	Warning: 	Moved Permanently for https://www.fibaro.com/en/smart-home-in-use/inteligentny-monitoring-domu/
+15:50:39	Warning: 	File has moved from https://www.fibaro.com/en/smart-home-in-use/inteligentny-monitoring-domu/ to https://www.fibaro.com/en/smart-home-in-use/smart-surveillance-system/
+15:50:39	Warning: 	Moved Permanently for https://www.fibaro.com/en/smart-home-in-use/inteligentne-ogrzewanie-klimatyzacja-domu/
+15:50:39	Warning: 	File has moved from https://www.fibaro.com/en/smart-home-in-use/inteligentne-ogrzewanie-klimatyzacja-domu/ to https://www.fibaro.com/en/smart-home-in-use/smart-hvac/
+15:50:39	Warning: 	Moved Permanently for https://www.fibaro.com/en/smart-home-in-use/automatyzacja-rtv-agd/
+15:50:39	Warning: 	File has moved from https://www.fibaro.com/en/smart-home-in-use/automatyzacja-rtv-agd/ to https://www.fibaro.com/en/smart-home-in-use/smart-interactive-media/
+15:50:39	Warning: 	Moved Permanently for https://www.fibaro.com/en/smart-home-in-use/automatyka-smart-home-nastroj/
+15:50:39	Warning: 	File has moved from https://www.fibaro.com/en/smart-home-in-use/automatyka-smart-home-nastroj/ to https://www.fibaro.com/en/smart-home-in-use/smart-home-comfort/
+15:50:39	Warning: 	Moved Permanently for https://www.fibaro.com/en/smart-home-in-use/inteligentny-ogrod/
+15:50:39	Warning: 	File has moved from https://www.fibaro.com/en/smart-home-in-use/inteligentny-ogrod/ to https://www.fibaro.com/en/smart-home-in-use/smart-garden/
+15:50:39	Warning: 	Moved Permanently for https://www.fibaro.com/en/smart-home-in-use/inteligentne-oswietlenie-domu/
+15:50:39	Warning: 	File has moved from https://www.fibaro.com/en/smart-home-in-use/inteligentne-oswietlenie-domu/ to https://www.fibaro.com/en/smart-home-in-use/the-smart-light/
+15:50:39	Error: 	"Not Found" (404) at link https://www.fibaro.com/en/wp-content/themes/fibaro-wp-theme/img/cant-find.png (from https://www.fibaro.com/en/wp-content/themes/fibaro-wp-theme/css/main.2906200724.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 35 seconds : 301 links scanned, 289 files written (20473360 bytes overall) [17384104 bytes received at 112155 bytes/sec], 4219029 bytes transferred using HTTP compression in 22 files, ratio 21%, 30.2 requests per connection
+(3 errors, 16 warnings, 0 messages)

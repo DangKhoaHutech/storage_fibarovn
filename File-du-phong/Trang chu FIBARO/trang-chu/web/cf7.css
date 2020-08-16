@@ -1,0 +1,99 @@
+/* Contact Form 7 */
+.wpcf7 p {padding-bottom: 0;}
+.wpcf7,.wpcf7-response-output{margin: 0;padding: 0;}
+.wpcf7-response-output{float: left;}
+.wpcf7 .screen-reader-response{position: absolute;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);height: 1px;width: 1px;margin: 0;padding: 0;border: 0;}
+
+.wpcf7-mail-sent-ok{color:#0090ff;display: none !important;}
+.wpcf7-mail-sent-ng{color:#ff0000;}
+.wpcf7-spam-blocked{color:#ffa500;}
+.wpcf7-validation-errors{color:#ff0000;}
+
+.wpcf7-form-control-wrap{position:relative;display:inline-block;width:100%;}
+.wpcf7-form-control-wrap.terms,.wpcf7-form-control-wrap.terms2,.wpcf7-form-control-wrap.terms3{position:relative;display:inline-block;width:auto;}
+
+.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: 1.4rem;
+    display: block;
+}
+
+.use-floating-validation-tip .wpcf7-not-valid-tip {
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    width:100%;
+}
+
+.wpcf7-select{width:100%;}
+
+.wpcf7-list-item{display:inline-block;margin:0 0 0 1em;}
+.wpcf7-list-item-label::before,.wpcf7-list-item-label::after{content:" ";}
+
+.wpcf7-display-none{display:none;}
+
+.wpcf7 .ajax-loader {visibility:hidden;display:block;background:url('form-wait.gif') no-repeat left 2px top 0;width:100%;height:15px;border:none;padding:0;vertical-align:middle;}
+/*.wpcf7 .ajax-loader {visibility:hidden;display:inline-block;background-image:url('../img/common/wait.gif');width:32px;height:32px;border:none;padding:0;margin:0 0 0 4px;vertical-align:middle;}*/
+.wpcf7 .ajax-loader.is-active{visibility:visible;}
+
+.wpcf7 .ajax-error{display: none;}
+.wpcf7 .placeheld{color:#444;}
+.wpcf7 .wpcf7-recaptcha iframe{margin-bottom: 0;}
+.wpcf7 input{outline:0;border-radius:4px;padding:8px;border:1px solid #0090ff;margin-bottom: 1.4rem;}
+.wpcf7 input[type="checkbox"]{margin-bottom: 0;}
+.wpcf7 input[type="file"]{cursor: pointer;}
+.wpcf7 input[type="file"]:disabled{cursor: default;}
+.wpcf7 textarea{width:388px;outline:0;border:1px solid #0090ff;border-radius:4px;padding:8px;}
+.wpcf7 input[type="text"],.wpcf7 input[type="tel"],.wpcf7 input[type="email"],.wpcf7 textarea{-webkit-appearance: none;}
+.wpcf7 input[type="text"]:focus,.wpcf7 input[type="tel"]:focus,.wpcf7 input[type="email"]:focus,.wpcf7 textarea:focus{-webkit-box-shadow:0 2px 2px rgba(0, 0, 0, 0.2);box-shadow:0 2px 2px rgba(0, 0, 0, 0.2);}
+
+.wpcf7 input[type="submit"]{border-radius:4px;padding:8px 0;width:134px;border:1px solid #0090ff;background-color: #0090ff;color:#fff;margin-bottom: 1.2rem;}
+.wpcf7 input[type="submit"]:disabled{background-color: #f0f0f0;border:1px solid #f0f0f0;}
+
+.wpcf7 .chosen-container input[type="text"]:focus{-webkit-box-shadow: none;box-shadow: none;}
+.wpcf7 .req{color: #ff0000;vertical-align:top;}
+
+.wpcf7 input[type="text"],.wpcf7 input[type="email"],.wpcf7 input[type="tel"],.wpcf7 textarea{width: 100%;}
+
+.wpcf7 .chosen-container {margin-bottom: 1.4rem;}
+
+.wpcf7 .form-acceptance{padding-top:6px;}
+.wpcf7 .form-acceptance .copy {display:block;font-size:60%;line-height: 1.4;}
+.wpcf7 .terms, .wpcf7 .terms2, .wpcf7 .terms3{float:left;margin-right: 12px;}
+.wpcf7 .form-left-wrapper,.wpcf7 .form-right-wrapper{width:100%;}
+
+
+@media screen and (max-width:767px) {
+    select {
+        border: 1px solid #0090ff;
+        background-color: #fff;
+        padding: 8px;
+        border-radius: 4px !important;
+        outline: 0 !important;
+        margin-bottom: 1.4rem !important;
+    }
+
+    .wpcf7-recaptcha {
+        margin-top: 1.4rem;
+        transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0
+    }
+}
+
+@media screen and (min-width:768px) {
+    .wpcf7 select {width:100%;opacity:0;}
+
+    .wpcf7-not-valid-tip {
+        position: absolute;
+        top: 4px;
+        left: 100%;
+        z-index: 100;
+        background: #fff;
+        margin-left: 1rem;
+        display: block;
+        width:200px;
+    }
+
+    .wpcf7 .ajax-loader {visibility:hidden;display:block;background:url('form-wait.gif') no-repeat right 2px top 0;width:100%;height:15px;border:none;padding:0;vertical-align:middle;}
+    .wpcf7 .form-left-wrapper,.wpcf7 .form-right-wrapper{width:50%;float: left;margin-top:12px;}
+    .wpcf7 .form-right-wrapper{text-align: right;}
+}
