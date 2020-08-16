@@ -1,0 +1,22 @@
+ <div class="links mobile-hidden">
+                                        <a href="index.html" class="current"> <p class="use_case_second_menu_desktop">Chiếu sáng</p> </a>
+                                        <a href="/vi/giai-phap-su-dung-nha-thong-minh-fibaro/giai-phap-he-thong-cong-va-rem-cua-nha-thong-minh-fibaro/" class=""> <p class="use_case_second_menu_desktop">Cổng và rèm cửa</p> </a>
+                                        <a href="/vi/giai-phap-su-dung-nha-thong-minh-fibaro/giai-phap-he-thong-nhiet-do-nha-thong-minh-fibaro/" class=""> <p class="use_case_second_menu_desktop">Nhiệt độ</p> </a>
+                                        <a href="/vi/giai-phap-su-dung-nha-thong-minh-fibaro/giai-phap-he-thong-an-ninh-nha-thong-minh-fibaro/" class=""> <p class="use_case_second_menu_desktop">An ninh</p> </a>
+                                        <a href="/vi/giai-phap-su-dung-nha-thong-minh-fibaro/giai-phap-he-thong-bao-dong-nha-thong-minh-fibaro/" class=""> <p class="use_case_second_menu_desktop">Hệ thống báo động</p> </a>
+                                        <a href="/vi/giai-phap-su-dung-nha-thong-minh-fibaro/giai-phap-he-thong-am-thanh-nha-thong-minh-fibaro/" class=""> <p class="use_case_second_menu_desktop">Hệ thống âm thanh</p> </a>
+                                        <a href="/vi/giai-phap-su-dung-nha-thong-minh-fibaro/giai-phap-he-thong-thu-gian-nha-thong-minh-fibaro/" class=""> <p class="use_case_second_menu_desktop">Thư giãn</p> </a>
+                                        <a href="/vi/giai-phap-su-dung-nha-thong-minh-fibaro/giai-phap-he-thong-vuon-thong-minh-nha-thong-minh-fibaro/" class=""> <p class="use_case_second_menu_desktop">Vườn thông minh</p> </a>
+                                    </div>
+
+
+
+/vi/san-pham/dieu-khien-rem-cong-rem-cua-cua-cuon-nha-thong-minh-FIBARO/
+/vi/san-pham/cam-bien-Universal-Binary-nha-thong-minh-fibaro/
+/vi/san-pham/dieu-khien-nhiet-thong-minh-nha-thong-minh-fibaro/
+/vi/san-pham/cam-bien-khi-CO-nha-thong-minh-fibaro/
+/vi/san-pham/chuon-cua-camera-nha-thong-minh-fibaro/
+
+/vi/san-pham/cam-bien-nhan-biet-khoi-nha-thong-minh-fibaro/
+
+/vi/san-pham/cong-tat-thong-minh-walli-line-nha-thong-minh-fibaro/
