@@ -1,0 +1,14 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 27 Aug 2020 22:39:26 at https://www.fibaro.com/de/products/intercom-smart-doorbell/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN3%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.fibaro.com/de/products/intercom-smart-doorbell/ -O1 "D:\Thuc tap sinh\git_web_fibarovn_storage\Format web Fibaro\Lien he\CHUONG CUA" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:40:04	Error: 	"Not Found" (404) at link https://www.fibaro.com/favicons/mstile-144x144.png (from https://www.fibaro.com/de/products/intercom-smart-doorbell/)
+22:40:07	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://www.fibaro.com/de/products/intercom-smart-doorbell/)
+22:40:07	Error: 	"Not Found" (404) at link https://www.fibaro.com/de/wp-content/themes/fibaro-wp-theme/img/cant-find.png (from https://www.fibaro.com/de/wp-content/themes/fibaro-wp-theme/css/main.2906200724.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 40 seconds : 127 links scanned, 123 files written (17756610 bytes overall) [15135996 bytes received at 378399 bytes/sec], 3509201 bytes transferred using HTTP compression in 13 files, ratio 22%, 25.6 requests per connection
+(3 errors, 0 warnings, 0 messages)
